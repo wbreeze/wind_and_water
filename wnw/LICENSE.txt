@@ -1,0 +1,6 @@
+Copyright 2018 Douglas Lovell
+All rights reserved
+
+Portions of this work are derived from https://github.com/jekyll/minima
+You will find MIT licensed copies of those portions at that location,
+as well as in the "master" branch of this project.
