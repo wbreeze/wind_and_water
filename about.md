@@ -4,15 +4,34 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+"Wind and Water" is a bolted-on extension of
+[WBreeze.com](http://wbreeze.com/) created with the very
+facile [Jekyll](https://jekyllrb.com/) platform.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+"The fascination of what's difficult" is a reference to the
+[poem by W.B. Yeats.](
+https://www.poetryfoundation.org/poems/43286/the-fascination-of-whats-difficult)
+Find it reproduced below.
+It's something to think about. Try to keep it real.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Douglas Lovell.
+March 8, 2018
 
+### The Fascination of What’s Difficult
+- By William Butler Yeats
 
-[jekyll-organization]: https://github.com/jekyll
+```
+The fascination of what's difficult
+Has dried the sap out of my veins, and rent
+Spontaneous joy and natural content
+Out of my heart. There's something ails our colt
+That must, as if it had not holy blood
+Nor on Olympus leaped from cloud to cloud,
+Shiver under the lash, strain, sweat and jolt
+As though it dragged road metal. My curse on plays
+That have to be set up in fifty ways,
+On the day's war with every knave and dolt,
+Theatre business, management of men.
+I swear before the dawn comes round again
+I'll find the stable and pull out the bolt.
+```
