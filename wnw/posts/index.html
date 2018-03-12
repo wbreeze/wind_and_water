@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
    href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab"><!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>About | Wind and Water</title>
+<title>Posts | Wind and Water</title>
 <meta name="generator" content="Jekyll v3.7.3" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Posts" />
 <meta name="author" content="Douglas Lovell" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="The fascination of what’s difficult…" />
 <meta property="og:description" content="The fascination of what’s difficult…" />
-<link rel="canonical" href="http://localhost:4000/about/" />
-<meta property="og:url" content="http://localhost:4000/about/" />
+<link rel="canonical" href="http://localhost:4000/posts/" />
+<meta property="og:url" content="http://localhost:4000/posts/" />
 <meta property="og:site_name" content="Wind and Water" />
 <script type="application/ld+json">
-{"name":"Wind and Water","description":"The fascination of what’s difficult…","author":{"@type":"Person","name":"Douglas Lovell"},"@type":"WebSite","url":"http://localhost:4000/about/","headline":"About","@context":"http://schema.org"}</script>
+{"description":"The fascination of what’s difficult…","author":{"@type":"Person","name":"Douglas Lovell"},"@type":"WebPage","url":"http://localhost:4000/posts/","headline":"Posts","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Wind and Water" /></head>
 <body><header class="site-header" role="banner">
@@ -41,41 +41,63 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title">Posts</h1>
   </header>
 
   <div class="post-content">
-    <p>“Wind and Water” is a bolted-on extension of
-<a href="http://wbreeze.com/">WBreeze.com</a> created with the very
-facile <a href="https://jekyllrb.com/">Jekyll</a> platform.</p>
+    
+<ul class="post-list">
+    
+    <li>
+      
+      <span class="post-meta">Mar 9, 2018</span>
+      <h3>
+        <a class="post-link" href="/git/rails/database/2018/03/09/merging-structure.html">
+          Merging migrations
+        </a>
+      </h3>
+      <p>In Rails, the file <code class="highlighter-rouge">db/structure.sql</code> or <code class="highlighter-rouge">db/schema.rb</code> (depending)
+captures a snapshot of the state of the development database after a
+migration, when you run the <code class="highlighter-rouge">db:migrate</code> or <code class="highlighter-rouge">db:schema:dump</code> tasks.</p>
 
-<p>“The fascination of what’s difficult” is a reference to the
-<a href="https://www.poetryfoundation.org/poems/43286/the-fascination-of-whats-difficult">poem by W.B. Yeats.</a>
-Find it reproduced below.
-It’s something to think about. Try to keep it real.</p>
 
-<p>Douglas Lovell.
-March 8, 2018</p>
+    </li>
+    
+    <li>
+      
+      <span class="post-meta">Mar 8, 2018</span>
+      <h3>
+        <a class="post-link" href="/git/teams/kiss/religion/2018/03/08/rebase-v-merge.html">
+          Git merge v. rebase
+        </a>
+      </h3>
+      <p>I’ve been looking into the git merge v. rebase endless theological debate.
+It comes up over and over. But I’ve only ever gotten into trouble
+trying to rebase. Not getting all wrapped up over how my
+commit history looks and just merging has given me fewer issues.</p>
 
-<h3 id="the-fascination-of-whats-difficult">The Fascination of What’s Difficult</h3>
-<ul>
-  <li>By William Butler Yeats</li>
-</ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The fascination of what's difficult
-Has dried the sap out of my veins, and rent
-Spontaneous joy and natural content
-Out of my heart. There's something ails our colt
-That must, as if it had not holy blood
-Nor on Olympus leaped from cloud to cloud,
-Shiver under the lash, strain, sweat and jolt
-As though it dragged road metal. My curse on plays
-That have to be set up in fifty ways,
-On the day's war with every knave and dolt,
-Theatre business, management of men.
-I swear before the dawn comes round again
-I'll find the stable and pull out the bolt.
-</code></pre></div></div>
+    </li>
+    
+    <li>
+      
+      <span class="post-meta">Feb 23, 2018</span>
+      <h3>
+        <a class="post-link" href="/rspec/rails/upgrading/2018/02/23/have-http-status.html">
+          RSpec have HTTP status upgrade
+        </a>
+      </h3>
+      <p>When upgrading a project to the Rails 5.2 pre-release we started to see
+some deprecation warnings in our RSpec runs.
+The warnings were as follows, and occurred wherever
+<code class="highlighter-rouge">have_http_status(:success)</code> or <code class="highlighter-rouge">have_success_status</code> and the like
+were used in tests.</p>
+
+
+    </li>
+    
+  </ul>
+
 
   </div>
 
