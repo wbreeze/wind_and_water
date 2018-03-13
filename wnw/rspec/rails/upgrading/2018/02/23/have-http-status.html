@@ -133,13 +133,14 @@ e.g. <code class="highlighter-rouge">successful?</code> and require any extant t
 <p>This would possibly be defensible as a “follow closely as a thin wrapper on
 Rails” strategy. Unfortunately, it would break a mountain of tests!</p>
 
-<p>The <a href="https://github.com/rspec/rspec-rails/pull/1951">method provided</a>
-settles with doing a version check on Rails.
-It also introduces the new status codes, <code class="highlighter-rouge">:successful</code>, <code class="highlighter-rouge">:not_found</code>,
-and <code class="highlighter-rouge">:server_error</code> while maintaining support for the Rails deprecated ones.</p>
+<p>However the <code class="highlighter-rouge">successful?</code>, <code class="highlighter-rouge">server_error?</code>, and <code class="highlighter-rouge">not_found?</code> methods have
+been available to <code class="highlighter-rouge">ActionDispatch::TestResponse</code> via
+<code class="highlighter-rouge">Rack::Response::Helpers</code> for many many years.</p>
 
-<p>Prior to 5.2 it maps <code class="highlighter-rouge">:success</code> or <code class="highlighter-rouge">:successful</code> to the <code class="highlighter-rouge">success?</code> method.
-From 5.2 and later it maps the same to the <code class="highlighter-rouge">successful?</code> method.</p>
+<p>The <a href="https://github.com/rspec/rspec-rails/pull/1951">method provided</a>
+introduces the new status codes, <code class="highlighter-rouge">:successful</code>, <code class="highlighter-rouge">:not_found</code>,
+and <code class="highlighter-rouge">:server_error</code> while maintaining support for the Rails deprecated ones.
+It does so by mapping, for example, <code class="highlighter-rouge">:success</code> to the <code class="highlighter-rouge">successful?</code> method.</p>
 
 <p>Thus the world of <code class="highlighter-rouge">rspec-rails</code> turns in accordance with the heavens,
 that is, Rails.</p>

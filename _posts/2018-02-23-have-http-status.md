@@ -45,13 +45,14 @@ e.g. `successful?` and require any extant tests using, for example,
 This would possibly be defensible as a "follow closely as a thin wrapper on
 Rails" strategy. Unfortunately, it would break a mountain of tests!
 
-The [method provided](https://github.com/rspec/rspec-rails/pull/1951)
-settles with doing a version check on Rails.
-It also introduces the new status codes, `:successful`, `:not_found`,
-and `:server_error` while maintaining support for the Rails deprecated ones.
+However the `successful?`, `server_error?`, and `not_found?` methods have
+been available to `ActionDispatch::TestResponse` via
+`Rack::Response::Helpers` for many many years.
 
-Prior to 5.2 it maps `:success` or `:successful` to the `success?` method.
-From 5.2 and later it maps the same to the `successful?` method.
+The [method provided](https://github.com/rspec/rspec-rails/pull/1951)
+introduces the new status codes, `:successful`, `:not_found`,
+and `:server_error` while maintaining support for the Rails deprecated ones.
+It does so by mapping, for example, `:success` to the `successful?` method.
 
 Thus the world of `rspec-rails` turns in accordance with the heavens,
 that is, Rails.
