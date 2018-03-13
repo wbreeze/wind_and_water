@@ -107,7 +107,7 @@ code {
   font-size: 15px;
   border: 1px solid #e8e8e8;
   border-radius: 3px;
-  background-color: #eef; }
+  background-color: #ececec; }
 
 code {
   padding: 1px 5px; }
@@ -364,9 +364,9 @@ table {
  * Syntax highlighting styles
  */
 .highlight {
-  background: #fff; }
+  background: #ececec; }
   .highlighter-rouge .highlight {
-    background: #eef; }
+    background: #ececec; }
   .highlight .c {
     color: #998;
     font-style: italic; }
