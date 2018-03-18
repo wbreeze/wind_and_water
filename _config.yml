@@ -40,6 +40,7 @@ minima:
 # Build settings
 destination: wnw
 markdown: kramdown
+permalink: /:year/:month/:title:output_ext
 theme: minima
 exclude:
   - Gemfile
