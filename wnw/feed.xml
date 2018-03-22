@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-03-18T16:39:05-03:00</updated><id>http://localhost:4000/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-03-22T16:55:02-03:00</updated><id>/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Tracking the source of a fork</title><link href="/2018/03/tracking-fork-sources.html" rel="alternate" type="text/html" title="Tracking the source of a fork" /><published>2018-03-21T00:00:00-03:00</published><updated>2018-03-21T00:00:00-03:00</updated><id>/2018/03/tracking-fork-sources</id><content type="html" xml:base="/2018/03/tracking-fork-sources.html">&lt;p&gt;In Ruby land, we usually take advantage of open source through the
+published gems. Sometimes it’s nice to use open source from the source.
+Sometimes you want to run off of a fork, but track
+changes and improvements made to the source.
+Here are a couple of scenarios:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;You need to make some changes for your project that don’t have a prayer
+of making it back into the source. That is, you expect to run from the
+fork more or less permanently, without requesting the source provider to
+pull your very specialized changes.&lt;/li&gt;
+  &lt;li&gt;You don’t trust the source not to disappear, or not to quietly introduce
+malicious code in an update.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How do you have your cake and eat it too? How do you run a customized
+fork while tracking improvements made to the original?&lt;/p&gt;
+
+&lt;p&gt;One way to do this is to fork the source, make a production branch
+for your localized modifications, and have the master branch track
+the source.
+With this setup, you can pull source improvements in the master branch,
+then merge or cherry-pick those into your production branch.&lt;/p&gt;
+
+&lt;p&gt;Here’s how it works. We’re going to pick-up an Ansible role from GitHub.
+Let’s use, &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys/ansible-role-lock-root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;First, fork the role in GitHub. The name of our fork is,
+&lt;code class=&quot;highlighter-rouge&quot;&gt;TelegraphyInteractive/ansible-role-lock-root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now we clone:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles$ git clone \
+&amp;gt; git@github.com:TelegraphyInteractive/ansible-role-lock-root.git lock-root
+Cloning into 'lock-root'...
+~/ansible/roles$ cd lock-root
+~/ansible/roles/lock-root[master]$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We cloned inside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;roles&lt;/code&gt; directory of our Ansible playbook, but
+that is an irrelevant detail. We also changed the name to keep it short.
+The cloned repository exists in directory, &lt;code class=&quot;highlighter-rouge&quot;&gt;~/ansible/roles/lock-root&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output contains these &lt;code class=&quot;highlighter-rouge&quot;&gt;remote&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;branch&lt;/code&gt;
+settings:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We want at least one branch to track the master branch from the original
+source, &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys/ansible-role-lock-root&lt;/code&gt;. In order to do this, we first
+have to make that repository available as a remote.
+We create a remote called, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git remote add \
+&amp;gt; -m master -t master \
+&amp;gt; source 'git@github.com:cdriehuys/ansible-role-lock-root.git'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output now contains the additional remote
+called, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
+remote.source.fetch=+refs/heads/master:refs/remotes/source/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We want to make the master branch track the source from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt;.
+First we fetch the branches from the source, then set the upstream
+branch for master.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git fetch --all
+Fetching origin
+Fetching source
+From github.com:cdriehuys/ansible-role-lock-root
+ * [new branch]      master     -&amp;gt; source/master
+~/ansible/roles/lock-root[master]$ git branch --set-upstream-to=source/master
+Branch 'master' set up to track remote branch 'master' from 'source'.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output shows that the master branch now tracks
+the master branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=source
+branch.master.merge=refs/heads/master
+remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
+remote.source.fetch=+refs/heads/master:refs/remotes/source/master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that the master branch is now “read-only.” We won’t be able to push
+from the master branch, because we do not have write access to the source
+repository. We &lt;strong&gt;can&lt;/strong&gt; however do &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;. The pull will bring any upstream
+changes from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt; into our workspace.&lt;/p&gt;
+
+&lt;p&gt;The only thing left to do is make our own branch based on our own repository,
+so that we can make changes. Let’s call the branch, &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.
+First we create the branch and switch to it at the same time.
+Next we push the branch to our own repository, the &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; and set
+that as the “default,” upstream branch for all future pushes.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git checkout -b production
+Switched to a new branch 'production'
+~/ansible/roles/lock-root[production]$ git push --set-upstream origin production
+Total 0 (delta 0), reused 0 (delta 0)
+To github.com:TelegraphyInteractive/ansible-role-lock-root.git
+ * [new branch]      production -&amp;gt; production
+Branch 'production' set up to track remote branch 'production' from 'origin'.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The output of &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; now shows the new &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt; branch
+tracking our own repository.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=source
+branch.master.merge=refs/heads/master
+remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
+remote.source.fetch=+refs/heads/master:refs/remotes/source/master
+branch.production.remote=origin
+branch.production.merge=refs/heads/production
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When we want to pull upstream changes, we go to the master branch
+and pull them.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[production]$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'source/master'.
+~/ansible/roles/lock-root[master]$ git pull
+Already up to date.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can now get a view of the changes made upstream on the master
+through &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Satisfied with the changes, we can merge, cherry-pick or
+&lt;a href=&quot;/2018/03/rebase-v-merge.html&quot;&gt;(gulp) rebase&lt;/a&gt;
+the changes we have in production:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git checkout production
+Switched to branch 'production'
+Your branch is up to date with 'origin/production'.
+~/ansible/roles/lock-root[production]$ git merge master
+Already up to date.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This gives us the best of two worlds, don’t you think?
+Who says you can’t have your cake and eat it too?&lt;/p&gt;
+
+&lt;p&gt;Well. There’s one source of error.  Now it’s necessary to leave
+the directory checked-out to the production branch. If we accidentally
+leave it checked-out to the master branch, all of our hard work will
+be for naught, and we might face some confusing errors.&lt;/p&gt;
+
+&lt;p&gt;The other complication is that we’ll now have to work with
+&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Tools-Submodules&quot;&gt;git submodules&lt;/a&gt;.
+Assuming the project we are working is under source control with git,
+we’ve just checked-out another git repository within it.&lt;/p&gt;
+
+&lt;p&gt;There’s some care required with making changes to submodules in a project.
+If it isn’t worth the trouble, forget everything you’ve read and copy copy
+copy! (It’s the sincerest form of flattery.)&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Ruby land, we usually take advantage of open source through the published gems. Sometimes it’s nice to use open source from the source. Sometimes you want to run off of a fork, but track changes and improvements made to the source. Here are a couple of scenarios:</summary></entry><entry><title type="html">The Dispossessed</title><link href="/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>/2018/03/the-dispossessed</id><content type="html" xml:base="/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
 how agreeable she sounded, remembered that I hadn’t found her books
 accessible when I was an adolescent, for whatever reason, and
 decided to try reading one of them again.&lt;/p&gt;
@@ -70,7 +239,7 @@ or despair or depression?&lt;/p&gt;
 
 &lt;p&gt;These are to me questions of the greatest importance and measure
 of the success of a society.  And that’s why I so much liked
-Ursula K Le Guin’s &lt;em&gt;The Dispossessed&lt;/em&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I was an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="http://localhost:4000/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="http://localhost:4000/2018/03/why-i-dont-use-fb.html">&lt;h1 id=&quot;-or-whatsapp-or-instagram-&quot;&gt;… or WhatsApp or Instagram …&lt;/h1&gt;
+Ursula K Le Guin’s &lt;em&gt;The Dispossessed&lt;/em&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I was an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="/2018/03/why-i-dont-use-fb.html">&lt;h1 id=&quot;-or-whatsapp-or-instagram-&quot;&gt;… or WhatsApp or Instagram …&lt;/h1&gt;
 
 &lt;p&gt;I don’t use these programs because they leak information about
 who your contacts are, whom you talk with, when, and how often,
@@ -189,7 +358,7 @@ whom I’m truly close to, I use &lt;a href=&quot;https://www.signal.org/&quot;&
 Signal is an angel funded small team that continually improves the
 function of the app. The application provides one of the few easy, practical
 ways to stay in touch without leaking information to the datalords.
-I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="http://localhost:4000/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/merging-structure</id><content type="html" xml:base="http://localhost:4000/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
+I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>/2018/03/merging-structure</id><content type="html" xml:base="/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
 captures a snapshot of the state of the development database after a
 migration, when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt; tasks.&lt;/p&gt;
 
@@ -247,7 +416,7 @@ The reference for doing that is deep down in the documentation of
 
 &lt;p&gt;In this way, your database schema will always be wholly in agreement with
 the text wanted by the framework, because it is always and only ever generated
-by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="http://localhost:4000/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/rebase-v-merge</id><content type="html" xml:base="http://localhost:4000/2018/03/rebase-v-merge.html">&lt;p&gt;I’ve been looking into the git merge v. rebase endless theological debate.
+by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>/2018/03/rebase-v-merge</id><content type="html" xml:base="/2018/03/rebase-v-merge.html">&lt;p&gt;I’ve been looking into the git merge v. rebase endless theological debate.
 It comes up over and over. But I’ve only ever gotten into trouble
 trying to rebase. Not getting all wrapped up over how my
 commit history looks and just merging has given me fewer issues.&lt;/p&gt;
@@ -273,7 +442,7 @@ Contains “The Golden Rule of Rebasing” and after two thousand words says,
 your feature branch occasionally before finally &lt;strong&gt;merging&lt;/strong&gt; it back to master.&lt;/p&gt;
 
 &lt;p&gt;All of the caveats and warnings I’m seeing in these threads are about rebase.
-That tells me something. My friend, KISS says, “Just merge and stop fussing.”&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry><entry><title type="html">RSpec have HTTP status upgrade</title><link href="http://localhost:4000/2018/02/have-http-status.html" rel="alternate" type="text/html" title="RSpec have HTTP status upgrade" /><published>2018-02-23T00:00:00-03:00</published><updated>2018-02-23T00:00:00-03:00</updated><id>http://localhost:4000/2018/02/have-http-status</id><content type="html" xml:base="http://localhost:4000/2018/02/have-http-status.html">&lt;p&gt;When upgrading a project to the Rails 5.2 pre-release we started to see
+That tells me something. My friend, KISS says, “Just merge and stop fussing.”&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry><entry><title type="html">RSpec have HTTP status upgrade</title><link href="/2018/02/have-http-status.html" rel="alternate" type="text/html" title="RSpec have HTTP status upgrade" /><published>2018-02-23T00:00:00-03:00</published><updated>2018-02-23T00:00:00-03:00</updated><id>/2018/02/have-http-status</id><content type="html" xml:base="/2018/02/have-http-status.html">&lt;p&gt;When upgrading a project to the Rails 5.2 pre-release we started to see
 some deprecation warnings in our RSpec runs.
 The warnings were as follows, and occurred wherever
 &lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status(:success)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;have_success_status&lt;/code&gt; and the like
