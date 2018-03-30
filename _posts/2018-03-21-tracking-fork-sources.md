@@ -6,7 +6,7 @@ categories: git forking
 ---
 
 In Ruby land, we usually take advantage of open source through the
-published gems. Sometimes it's nice to use open source from the source.
+published gems. Sometimes however, it's nice to use open source from the source.
 Sometimes you want to run off of a fork, but track
 changes and improvements made to the source.
 Here are a couple of scenarios:
