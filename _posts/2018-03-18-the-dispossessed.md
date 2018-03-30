@@ -8,7 +8,8 @@ When I read about the [death of Ursula K Le Guin](
 https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html
 ) in the New York Times, at the end of January, I thought
 how agreeable she sounded, remembered that I hadn't found her books
-accessible when I was an adolescent, for whatever reason, and
+accessible when I first encountered them as an adolescent,
+for whatever reason, and
 decided to try reading one of them again.
 
 It isn't strange, but a little regrettable how an artist's stock can
