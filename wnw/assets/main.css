@@ -545,13 +545,25 @@ table {
 .span_1_of_4 {
   width: 23.8%; }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 900px) {
   .col {
     margin: 1% 0 1% 0%; }
 
-  .span_1_of_4 {
+  .post-list {
     display: none; }
 
-  .span_2_of_4, .span_3_of_4, .span_4_of_4 {
+  .span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 {
     width: 100%; } }
+img {
+  width: 40%;
+  display: block;
+  float: left;
+  clear: both;
+  padding-top: 0.5ex;
+  padding-bottom: 0.5ex;
+  padding-right: 2em; }
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 100%;
+    padding-right: 0px; } }
