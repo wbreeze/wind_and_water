@@ -1,0 +1,15 @@
+img {
+  width: 40%;
+  display: block;
+  float: left;
+  margin-top: 0.5ex;
+  margin-bottom: 0.5ex;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 100%;
+    margin-right: 0px;
+  }
+}
