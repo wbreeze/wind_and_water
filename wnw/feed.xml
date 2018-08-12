@@ -1,4 +1,157 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-04-17T15:33:49-03:00</updated><id>http://localhost:4000/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-12T10:21:29-03:00</updated><id>http://localhost:4000/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Keeping minitest Dry</title><link href="http://localhost:4000/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>http://localhost:4000/2018/08/dry-minitest</id><content type="html" xml:base="http://localhost:4000/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
+&lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;minitest&lt;/a&gt;
+as extended for Rails.(&lt;a href=&quot;#footnote&quot;&gt;Footnote&lt;/a&gt;)
+It is from the open source Rails project,
+&lt;a href=&quot;https://github.com/wbreeze/iaccdb&quot;&gt;IACCDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require 'test_helper'
+
+module Admin
+  class MemberControllerTest &amp;lt; ActionController::TestCase
+    setup do
+      @member_list = create_list(:member, 12)
+      @before_attrs = @member_list.first.attributes
+      @after_attrs = @before_attrs.merge(
+        {'family_name' =&amp;gt; Faker::Name.last_name}
+      )
+    end
+
+    test 'non-admin cannot view index' do
+      get :index
+      assert_response :unauthorized
+    end
+
+    test 'non-admin cannot show member' do
+      get :show, params: { id: @member_list.first.id }
+      assert_response :unauthorized
+    end
+
+    test 'non-admin cannot patch update' do
+      patch :update, params: { id: @after_attrs['id'], member: @after_attrs }
+      assert_response :unauthorized
+    end
+
+    test 'admin can get index' do
+      http_auth_login(:admin)
+      get :index
+      assert_response :success
+    end
+
+    test 'admin can get show' do
+      http_auth_login(:admin)
+      get :show, params: { id: @member_list.first.id }
+      assert_response :success
+    end
+
+    test 'admin can patch update' do
+      http_auth_login(:admin)
+      patch :update, params: { id: @after_attrs['id'], member: @after_attrs }
+      assert_response :redirect
+      member = Member.find(@after_attrs['id'])
+      assert_not_nil(member)
+      assert_equal(@after_attrs['family_name'], member.family_name)
+    end
+
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The test validates that an unauthenticated user cannot access some
+member administration controller methods.
+It validates that an authenticated user can access the methods.&lt;/p&gt;
+
+&lt;p&gt;A few things about this test file are troublesome:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Primarily, I don’t like the repetiton of &lt;code class=&quot;highlighter-rouge&quot;&gt;http_auth_login(:admin)&lt;/code&gt;
+at the front of each of the authenticated tests.&lt;/li&gt;
+  &lt;li&gt;There is some repetition in the test naming: “non-admin cannot”,
+“admin can”&lt;/li&gt;
+  &lt;li&gt;There are two groups of tests here that aren’t in any way grouped.
+Each group calls the same endpoints with different setup and expected
+results.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;thoughtbotshoulda-context&quot;&gt;thoughtbot/shoulda-context&lt;/h2&gt;
+
+&lt;p&gt;One solution is to use the
+&lt;a href=&quot;https://github.com/thoughtbot/shoulda-context&quot;&gt;thoughtbot/shoulda-context&lt;/a&gt;
+gem.
+The shoulda-context gem adds some DSL to minitest for defining contexts of
+tests. Now the non-admin tests and the admin
+tests each have their own context group. The admin context group has
+additional setup that arranges the http basic authentication.&lt;/p&gt;
+
+&lt;p&gt;Here is a link to a
+&lt;a href=&quot;https://github.com/wbreeze/iaccdb/commit/f7f8e3c08ca3856ae70545abca097cde195d51cc&quot;&gt;commit with the diff&lt;/a&gt;
+that shows all of the changes. It adds the gem and includes the DSL
+additions for all tests in the &lt;code class=&quot;highlighter-rouge&quot;&gt;test_helper.rb&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;Here is the new test file. The test implementations themselves did not
+change, and are omitted here. The structure of the test file changed with
+&lt;code class=&quot;highlighter-rouge&quot;&gt;context&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;should&lt;/code&gt; DSL methods.
+You can find an additional &lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; block within the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;allow admin&lt;/code&gt; context that takes care of authenticating the
+admin user for that context.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require 'test_helper'
+
+module Admin
+  class MemberControllerTest &amp;lt; ActionController::TestCase
+    setup do
+      @member_list = create_list(:member, 12)
+      @before_attrs = @member_list.first.attributes
+      @after_attrs = @before_attrs.merge(
+        {'family_name' =&amp;gt; Faker::Name.last_name}
+      )
+    end
+
+    context 'deny non-admin' do
+      should 'get index' do
+        # ...
+      end
+
+      should 'get show' do
+        # ...
+      end
+
+      should 'patch update' do
+        # ...
+      end
+    end
+
+    context 'allow admin' do
+      setup do
+        http_auth_login(:admin)
+      end
+
+      should 'get index' do
+        # ...
+      end
+
+      should 'get show' do
+        # ...
+      end
+
+      should 'patch update' do
+        # ...
+      end
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is more satisfying because it:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calls out that we’re testing the same endpoints with two setups&lt;/li&gt;
+  &lt;li&gt;Avoids repeating the &lt;code class=&quot;highlighter-rouge&quot;&gt;http_auth_login&lt;/code&gt; call on each of the authorized tests&lt;/li&gt;
+  &lt;li&gt;Avoids repeating &lt;code class=&quot;highlighter-rouge&quot;&gt;deny non-admin&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;allow admin&lt;/code&gt; in the test names&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
+&lt;p&gt;Rails adds some DSL shortcuts through ActiveSupport::TestCase for defining test
+methods with &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;; defining setup and teardown methods with
+&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails.(Footnote) It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
 Well, I have. Here’s how it works.&lt;/p&gt;
 
 &lt;p&gt;A portable crane constructs the initial tower and places the head, with
