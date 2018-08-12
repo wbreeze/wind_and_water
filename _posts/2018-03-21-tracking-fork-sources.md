@@ -156,4 +156,4 @@ checking-out the project for the first time:
  - Reconstituting the elaborate setup dealt a lot of complicated rework.
 
 Hoping this is simpler and apology for misleading anybody.
-Rewrite date, September 12, 2018.
+Rewrite date, August 12, 2018.
