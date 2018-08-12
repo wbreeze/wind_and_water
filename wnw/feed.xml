@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-12T10:21:29-03:00</updated><id>http://localhost:4000/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Keeping minitest Dry</title><link href="http://localhost:4000/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>http://localhost:4000/2018/08/dry-minitest</id><content type="html" xml:base="http://localhost:4000/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-12T18:05:23-03:00</updated><id>http://localhost:4000/</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Keeping minitest Dry</title><link href="http://localhost:4000/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>http://localhost:4000/2018/08/dry-minitest</id><content type="html" xml:base="http://localhost:4000/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
 &lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;minitest&lt;/a&gt;
-as extended for Rails.(&lt;a href=&quot;#footnote&quot;&gt;Footnote&lt;/a&gt;)
+as &lt;a href=&quot;#footnote&quot;&gt;extended for Rails&lt;/a&gt;.
 It is from the open source Rails project,
 &lt;a href=&quot;https://github.com/wbreeze/iaccdb&quot;&gt;IACCDB&lt;/a&gt;.&lt;/p&gt;
 
@@ -84,8 +84,9 @@ additional setup that arranges the http basic authentication.&lt;/p&gt;
 
 &lt;p&gt;Here is a link to a
 &lt;a href=&quot;https://github.com/wbreeze/iaccdb/commit/f7f8e3c08ca3856ae70545abca097cde195d51cc&quot;&gt;commit with the diff&lt;/a&gt;
-that shows all of the changes. It adds the gem and includes the DSL
-additions for all tests in the &lt;code class=&quot;highlighter-rouge&quot;&gt;test_helper.rb&lt;/code&gt; file.&lt;/p&gt;
+that shows all of the changes. It adds the gem and includes
+the DSL additions
+in the &lt;code class=&quot;highlighter-rouge&quot;&gt;test_helper.rb&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;p&gt;Here is the new test file. The test implementations themselves did not
 change, and are omitted here. The structure of the test file changed with
@@ -151,7 +152,7 @@ end
 &lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
 &lt;p&gt;Rails adds some DSL shortcuts through ActiveSupport::TestCase for defining test
 methods with &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;; defining setup and teardown methods with
-&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails.(Footnote) It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
+&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails. It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
 Well, I have. Here’s how it works.&lt;/p&gt;
 
 &lt;p&gt;A portable crane constructs the initial tower and places the head, with
