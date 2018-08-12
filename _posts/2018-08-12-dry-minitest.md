@@ -6,7 +6,7 @@ categories: minitest testing dry "clean code"
 ---
 Here's a test written with
 [minitest](https://github.com/seattlerb/minitest)
-as extended for Rails.([Footnote](#footnote))
+as [extended for Rails](#footnote).
 It is from the open source Rails project,
 [IACCDB](https://github.com/wbreeze/iaccdb).
 
@@ -91,8 +91,9 @@ additional setup that arranges the http basic authentication.
 Here is a link to a
 [commit with the diff](
 https://github.com/wbreeze/iaccdb/commit/f7f8e3c08ca3856ae70545abca097cde195d51cc)
-that shows all of the changes. It adds the gem and includes the DSL
-additions for all tests in the `test_helper.rb` file.
+that shows all of the changes. It adds the gem and includes
+the DSL additions
+in the `test_helper.rb` file.
 
 Here is the new test file. The test implementations themselves did not
 change, and are omitted here. The structure of the test file changed with
