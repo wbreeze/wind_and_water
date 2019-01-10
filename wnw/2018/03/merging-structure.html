@@ -83,16 +83,6 @@
       
       <li>
         
-        <span class="post-meta">Mar 21, 2018</span>
-        <h3>
-          <a class="post-link" href="/2018/03/tracking-fork-sources.html">
-            Tracking the source of a fork
-          </a>
-        </h3>
-      </li>
-      
-      <li>
-        
         <span class="post-meta">Mar 18, 2018</span>
         <h3>
           <a class="post-link" href="/2018/03/the-dispossessed.html">
@@ -189,8 +179,8 @@ combining independent migrations without errors induced by merging.</p>
 <p>First, do not allow git to merge the file. Set-up git to always treat
 independent changes to the schema as a conflict. You do this by placing
 a <code class="highlighter-rouge">.gitattributes</code> file in the <code class="highlighter-rouge">db</code> directory with content,</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>schema.rb merge binary
-structure.sql merge binary
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>schema.rb -merge
+structure.sql -merge
 </code></pre></div></div>
 <p>(Or add those lines to the existing <code class="highlighter-rouge">.gitattributes</code> file if there is one.)
 The reference for doing that is deep down in the documentation of
@@ -198,19 +188,18 @@ The reference for doing that is deep down in the documentation of
 
 <p>Second, when you do get a conflict, resolve it as follows:</p>
 
+<p>If your database migrations come <em>after</em> those you picked-up in the merge:</p>
 <ul>
-  <li>Checkout <strong>their</strong> version, <code class="highlighter-rouge">git checkout --theirs db/structure.sql</code></li>
-  <li>Accept that change, <code class="highlighter-rouge">git add db/structure.sql</code></li>
+  <li>Abort the merge <code class="highlighter-rouge">git merge --abort</code></li>
+  <li>Roll back your migrations, however many, <code class="highlighter-rouge">rails db:rollback</code></li>
+  <li>Pull the changes a second time</li>
 </ul>
 
-<p>After you have finished the merge and committed the changes (<code class="highlighter-rouge">git commit</code>):</p>
-
+<p>In either case,</p>
 <ul>
-  <li>Reset the development database such that it matches the structure of
-<strong>their</strong> version, e.g. <code class="highlighter-rouge">rails db:reset</code></li>
-  <li>Rerun the migrations from your branch, <code class="highlighter-rouge">rails db:migrate</code></li>
+  <li>Run the migrations picked-up in the merge, <code class="highlighter-rouge">rails db:migrate</code></li>
   <li>Accept the newly generated schema, e.g. <code class="highlighter-rouge">git add db/structure.sql</code></li>
-  <li>Make that new commit, <code class="highlighter-rouge">git commit</code></li>
+  <li>Make that merge commit, <code class="highlighter-rouge">git commit</code></li>
 </ul>
 
 <p>In this way, your database schema will always be wholly in agreement with

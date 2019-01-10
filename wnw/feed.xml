@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T20:34:24-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">SCCM and Git</title><link href="http://localhost:4000/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/01/sccm-and-git</id><content type="html" xml:base="http://localhost:4000/2019/01/sccm-and-git.html">&lt;p&gt;There are files in our software systems that we desire to have under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-01-09T21:26:37-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">SCCM and Git</title><link href="http://localhost:4000/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/01/sccm-and-git</id><content type="html" xml:base="http://localhost:4000/2019/01/sccm-and-git.html">&lt;p&gt;There are files in our software systems that we desire to have under
 source control, but which we never edit. These are source code configuration
 management (SCCM) files such as &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;npm.shrinkwrap.json&lt;/code&gt;,
 or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We keep these files under source control (e.g. git), but should we
+allow git to merge them when there are independent changes?
+If this looks “tl;dr”, jump now to the conclusion.&lt;/p&gt;
 
 &lt;p&gt;Three examples in a &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; application are
 the &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; for capturing the configuration of Ruby Gems
@@ -49,7 +53,9 @@ until we have resolved it.&lt;/p&gt;
 The &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; lives next to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; directory in the root
 of our project (and does not exist unless we create it).&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;man gitattributes&lt;/code&gt; command produces a long list of configuration
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;man gitattributes&lt;/code&gt; command produces a
+&lt;a href=&quot;https://www.git-scm.com/docs/gitattributes&quot;&gt;long list&lt;/a&gt;
+of configuration
 options we can set for files managed by git. One of them is the “&lt;code class=&quot;highlighter-rouge&quot;&gt;merge&lt;/code&gt;”
 attribute, found under the heading, “Performing a three-way merge”.
 Using the setting as follows:&lt;/p&gt;
@@ -119,7 +125,9 @@ generate a new shrinkwrap file that we can add to the commit.&lt;/p&gt;
 developer’s new migration in the merge. We run &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt; to
 not only make the needed changes to local development and test databases,
 but also to produce a new &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; file that
-we add to the merge commit.&lt;/p&gt;
+we add to the merge commit.
+See &lt;a href=&quot;/2018/03/merging-structure.html&quot;&gt;Merging migrations&lt;/a&gt;
+for full details.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 &lt;p&gt;In order to properly manage generated SCCM files with git, we:&lt;/p&gt;
@@ -325,176 +333,7 @@ of privacy has become.&lt;/p&gt;
 &lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
 &lt;p&gt;Credit history does cross the line into vital territory.
 Some employers require good credit history for certain job roles.
-Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">Tracking the source of a fork</title><link href="http://localhost:4000/2018/03/tracking-fork-sources.html" rel="alternate" type="text/html" title="Tracking the source of a fork" /><published>2018-03-21T00:00:00-03:00</published><updated>2018-03-21T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/tracking-fork-sources</id><content type="html" xml:base="http://localhost:4000/2018/03/tracking-fork-sources.html">&lt;p&gt;In Ruby land, we usually take advantage of open source through the
-published gems. Sometimes however, it’s nice to use open source from the source.
-Sometimes you want to run off of a fork, but track
-changes and improvements made to the source.
-Here are a couple of scenarios:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;You need to make some changes for your project that don’t have a prayer
-of making it back into the source. That is, you expect to run from the
-fork more or less permanently, without requesting the source provider to
-pull your very specialized changes.&lt;/li&gt;
-  &lt;li&gt;You don’t trust the source not to disappear, or not to quietly introduce
-malicious code in an update.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;How do you have your cake and eat it too? How do you run a customized
-fork while tracking improvements made to the original?&lt;/p&gt;
-
-&lt;p&gt;One way to do this is to fork the source, make a production branch
-for your localized modifications, and have the master branch track
-the source.
-With this setup, you can pull source improvements in the master branch,
-then merge or cherry-pick those into your production branch.&lt;/p&gt;
-
-&lt;p&gt;Here’s how it works. We’re going to pick-up an Ansible role from GitHub.
-Let’s use, &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys/ansible-role-lock-root&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;First, fork the role in GitHub. The name of our fork is,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;TelegraphyInteractive/ansible-role-lock-root&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now we clone:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles$ git clone \
-&amp;gt; git@github.com:TelegraphyInteractive/ansible-role-lock-root.git lock-root
-Cloning into 'lock-root'...
-~/ansible/roles$ cd lock-root
-~/ansible/roles/lock-root[master]$
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We cloned inside of the &lt;code class=&quot;highlighter-rouge&quot;&gt;roles&lt;/code&gt; directory of our Ansible playbook, but
-that is an irrelevant detail. We also changed the name to keep it short.
-The cloned repository exists in directory, &lt;code class=&quot;highlighter-rouge&quot;&gt;~/ansible/roles/lock-root&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output contains these &lt;code class=&quot;highlighter-rouge&quot;&gt;remote&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;branch&lt;/code&gt;
-settings:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-branch.master.remote=origin
-branch.master.merge=refs/heads/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We want at least one branch to track the master branch from the original
-source, &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys/ansible-role-lock-root&lt;/code&gt;. In order to do this, we first
-have to make that repository available as a remote.
-We create a remote called, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git remote add \
-&amp;gt; -m master -t master \
-&amp;gt; source 'git@github.com:cdriehuys/ansible-role-lock-root.git'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output now contains the additional remote
-called, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-branch.master.remote=origin
-branch.master.merge=refs/heads/master
-remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
-remote.source.fetch=+refs/heads/master:refs/remotes/source/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We want to make the master branch track the source from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt;.
-First we fetch the branches from the source, then set the upstream
-branch for master.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git fetch --all
-Fetching origin
-Fetching source
-From github.com:cdriehuys/ansible-role-lock-root
- * [new branch]      master     -&amp;gt; source/master
-~/ansible/roles/lock-root[master]$ git branch --set-upstream-to=source/master
-Branch 'master' set up to track remote branch 'master' from 'source'.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; output shows that the master branch now tracks
-the master branch from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-branch.master.remote=source
-branch.master.merge=refs/heads/master
-remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
-remote.source.fetch=+refs/heads/master:refs/remotes/source/master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Note that the master branch is now “read-only.” We won’t be able to push
-from the master branch, because we do not have write access to the source
-repository. We &lt;strong&gt;can&lt;/strong&gt; however do &lt;code class=&quot;highlighter-rouge&quot;&gt;git pull&lt;/code&gt;. The pull will bring any upstream
-changes from &lt;code class=&quot;highlighter-rouge&quot;&gt;cdriehuys&lt;/code&gt; into our workspace.&lt;/p&gt;
-
-&lt;p&gt;The only thing left to do is make our own branch based on our own repository,
-so that we can make changes. Let’s call the branch, &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt;.
-First we create the branch and switch to it at the same time.
-Next we push the branch to our own repository, the &lt;code class=&quot;highlighter-rouge&quot;&gt;origin&lt;/code&gt; and set
-that as the “default,” upstream branch for all future pushes.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git checkout -b production
-Switched to a new branch 'production'
-~/ansible/roles/lock-root[production]$ git push --set-upstream origin production
-Total 0 (delta 0), reused 0 (delta 0)
-To github.com:TelegraphyInteractive/ansible-role-lock-root.git
- * [new branch]      production -&amp;gt; production
-Branch 'production' set up to track remote branch 'production' from 'origin'.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The output of &lt;code class=&quot;highlighter-rouge&quot;&gt;git config -l&lt;/code&gt; now shows the new &lt;code class=&quot;highlighter-rouge&quot;&gt;production&lt;/code&gt; branch
-tracking our own repository.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;remote.origin.url=git@github.com:TelegraphyInteractive/ansible-role-lock-root.git
-remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
-branch.master.remote=source
-branch.master.merge=refs/heads/master
-remote.source.url=git@github.com:cdriehuys/ansible-role-lock-root.git
-remote.source.fetch=+refs/heads/master:refs/remotes/source/master
-branch.production.remote=origin
-branch.production.merge=refs/heads/production
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;When we want to pull upstream changes, we go to the master branch
-and pull them.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[production]$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'source/master'.
-~/ansible/roles/lock-root[master]$ git pull
-Already up to date.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;We can now get a view of the changes made upstream on the master
-through &lt;code class=&quot;highlighter-rouge&quot;&gt;git log&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;git diff&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Satisfied with the changes, we can merge, cherry-pick or
-&lt;a href=&quot;/2018/03/rebase-v-merge.html&quot;&gt;(gulp) rebase&lt;/a&gt;
-the changes we have in production:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;~/ansible/roles/lock-root[master]$ git checkout production
-Switched to branch 'production'
-Your branch is up to date with 'origin/production'.
-~/ansible/roles/lock-root[production]$ git merge master
-Already up to date.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This gives us the best of two worlds, don’t you think?
-Who says you can’t have your cake and eat it too?&lt;/p&gt;
-
-&lt;p&gt;Well. There’s one source of error.  Now it’s necessary to leave
-the directory checked-out to the production branch. If we accidentally
-leave it checked-out to the master branch, all of our hard work will
-be for naught, and we might face some confusing errors.&lt;/p&gt;
-
-&lt;p&gt;The other complication is that we’ll now have to work with
-&lt;a href=&quot;https://git-scm.com/book/en/v2/Git-Tools-Submodules&quot;&gt;git submodules&lt;/a&gt;.
-Assuming the project we are working is under source control with git,
-we’ve just checked-out another git repository within it.&lt;/p&gt;
-
-&lt;p&gt;There’s some care required with making changes to submodules in a project.
-If it isn’t worth the trouble, forget everything you’ve read and copy copy
-copy! (It’s the sincerest form of flattery.)&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Ruby land, we usually take advantage of open source through the published gems. Sometimes however, it’s nice to use open source from the source. Sometimes you want to run off of a fork, but track changes and improvements made to the source. Here are a couple of scenarios:</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
+Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
 how agreeable she sounded, remembered that I hadn’t found her books
 accessible when I first encountered them as an adolescent,
 for whatever reason, and
@@ -718,8 +557,8 @@ combining independent migrations without errors induced by merging.&lt;/p&gt;
 &lt;p&gt;First, do not allow git to merge the file. Set-up git to always treat
 independent changes to the schema as a conflict. You do this by placing
 a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;db&lt;/code&gt; directory with content,&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;schema.rb merge binary
-structure.sql merge binary
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;schema.rb -merge
+structure.sql -merge
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;(Or add those lines to the existing &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file if there is one.)
 The reference for doing that is deep down in the documentation of
@@ -727,19 +566,18 @@ The reference for doing that is deep down in the documentation of
 
 &lt;p&gt;Second, when you do get a conflict, resolve it as follows:&lt;/p&gt;
 
+&lt;p&gt;If your database migrations come &lt;em&gt;after&lt;/em&gt; those you picked-up in the merge:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Checkout &lt;strong&gt;their&lt;/strong&gt; version, &lt;code class=&quot;highlighter-rouge&quot;&gt;git checkout --theirs db/structure.sql&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Accept that change, &lt;code class=&quot;highlighter-rouge&quot;&gt;git add db/structure.sql&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Abort the merge &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge --abort&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Roll back your migrations, however many, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:rollback&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Pull the changes a second time&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;After you have finished the merge and committed the changes (&lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;):&lt;/p&gt;
-
+&lt;p&gt;In either case,&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Reset the development database such that it matches the structure of
-&lt;strong&gt;their&lt;/strong&gt; version, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:reset&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Rerun the migrations from your branch, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Run the migrations picked-up in the merge, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;Accept the newly generated schema, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;git add db/structure.sql&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Make that new commit, &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Make that merge commit, &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In this way, your database schema will always be wholly in agreement with
