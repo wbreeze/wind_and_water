@@ -36,8 +36,8 @@ First, do not allow git to merge the file. Set-up git to always treat
 independent changes to the schema as a conflict. You do this by placing
 a `.gitattributes` file in the `db` directory with content,
 ```
-schema.rb merge binary
-structure.sql merge binary
+schema.rb -merge
+structure.sql -merge
 ```
 (Or add those lines to the existing `.gitattributes` file if there is one.)
 The reference for doing that is deep down in the documentation of
@@ -45,16 +45,15 @@ The reference for doing that is deep down in the documentation of
 
 Second, when you do get a conflict, resolve it as follows:
 
-- Checkout **their** version, `git checkout --theirs db/structure.sql`
-- Accept that change, `git add db/structure.sql`
+If your database migrations come *after* those you picked-up in the merge:
+- Abort the merge `git merge --abort`
+- Roll back your migrations, however many, `rails db:rollback`
+- Pull the changes a second time
 
-After you have finished the merge and committed the changes (`git commit`):
-
-- Reset the development database such that it matches the structure of
-**their** version, e.g. `rails db:reset`
-- Rerun the migrations from your branch, `rails db:migrate`
+In either case,
+- Run the migrations picked-up in the merge, `rails db:migrate`
 - Accept the newly generated schema, e.g. `git add db/structure.sql`
-- Make that new commit, `git commit`
+- Make that merge commit, `git commit`
 
 In this way, your database schema will always be wholly in agreement with
 the text wanted by the framework, because it is always and only ever generated
