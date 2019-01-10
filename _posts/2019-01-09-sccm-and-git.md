@@ -9,6 +9,10 @@ source control, but which we never edit. These are source code configuration
 management (SCCM) files such as `Gemfile.lock`, `npm.shrinkwrap.json`,
 or `db/schema.rb`.
 
+We keep these files under source control (e.g. git), but should we
+allow git to merge them when there are independent changes?
+If this looks "tl;dr", jump now to the conclusion.
+
 Three examples in a [Rails](https://rubyonrails.org/) application are
 the `Gemfile.lock` for capturing the configuration of Ruby Gems
 and `db/schema.rb` or `db/structure.sql` files that capture the schema
@@ -53,7 +57,9 @@ We can tell git not to merge a file using the `.gitattributes` file.
 The `.gitattributes` lives next to the `.git` directory in the root
 of our project (and does not exist unless we create it).
 
-The `man gitattributes` command produces a long list of configuration
+The `man gitattributes` command produces a
+[long list](https://www.git-scm.com/docs/gitattributes)
+of configuration
 options we can set for files managed by git. One of them is the "`merge`"
 attribute, found under the heading, "Performing a three-way merge".
 Using the setting as follows:
@@ -129,6 +135,8 @@ developer's new migration in the merge. We run `rails db:migrate` to
 not only make the needed changes to local development and test databases,
 but also to produce a new `db/schema.rb` or `db/structure.sql` file that
 we add to the merge commit.
+See [Merging migrations]({% post_url 2018-03-09-merging-structure %})
+for full details.
 
 ## Conclusion
 In order to properly manage generated SCCM files with git, we:
