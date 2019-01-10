@@ -6,19 +6,17 @@
   <link rel="stylesheet"
    href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab"><!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Merging migrations | Wind and Water</title>
-<meta name="generator" content="Jekyll v3.8.3" />
+<meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Merging migrations" />
 <meta name="author" content="Douglas Lovell" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks." />
 <meta property="og:description" content="In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks." />
-<link rel="canonical" href="http://localhost:4000/2018/03/merging-structure.html" />
-<meta property="og:url" content="http://localhost:4000/2018/03/merging-structure.html" />
 <meta property="og:site_name" content="Wind and Water" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-03-09T00:00:00-03:00" />
 <script type="application/ld+json">
-{"description":"In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.","author":{"@type":"Person","name":"Douglas Lovell"},"@type":"BlogPosting","url":"http://localhost:4000/2018/03/merging-structure.html","headline":"Merging migrations","dateModified":"2018-03-09T00:00:00-03:00","datePublished":"2018-03-09T00:00:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/03/merging-structure.html"},"@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/2018/03/merging-structure.html"},"url":"/2018/03/merging-structure.html","author":{"@type":"Person","name":"Douglas Lovell"},"description":"In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.","@type":"BlogPosting","headline":"Merging migrations","dateModified":"2018-03-09T00:00:00-03:00","datePublished":"2018-03-09T00:00:00-03:00","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <style type='text/css'>
     <!-- this is here because scss doesn't process the liquid filter -->
@@ -26,7 +24,7 @@
       background-image: url("/assets/paperbg.png");
     }
   </style>
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Wind and Water" /></head>
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Wind and Water" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Wind and Water</a><nav class="site-nav">
@@ -50,6 +48,16 @@
   
     <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list">
+      
+      <li>
+        
+        <span class="post-meta">Jan 9, 2019</span>
+        <h3>
+          <a class="post-link" href="/2019/01/sccm-and-git.html">
+            SCCM and Git
+          </a>
+        </h3>
+      </li>
       
       <li>
         
@@ -77,16 +85,6 @@
         <h3>
           <a class="post-link" href="/2018/04/dock-io.html">
             Your Professional Pedigree
-          </a>
-        </h3>
-      </li>
-      
-      <li>
-        
-        <span class="post-meta">Mar 21, 2018</span>
-        <h3>
-          <a class="post-link" href="/2018/03/tracking-fork-sources.html">
-            Tracking the source of a fork
           </a>
         </h3>
       </li>
@@ -189,8 +187,8 @@ combining independent migrations without errors induced by merging.</p>
 <p>First, do not allow git to merge the file. Set-up git to always treat
 independent changes to the schema as a conflict. You do this by placing
 a <code class="highlighter-rouge">.gitattributes</code> file in the <code class="highlighter-rouge">db</code> directory with content,</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>schema.rb merge binary
-structure.sql merge binary
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>schema.rb -merge
+structure.sql -merge
 </code></pre></div></div>
 <p>(Or add those lines to the existing <code class="highlighter-rouge">.gitattributes</code> file if there is one.)
 The reference for doing that is deep down in the documentation of
@@ -198,19 +196,18 @@ The reference for doing that is deep down in the documentation of
 
 <p>Second, when you do get a conflict, resolve it as follows:</p>
 
+<p>If your database migrations come <em>after</em> those you picked-up in the merge:</p>
 <ul>
-  <li>Checkout <strong>their</strong> version, <code class="highlighter-rouge">git checkout --theirs db/structure.sql</code></li>
-  <li>Accept that change, <code class="highlighter-rouge">git add db/structure.sql</code></li>
+  <li>Abort the merge <code class="highlighter-rouge">git merge --abort</code></li>
+  <li>Roll back your migrations, however many, <code class="highlighter-rouge">rails db:rollback</code></li>
+  <li>Pull the changes a second time</li>
 </ul>
 
-<p>After you have finished the merge and committed the changes (<code class="highlighter-rouge">git commit</code>):</p>
-
+<p>In either case,</p>
 <ul>
-  <li>Reset the development database such that it matches the structure of
-<strong>their</strong> version, e.g. <code class="highlighter-rouge">rails db:reset</code></li>
-  <li>Rerun the migrations from your branch, <code class="highlighter-rouge">rails db:migrate</code></li>
+  <li>Run the migrations picked-up in the merge, <code class="highlighter-rouge">rails db:migrate</code></li>
   <li>Accept the newly generated schema, e.g. <code class="highlighter-rouge">git add db/structure.sql</code></li>
-  <li>Make that new commit, <code class="highlighter-rouge">git commit</code></li>
+  <li>Make that merge commit, <code class="highlighter-rouge">git commit</code></li>
 </ul>
 
 <p>In this way, your database schema will always be wholly in agreement with
