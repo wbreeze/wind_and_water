@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-01-09T21:43:15-03:00</updated><id>/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">SCCM and Git</title><link href="/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>/2019/01/sccm-and-git</id><content type="html" xml:base="/2019/01/sccm-and-git.html">&lt;p&gt;There are files in our software systems that we desire to have under
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-02-09T18:53:44-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Goodbye myFltTime</title><link href="http://localhost:4000/2019/02/goodbye-myflttime.html" rel="alternate" type="text/html" title="Goodbye myFltTime" /><published>2019-02-09T00:00:00-03:00</published><updated>2019-02-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/02/goodbye-myflttime</id><content type="html" xml:base="http://localhost:4000/2019/02/goodbye-myflttime.html">&lt;p&gt;In 2011 I started a project for pilot flight time logging and called it,
+“myFltTime.com”. The idea was to do something I knew, and try to build a
+software as a service (SAAS) product that would bootstrap into a sustainable
+business.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/myFltTime.png&quot; alt=&quot;myFltTime.com landing page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like every entrepreneur starting a business, I knew that I would succeed.
+I was optimistic. This is normal and necessary.&lt;/p&gt;
+
+&lt;p&gt;It didn’t cost me a lot in terms of dollars to set it up and get it running.
+It did cost me a lot of time. In terms of sunken costs and not cutting-loose,
+the time invested was the greatest impediment. The more time I put into it,
+the less I was willing to hear that it wasn’t working and best abandoned.&lt;/p&gt;
+
+&lt;p&gt;One of the things that I didn’t pay attention to was that it is a
+crowded market. There were and are a lot of other solutions for this.
+I convinced myself that mine would be the best, and that I had a very clean
+migration path that made bootstrapping from paper logs or importing from
+another solution pretty friction free. I invested time in that.
+I did a pretty good job of it.&lt;/p&gt;
+
+&lt;p&gt;More saliently, working as a pilot, I met a lot of pilots. Talking to
+them about logging their flight time, I kept hearing that they don’t.
+Most professional working pilots rely on the logging they’re already
+doing with their employer.
+Those that kept their own logs– private pilots and the rare professional
+–were very attached to the things they were using. Pilots aren’t
+big risk takers. The reliable known is preferable to them. Change isn’t
+welcome, and I didn’t have good compelling reasons to get them to change.
+Fewer than fifty pilots even tried it.&lt;/p&gt;
+
+&lt;p&gt;In the past few years I didn’t do a lot with it. Very little. But kept it
+online, paying the hosting fees, because I couldn’t bring myself to throw
+away all of the work I’d invested in it.
+Now I’m at the place where I wouldn’t know what to do if by some fluke
+of economics a dozen or so pilots start using it. Or worse, thousands.
+Time having passed, the lost time and effort that I had invested in it
+is less of a memory. Shutting it down, at last, feels like a positive.
+I save the hosting fees. Money kept in pocket. A win.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In 2011 I started a project for pilot flight time logging and called it, “myFltTime.com”. The idea was to do something I knew, and try to build a software as a service (SAAS) product that would bootstrap into a sustainable business.</summary></entry><entry><title type="html">SCCM and Git</title><link href="http://localhost:4000/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/01/sccm-and-git</id><content type="html" xml:base="http://localhost:4000/2019/01/sccm-and-git.html">&lt;p&gt;There are files in our software systems that we desire to have under
 source control, but which we never edit. These are source code configuration
 management (SCCM) files such as &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;npm.shrinkwrap.json&lt;/code&gt;,
 or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt;.&lt;/p&gt;
@@ -136,7 +175,7 @@ for full details.&lt;/p&gt;
 but rather announce that there is a conflict.&lt;/li&gt;
   &lt;li&gt;use our tooling to regenerate the files from the merged assets.&lt;/li&gt;
   &lt;li&gt;add the newly generated files to the merge commit.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">There are files in our software systems that we desire to have under source control, but which we never edit. These are source code configuration management (SCCM) files such as Gemfile.lock, npm.shrinkwrap.json, or db/schema.rb.</summary></entry><entry><title type="html">Keeping minitest Dry</title><link href="/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>/2018/08/dry-minitest</id><content type="html" xml:base="/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
+&lt;/ol&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">There are files in our software systems that we desire to have under source control, but which we never edit. These are source code configuration management (SCCM) files such as Gemfile.lock, npm.shrinkwrap.json, or db/schema.rb.</summary></entry><entry><title type="html">Keeping minitest Dry</title><link href="http://localhost:4000/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>http://localhost:4000/2018/08/dry-minitest</id><content type="html" xml:base="http://localhost:4000/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
 &lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;minitest&lt;/a&gt;
 as &lt;a href=&quot;#footnote&quot;&gt;extended for Rails&lt;/a&gt;.
 It is from the open source Rails project,
@@ -290,7 +329,7 @@ end
 &lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
 &lt;p&gt;Rails adds some DSL shortcuts through ActiveSupport::TestCase for defining test
 methods with &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;; defining setup and teardown methods with
-&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails. It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>/2018/04/co-routines</id><content type="html" xml:base="/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
+&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails. It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
 Well, I have. Here’s how it works.&lt;/p&gt;
 
 &lt;p&gt;A portable crane constructs the initial tower and places the head, with
@@ -387,7 +426,7 @@ building.&lt;/li&gt;
 &lt;p&gt;In any case,
 it’s fun to see a construction crew make progress on a building,
 to see a crane bootstrap itself, and
-to see a development team make progress on a software system.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>/2018/04/dock-io</id><content type="html" xml:base="/2018/04/dock-io.html">&lt;p&gt;I was a LinkedIn early adopter in 2007. My profile there was very complete
+to see a development team make progress on a software system.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="http://localhost:4000/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/dock-io</id><content type="html" xml:base="http://localhost:4000/2018/04/dock-io.html">&lt;p&gt;I was a LinkedIn early adopter in 2007. My profile there was very complete
 and well connected. In April, 2017 I got freaked-out about privacy and an
 update to LinkedIn terms. (What about them in particular I don’t recall.)
 I deleted my account.&lt;/p&gt;
@@ -487,7 +526,7 @@ of privacy has become.&lt;/p&gt;
 &lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
 &lt;p&gt;Credit history does cross the line into vital territory.
 Some employers require good credit history for certain job roles.
-Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>/2018/03/the-dispossessed</id><content type="html" xml:base="/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
+Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
 how agreeable she sounded, remembered that I hadn’t found her books
 accessible when I first encountered them as an adolescent,
 for whatever reason, and
@@ -560,7 +599,7 @@ or despair or depression?&lt;/p&gt;
 
 &lt;p&gt;These are to me questions of the greatest importance and measure
 of the success of a society.  And that’s why I so much liked
-Ursula K Le Guin’s &lt;em&gt;The Dispossessed&lt;/em&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I first encountered them as an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="/2018/03/why-i-dont-use-fb.html">&lt;h1 id=&quot;-or-whatsapp-or-instagram-&quot;&gt;… or WhatsApp or Instagram …&lt;/h1&gt;
+Ursula K Le Guin’s &lt;em&gt;The Dispossessed&lt;/em&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I first encountered them as an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="http://localhost:4000/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="http://localhost:4000/2018/03/why-i-dont-use-fb.html">&lt;h1 id=&quot;-or-whatsapp-or-instagram-&quot;&gt;… or WhatsApp or Instagram …&lt;/h1&gt;
 
 &lt;p&gt;I don’t use these programs because they leak information about
 who your contacts are, whom you talk with, when, and how often,
@@ -679,7 +718,7 @@ whom I’m truly close to, I use &lt;a href=&quot;https://www.signal.org/&quot;&
 Signal is an angel funded small team that continually improves the
 function of the app. The application provides one of the few easy, practical
 ways to stay in touch without leaking information to the datalords.
-I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>/2018/03/merging-structure</id><content type="html" xml:base="/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
+I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="http://localhost:4000/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/merging-structure</id><content type="html" xml:base="http://localhost:4000/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
 captures a snapshot of the state of the development database after a
 migration, when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt; tasks.&lt;/p&gt;
 
@@ -736,7 +775,7 @@ The reference for doing that is deep down in the documentation of
 
 &lt;p&gt;In this way, your database schema will always be wholly in agreement with
 the text wanted by the framework, because it is always and only ever generated
-by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>/2018/03/rebase-v-merge</id><content type="html" xml:base="/2018/03/rebase-v-merge.html">&lt;p&gt;I’ve been looking into the git merge v. rebase endless theological debate.
+by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="http://localhost:4000/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/rebase-v-merge</id><content type="html" xml:base="http://localhost:4000/2018/03/rebase-v-merge.html">&lt;p&gt;I’ve been looking into the git merge v. rebase endless theological debate.
 It comes up over and over. But I’ve only ever gotten into trouble
 trying to rebase. Not getting all wrapped up over how my
 commit history looks and just merging has given me fewer issues.&lt;/p&gt;
@@ -762,7 +801,7 @@ Contains “The Golden Rule of Rebasing” and after two thousand words says,
 your feature branch occasionally before finally &lt;strong&gt;merging&lt;/strong&gt; it back to master.&lt;/p&gt;
 
 &lt;p&gt;All of the caveats and warnings I’m seeing in these threads are about rebase.
-That tells me something. My friend, KISS says, “Just merge and stop fussing.”&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry><entry><title type="html">RSpec have HTTP status upgrade</title><link href="/2018/02/have-http-status.html" rel="alternate" type="text/html" title="RSpec have HTTP status upgrade" /><published>2018-02-23T00:00:00-03:00</published><updated>2018-02-23T00:00:00-03:00</updated><id>/2018/02/have-http-status</id><content type="html" xml:base="/2018/02/have-http-status.html">&lt;p&gt;When upgrading a project to the Rails 5.2 pre-release we started to see
+That tells me something. My friend, KISS says, “Just merge and stop fussing.”&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry><entry><title type="html">RSpec have HTTP status upgrade</title><link href="http://localhost:4000/2018/02/have-http-status.html" rel="alternate" type="text/html" title="RSpec have HTTP status upgrade" /><published>2018-02-23T00:00:00-03:00</published><updated>2018-02-23T00:00:00-03:00</updated><id>http://localhost:4000/2018/02/have-http-status</id><content type="html" xml:base="http://localhost:4000/2018/02/have-http-status.html">&lt;p&gt;When upgrading a project to the Rails 5.2 pre-release we started to see
 some deprecation warnings in our RSpec runs.
 The warnings were as follows, and occurred wherever
 &lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status(:success)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;have_success_status&lt;/code&gt; and the like
