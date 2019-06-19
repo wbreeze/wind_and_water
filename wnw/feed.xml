@@ -1,129 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2019-06-18T21:43:47-03:00</updated><id>/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Goodbye myFltTime</title><link href="/2019/02/goodbye-myflttime.html" rel="alternate" type="text/html" title="Goodbye myFltTime" /><published>2019-02-09T00:00:00-03:00</published><updated>2019-02-09T00:00:00-03:00</updated><id>/2019/02/goodbye-myflttime</id><content type="html" xml:base="/2019/02/goodbye-myflttime.html">&lt;p&gt;In 2011 I started a project for pilot flight time logging and called it,
-“myFltTime.com”. The idea was to do something I knew, and try to build a
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-19T01:21:43-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">To the moon</title><link href="http://localhost:4000/2019/06/apollo.html" rel="alternate" type="text/html" title="To the moon" /><published>2019-06-18T00:00:00-03:00</published><updated>2019-06-18T00:00:00-03:00</updated><id>http://localhost:4000/2019/06/apollo</id><content type="html" xml:base="http://localhost:4000/2019/06/apollo.html">This year, July 20, 2019 marks the fiftieth anniversary of the first
+moon landing.
+
+![NASA photo of Buzz Aldrin stepping off of the LM ladder](
+/assets/images/SecondMan.jpg)
+
+It's hard to believe it was fifty years ago. Maybe half the people
+on earth today weren't alive when we did it. Maybe more. I was a little
+kid, and remember watching on a little black and white television as
+Neil Armstrong stepped off of the ladder.
+
+The photo is a picture that Neil Armstrong made of Buzz Aldrin following
+him a little while later. It's a photo of the second man
+setting foot on the moon.
+These days we would say, &quot;second person,&quot; but I like
+&quot;second man&quot; because they were all men and one day there might be a
+second woman.
+
+When I was a kid we thought we'd make a permanent human presense on the moon,
+moon colonies. I thought it was the first excursion into space and that
+we were really going, that it was just the beginning.
+We did get a more or less permanent presence in orbit with SkyLab and
+now the International Space Station, but never went back to the moon.
+
+Instead, we got the internet.
+
+To relive the days when human beings went to the moon, there's lots of
+cool media:
+
+ - [Apollo 11 (2019)](https://www.imdb.com/title/tt8760684/), this
+ year's documentary about the first moon landing.
+ - [First Man (2018)](https://www.imdb.com/title/tt1213641/), a drama based
+ on the life of Neil Armstrong
+ - [For All Mankind (1989)](https://www.imdb.com/title/tt0097372/),
+ a documentary
+ using only NASA footage and voices of the people involved in the missions,
+ incuding astronauts and flight controllers.
+ - [Apollo 13 (1995)](https://www.imdb.com/title/tt0112384/), the most
+ famous hollywood effort, with Tom Hanks as James Lovell
+ - [13 minutes to the moon](https://www.bbc.co.uk/programmes/w13xttx2), a
+ BBC podcast currently rolling-out to celebrate the anniversary
+ - [Apollo and The Moon](https://www.nasa.gov/johnson/HWHAP/apollo-and-the-moon),
+ a NASA Johnson Space Center podcast episode
+
+![NASA photo of LM ascent stage approaching CSM with Earth in the background](
+/assets/images/LunarRising.jpg)
+
+Of the movies, my favorite is &quot;For All Mankind&quot;, despite the title, because
+it has lots of video and audio of the people involved. Of all, it gives the
+greatest feel for the times. It has great music from Brian Eno, and footage
+of the astronauts playing, just messing around on a moon walk.
+
+The podcast from BBC is a lot of fun.
+It's always slow to get started, but once
+it gets going it presents many details I've never heard about.
+For one thing, it has interviews and descriptions about
+mission control, the software, and
+the engineering processes around the effort.
+
+NASA Science currently has a
+[lovely page about the moon](https://moon.nasa.gov/)
+with landing sites marked, information about the Lunar Reconnaissance Orbiter,
+a list of the twenty-four men who travelled there and the
+twelve who walked on its surface, photos, and
+close-up videos of the lunar surface.
+There's also the [Apollo missions page](
+https://www.nasa.gov/mission_pages/apollo/index.html) which is a portal
+to official, authentic, historical photos, video, and audio.
+
+The articles about the Apollo program on Wikipedia are extensive and detailed.
+
+Watching the movies, back in the sixties, they said &quot;Man&quot; and &quot;Mankind&quot; when
+they talked about humans. There were some women involved in the effort,
+notably [Margaret Hamilton](
+https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer))
+at MIT, who wrote a lot of the software that landed us.
+These days you see things more correctly worded like,
+&quot;Twenty-four human beings have travelled
+from the Earth to Moon&quot; although in fact they were all men. The vast majority
+of the people directly involved were men. It's striking now how dominant
+men were in the culture of science and engineering.
+It's striking to hear how embedded that was in the language, how we
+talked about the people involved. It was always &quot;men.&quot;
+
+The plaque left at tranquility base, on a leg of the landing stage behind
+the ladder says,
+&quot;Here men first set foot on the moon ... We came in peace for all mankind.&quot;
+No-one gave that a second thought.
+
+![NASA photo of astronaut saluting flag with kit](
+/assets/images/LunarSalute.jpg)
+
+Some movies I haven't seen and might try to watch:
+ - [To the Moon](https://www.imdb.com/title/tt0784725/), an episode of
+ Nova that aired in 1999, near the 30th anniversary
+ - [When we left the earth](https://www.imdb.com/title/tt1233514/), seven
+ TV miniseries episodes from 2008
+ - [Moon Shot (1994)](https://www.imdb.com/title/tt0124010/), a three hour
+ TV movie aired around the time of the 25th anniversary
+
+And just like the United States, wouldn't you know? We had to send cars
+to the moon. In truth, they were quite useful, enabling exploration
+as far as about five miles from the lander.
+We left three moon buggies there, delivered on the last three missions.
+The last time humans were on the moon was early morning December 14, 1972.</content><author><name>Douglas Lovell</name></author><summary type="html">This year, July 20, 2019 marks the fiftieth anniversary of the first moon landing.</summary></entry><entry><title type="html">Goodbye myFltTime</title><link href="http://localhost:4000/2019/02/goodbye-myflttime.html" rel="alternate" type="text/html" title="Goodbye myFltTime" /><published>2019-02-09T00:00:00-03:00</published><updated>2019-02-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/02/goodbye-myflttime</id><content type="html" xml:base="http://localhost:4000/2019/02/goodbye-myflttime.html">In 2011 I started a project for pilot flight time logging and called it,
+&quot;myFltTime.com&quot;. The idea was to do something I knew, and try to build a
 software as a service (SAAS) product that would bootstrap into a sustainable
-business.&lt;/p&gt;
+business.
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/myFltTime.png&quot; alt=&quot;myFltTime.com landing page&quot; /&gt;&lt;/p&gt;
+![myFltTime.com landing page](/assets/images/myFltTime.png)
 
-&lt;p&gt;Like every entrepreneur starting a business, I knew that I would succeed.
-I was optimistic. This is normal and necessary.&lt;/p&gt;
+Like every entrepreneur starting a business, I knew that I would succeed.
+I was optimistic. This is normal and necessary.
 
-&lt;p&gt;It didn’t cost me a lot in terms of dollars to set it up and get it running.
+It didn't cost me a lot in terms of dollars to set it up and get it running.
 It did cost me a lot of time. In terms of sunken costs and not cutting-loose,
 the time invested was the greatest impediment. The more time I put into it,
-the less I was willing to hear that it wasn’t working and best abandoned.&lt;/p&gt;
+the less I was willing to hear that it wasn't working and best abandoned.
 
-&lt;p&gt;One of the things that I didn’t pay attention to was that it is a
+One of the things that I didn't pay attention to was that it is a
 crowded market. There were and are a lot of other solutions for this.
 I convinced myself that mine would be the best, and that I had a very clean
 migration path that made bootstrapping from paper logs or importing from
 another solution pretty friction free. I invested time in that.
-I did a pretty good job of it.&lt;/p&gt;
+I did a pretty good job of it.
 
-&lt;p&gt;More saliently, working as a pilot, I met a lot of pilots. Talking to
-them about logging their flight time, I kept hearing that they don’t.
-Most professional working pilots rely on the logging they’re already
+More saliently, working as a pilot, I met a lot of pilots. Talking to
+them about logging their flight time, I kept hearing that they don't.
+Most professional working pilots rely on the logging they're already
 doing with their employer.
-Those that kept their own logs– private pilots and the rare professional
-–were very attached to the things they were using. Pilots aren’t
-big risk takers. The reliable known is preferable to them. Change isn’t
-welcome, and I didn’t have good compelling reasons to get them to change.
-Fewer than fifty pilots even tried it.&lt;/p&gt;
+Those that kept their own logs-- private pilots and the rare professional
+--were very attached to the things they were using. Pilots aren't
+big risk takers. The reliable known is preferable to them. Change isn't
+welcome, and I didn't have good compelling reasons to get them to change.
+Fewer than fifty pilots even tried it.
 
-&lt;p&gt;In the past few years I didn’t do a lot with it. Very little. But kept it
-online, paying the hosting fees, because I couldn’t bring myself to throw
-away all of the work I’d invested in it.
-Now I’m at the place where I wouldn’t know what to do if by some fluke
+In the past few years I didn't do a lot with it. Very little. But kept it
+online, paying the hosting fees, because I couldn't bring myself to throw
+away all of the work I'd invested in it.
+Now I'm at the place where I wouldn't know what to do if by some fluke
 of economics a dozen or so pilots start using it. Or worse, thousands.
 Time having passed, the lost time and effort that I had invested in it
 is less of a memory. Shutting it down, at last, feels like a positive.
-I save the hosting fees. Money kept in pocket. A win.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In 2011 I started a project for pilot flight time logging and called it, “myFltTime.com”. The idea was to do something I knew, and try to build a software as a service (SAAS) product that would bootstrap into a sustainable business.</summary></entry><entry><title type="html">SCCM and Git</title><link href="/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>/2019/01/sccm-and-git</id><content type="html" xml:base="/2019/01/sccm-and-git.html">&lt;p&gt;There are files in our software systems that we desire to have under
+I save the hosting fees. Money kept in pocket. A win.</content><author><name>Douglas Lovell</name></author><summary type="html">In 2011 I started a project for pilot flight time logging and called it, “myFltTime.com”. The idea was to do something I knew, and try to build a software as a service (SAAS) product that would bootstrap into a sustainable business.</summary></entry><entry><title type="html">SCCM and Git</title><link href="http://localhost:4000/2019/01/sccm-and-git.html" rel="alternate" type="text/html" title="SCCM and Git" /><published>2019-01-09T00:00:00-03:00</published><updated>2019-01-09T00:00:00-03:00</updated><id>http://localhost:4000/2019/01/sccm-and-git</id><content type="html" xml:base="http://localhost:4000/2019/01/sccm-and-git.html">There are files in our software systems that we desire to have under
 source control, but which we never edit. These are source code configuration
-management (SCCM) files such as &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;npm.shrinkwrap.json&lt;/code&gt;,
-or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt;.&lt;/p&gt;
+management (SCCM) files such as `Gemfile.lock`, `npm.shrinkwrap.json`,
+or `db/schema.rb`.
 
-&lt;p&gt;We keep these files under source control (e.g. git), but should we
+We keep these files under source control (e.g. git), but should we
 allow git to merge them when there are independent changes?
-If this looks “tl;dr”, jump now to the conclusion.&lt;/p&gt;
+If this looks &quot;tl;dr&quot;, jump now to the conclusion.
 
-&lt;p&gt;Three examples in a &lt;a href=&quot;https://rubyonrails.org/&quot;&gt;Rails&lt;/a&gt; application are
-the &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; for capturing the configuration of Ruby Gems
-and &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; files that capture the schema
-for the database.&lt;/p&gt;
+Three examples in a [Rails](https://rubyonrails.org/) application are
+the `Gemfile.lock` for capturing the configuration of Ruby Gems
+and `db/schema.rb` or `db/structure.sql` files that capture the schema
+for the database.
 
-&lt;p&gt;An example in a &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;node.js&lt;/a&gt; application is the
-&lt;code class=&quot;highlighter-rouge&quot;&gt;npm.shrinkwrap.json&lt;/code&gt; file that captures the configuration of Node packages.&lt;/p&gt;
+An example in a [node.js](https://nodejs.org/en/) application is the
+`npm.shrinkwrap.json` file that captures the configuration of Node packages.
 
-&lt;p&gt;We don’t edit these files because they are generated by the development
+We don't edit these files because they are generated by the development
 platform as artifacts that capture software configuration.
 We keep them under source control, in git, because they capture the current
 configuration of dependencies, or of database structure, etc. for the
-software system.&lt;/p&gt;
+software system.
 
-&lt;h2 id=&quot;merging-configuration-files&quot;&gt;Merging configuration files&lt;/h2&gt;
-&lt;p&gt;So what happens when two developers make a change which requires regeneration
+## Merging configuration files
+So what happens when two developers make a change which requires regeneration
 of one of these files? To be concrete, suppose two developers individually
-update a gem using the &lt;code class=&quot;highlighter-rouge&quot;&gt;bundler&lt;/code&gt; program, generating independent
-versions of &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;.&lt;/p&gt;
+update a gem using the `bundler` program, generating independent
+versions of `Gemfile.lock`.
 
-&lt;p&gt;Whichever of these developers is second to commit, they will have to first
-merge the other’s changes. Here is the ten dollar question: do we allow
-git to merge the two versions of &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;?&lt;/p&gt;
+Whichever of these developers is second to commit, they will have to first
+merge the other's changes. Here is the ten dollar question: do we allow
+git to merge the two versions of `Gemfile.lock`?
 
-&lt;p&gt;To answer it, let’s consider:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Would you think of editing this file by hand? Generally not.&lt;/li&gt;
-  &lt;li&gt;Will the git merge produce a file identical to the one that would result
-if one developer had made both changes? Maybe. Maybe not.&lt;/li&gt;
-  &lt;li&gt;If git produced a merge conflict, would you reconsider editing by
-hand to resolve the conflict? Would you be sure of the result?&lt;/li&gt;
-  &lt;li&gt;Suppose instead we’re talking about the database schema. Are you certain
+To answer it, let's consider:
+- Would you think of editing this file by hand? Generally not.
+- Will the git merge produce a file identical to the one that would result
+if one developer had made both changes? Maybe. Maybe not.
+- If git produced a merge conflict, would you reconsider editing by
+hand to resolve the conflict? Would you be sure of the result?
+- Suppose instead we're talking about the database schema. Are you certain
 that merge will always produce the schema that would result if one
-developer had made both changes?&lt;/li&gt;
-&lt;/ul&gt;
+developer had made both changes?
 
-&lt;p&gt;Thinking about those questions, it seems prudent not to allow git to
+Thinking about those questions, it seems prudent not to allow git to
 merge these files. What we would prefer is that git leave our version
 intact, announce that there is a conflict, and not commit the merge
-until we have resolved it.&lt;/p&gt;
+until we have resolved it.
 
-&lt;h3 id=&quot;preventing-automatic-merge-by-git&quot;&gt;Preventing automatic merge by git&lt;/h3&gt;
-&lt;p&gt;We can tell git not to merge a file using the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file.
-The &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; lives next to the &lt;code class=&quot;highlighter-rouge&quot;&gt;.git&lt;/code&gt; directory in the root
-of our project (and does not exist unless we create it).&lt;/p&gt;
+### Preventing automatic merge by git
+We can tell git not to merge a file using the `.gitattributes` file.
+The `.gitattributes` lives next to the `.git` directory in the root
+of our project (and does not exist unless we create it).
 
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;man gitattributes&lt;/code&gt; command produces a
-&lt;a href=&quot;https://www.git-scm.com/docs/gitattributes&quot;&gt;long list&lt;/a&gt;
+The `man gitattributes` command produces a
+[long list](https://www.git-scm.com/docs/gitattributes)
 of configuration
-options we can set for files managed by git. One of them is the “&lt;code class=&quot;highlighter-rouge&quot;&gt;merge&lt;/code&gt;”
-attribute, found under the heading, “Performing a three-way merge”.
-Using the setting as follows:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Gemfile.lock -merge
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;in &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; will unset merge for Gemfile.lock. Thus git will
-“Take the version from the current branch as the tentative merge result,
-and declare that the merge has conflicts.”&lt;/p&gt;
+options we can set for files managed by git. One of them is the &quot;`merge`&quot;
+attribute, found under the heading, &quot;Performing a three-way merge&quot;.
+Using the setting as follows:
+```
+Gemfile.lock -merge
+```
+in `.gitattributes` will unset merge for Gemfile.lock. Thus git will
+&quot;Take the version from the current branch as the tentative merge result,
+and declare that the merge has conflicts.&quot;
 
-&lt;p&gt;The setting,&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Gemfile.lock merge=binary
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;in &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; will set merge to binary mode for Gemfile.lock. Thus
-git will “Keep the version from your branch in the work tree,
-but leave the path in the conflicted state for the user to sort out.”&lt;/p&gt;
+The setting,
+```
+Gemfile.lock merge=binary
+```
+in `.gitattributes` will set merge to binary mode for Gemfile.lock. Thus
+git will &quot;Keep the version from your branch in the work tree,
+but leave the path in the conflicted state for the user to sort out.&quot;
 
-&lt;p&gt;Either method provides the desired result. In fact, they sound the same.
-However it’s easy to experiment.&lt;/p&gt;
+Either method provides the desired result. In fact, they sound the same.
+However it's easy to experiment.
 
-&lt;p&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock -merge&lt;/code&gt;, on a conflict, we get the following:&lt;/p&gt;
+With `Gemfile.lock -merge`, on a conflict, we get the following:
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;warning: Cannot merge binary files: Gemfile.lock (HEAD vs. &amp;lt;commit-id&amp;gt;)
+```
+warning: Cannot merge binary files: Gemfile.lock (HEAD vs. &lt;commit-id&gt;)
 Auto-merging Gemfile.lock
 CONFLICT (content): Merge conflict in Gemfile.lock
 Automatic merge failed; fix conflicts and then commit the result.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt; file has the content from the local (our) version.
-The &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; command yields:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;On branch master
+```
+The `Gemfile.lock` file has the content from the local (our) version.
+The `git status` command yields:
+```
+On branch master
 Your branch and 'origin/master' have diverged,
 and have 1 and 1 different commits each, respectively.
   (use &quot;git pull&quot; to merge the remote branch into yours)
@@ -133,63 +239,63 @@ You have unmerged paths.
   (use &quot;git merge --abort&quot; to abort the merge)
 
 Unmerged paths:
-  (use &quot;git add &amp;lt;file&amp;gt;...&quot; to mark resolution)
+  (use &quot;git add &lt;file&gt;...&quot; to mark resolution)
 
 	both modified:   Gemfile.lock
 
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock merge=binary&lt;/code&gt;, on a conflict, we get identical outputs
-and the file itself is treated identically.&lt;/p&gt;
+With `Gemfile.lock merge=binary`, on a conflict, we get identical outputs
+and the file itself is treated identically.
 
-&lt;h2 id=&quot;resolving-the-conflict&quot;&gt;Resolving the conflict&lt;/h2&gt;
-&lt;p&gt;Resolution of the conflict means running whatever process is in place
+## Resolving the conflict
+Resolution of the conflict means running whatever process is in place
 for generating these files, in order to produce the generated content
 as it should be. The artifacts from which these files are derived are
-present in the merged result.&lt;/p&gt;
+present in the merged result.
 
-&lt;p&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile.lock&lt;/code&gt;, the independent changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; have been merged.
+With `Gemfile.lock`, the independent changes to `Gemfile` have been merged.
 (If there is a conflict for that file, we resolve it.) Then all we need
-do is run bundler and add the resultant file to the merge:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
+do is run bundler and add the resultant file to the merge:
+```
+bundle install
 git add Gemfile.lock
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;The case for an &lt;code class=&quot;highlighter-rouge&quot;&gt;npm.shrinkwrap.json&lt;/code&gt; file is analogous. The independent
-changes to &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; have been merged. Running &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; will
-generate a new shrinkwrap file that we can add to the commit.&lt;/p&gt;
+The case for an `npm.shrinkwrap.json` file is analogous. The independent
+changes to `package.json` have been merged. Running `npm install` will
+generate a new shrinkwrap file that we can add to the commit.
 
-&lt;p&gt;With the database schema files managed by Rails, we picked-up the other
-developer’s new migration in the merge. We run &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt; to
+With the database schema files managed by Rails, we picked-up the other
+developer's new migration in the merge. We run `rails db:migrate` to
 not only make the needed changes to local development and test databases,
-but also to produce a new &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; file that
+but also to produce a new `db/schema.rb` or `db/structure.sql` file that
 we add to the merge commit.
-See &lt;a href=&quot;/2018/03/merging-structure.html&quot;&gt;Merging migrations&lt;/a&gt;
-for full details.&lt;/p&gt;
+See [Merging migrations]({% post_url 2018-03-09-merging-structure %})
+for full details.
 
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;In order to properly manage generated SCCM files with git, we:&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;use the &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file to tell git not to merge them, ever,
-but rather announce that there is a conflict.&lt;/li&gt;
-  &lt;li&gt;use our tooling to regenerate the files from the merged assets.&lt;/li&gt;
-  &lt;li&gt;add the newly generated files to the merge commit.&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">There are files in our software systems that we desire to have under source control, but which we never edit. These are source code configuration management (SCCM) files such as Gemfile.lock, npm.shrinkwrap.json, or db/schema.rb.</summary></entry><entry><title type="html">Keeping minitest Dry</title><link href="/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>/2018/08/dry-minitest</id><content type="html" xml:base="/2018/08/dry-minitest.html">&lt;p&gt;Here’s a test written with
-&lt;a href=&quot;https://github.com/seattlerb/minitest&quot;&gt;minitest&lt;/a&gt;
-as &lt;a href=&quot;#footnote&quot;&gt;extended for Rails&lt;/a&gt;.
+## Conclusion
+In order to properly manage generated SCCM files with git, we:
+1. use the `.gitattributes` file to tell git not to merge them, ever,
+but rather announce that there is a conflict.
+2. use our tooling to regenerate the files from the merged assets.
+3. add the newly generated files to the merge commit.</content><author><name>Douglas Lovell</name></author><summary type="html">There are files in our software systems that we desire to have under source control, but which we never edit. These are source code configuration management (SCCM) files such as Gemfile.lock, npm.shrinkwrap.json, or db/schema.rb.</summary></entry><entry><title type="html">Keeping minitest Dry</title><link href="http://localhost:4000/2018/08/dry-minitest.html" rel="alternate" type="text/html" title="Keeping minitest Dry" /><published>2018-08-12T00:00:00-03:00</published><updated>2018-08-12T00:00:00-03:00</updated><id>http://localhost:4000/2018/08/dry-minitest</id><content type="html" xml:base="http://localhost:4000/2018/08/dry-minitest.html">Here's a test written with
+[minitest](https://github.com/seattlerb/minitest)
+as [extended for Rails](#footnote).
 It is from the open source Rails project,
-&lt;a href=&quot;https://github.com/wbreeze/iaccdb&quot;&gt;IACCDB&lt;/a&gt;.&lt;/p&gt;
+[IACCDB](https://github.com/wbreeze/iaccdb).
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require 'test_helper'
+```
+require 'test_helper'
 
 module Admin
-  class MemberControllerTest &amp;lt; ActionController::TestCase
+  class MemberControllerTest &lt; ActionController::TestCase
     setup do
       @member_list = create_list(:member, 12)
       @before_attrs = @member_list.first.attributes
       @after_attrs = @before_attrs.merge(
-        {'family_name' =&amp;gt; Faker::Name.last_name}
+        {'family_name' =&gt; Faker::Name.last_name}
       )
     end
 
@@ -231,56 +337,57 @@ module Admin
 
   end
 end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+```
 
-&lt;p&gt;The test validates that an unauthenticated user cannot access some
+The test validates that an unauthenticated user cannot access some
 member administration controller methods.
-It validates that an authenticated user can access the methods.&lt;/p&gt;
+It validates that an authenticated user can access the methods.
 
-&lt;p&gt;A few things about this test file are troublesome:&lt;/p&gt;
+A few things about this test file are troublesome:
 
-&lt;ul&gt;
-  &lt;li&gt;Primarily, I don’t like the repetiton of &lt;code class=&quot;highlighter-rouge&quot;&gt;http_auth_login(:admin)&lt;/code&gt;
-at the front of each of the authenticated tests.&lt;/li&gt;
-  &lt;li&gt;There is some repetition in the test naming: “non-admin cannot”,
-“admin can”&lt;/li&gt;
-  &lt;li&gt;There are two groups of tests here that aren’t in any way grouped.
-Each group calls the same endpoints with different setup and expected
-results.&lt;/li&gt;
-&lt;/ul&gt;
+- Primarily, I don't like the repetiton of `http_auth_login(:admin)`
+  at the front of each of the authenticated tests.
+- There is some repetition in the test naming: &quot;non-admin cannot&quot;,
+  &quot;admin can&quot;
+- There are two groups of tests here that aren't in any way grouped.
+  Each group calls the same endpoints with different setup and expected
+  results.
 
-&lt;h2 id=&quot;thoughtbotshoulda-context&quot;&gt;thoughtbot/shoulda-context&lt;/h2&gt;
 
-&lt;p&gt;One solution is to use the
-&lt;a href=&quot;https://github.com/thoughtbot/shoulda-context&quot;&gt;thoughtbot/shoulda-context&lt;/a&gt;
+## thoughtbot/shoulda-context
+
+One solution is to use the
+[thoughtbot/shoulda-context](https://github.com/thoughtbot/shoulda-context)
 gem.
 The shoulda-context gem adds some DSL to minitest for defining contexts of
 tests. Now the non-admin tests and the admin
 tests each have their own context group. The admin context group has
-additional setup that arranges the http basic authentication.&lt;/p&gt;
+additional setup that arranges the http basic authentication.
 
-&lt;p&gt;Here is a link to a
-&lt;a href=&quot;https://github.com/wbreeze/iaccdb/commit/f7f8e3c08ca3856ae70545abca097cde195d51cc&quot;&gt;commit with the diff&lt;/a&gt;
+Here is a link to a
+[commit with the diff](
+https://github.com/wbreeze/iaccdb/commit/f7f8e3c08ca3856ae70545abca097cde195d51cc)
 that shows all of the changes. It adds the gem and includes
 the DSL additions
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;test_helper.rb&lt;/code&gt; file.&lt;/p&gt;
+in the `test_helper.rb` file.
 
-&lt;p&gt;Here is the new test file. The test implementations themselves did not
+Here is the new test file. The test implementations themselves did not
 change, and are omitted here. The structure of the test file changed with
-&lt;code class=&quot;highlighter-rouge&quot;&gt;context&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;should&lt;/code&gt; DSL methods.
-You can find an additional &lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; block within the
-&lt;code class=&quot;highlighter-rouge&quot;&gt;allow admin&lt;/code&gt; context that takes care of authenticating the
-admin user for that context.&lt;/p&gt;
+`context` and `should` DSL methods.
+You can find an additional `setup` block within the
+`allow admin` context that takes care of authenticating the
+admin user for that context.
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;require 'test_helper'
+```
+require 'test_helper'
 
 module Admin
-  class MemberControllerTest &amp;lt; ActionController::TestCase
+  class MemberControllerTest &lt; ActionController::TestCase
     setup do
       @member_list = create_list(:member, 12)
       @before_attrs = @member_list.first.attributes
       @after_attrs = @before_attrs.merge(
-        {'family_name' =&amp;gt; Faker::Name.last_name}
+        {'family_name' =&gt; Faker::Name.last_name}
       )
     end
 
@@ -317,91 +424,85 @@ module Admin
     end
   end
 end
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This is more satisfying because it:&lt;/p&gt;
+```
+This is more satisfying because it:
 
-&lt;ul&gt;
-  &lt;li&gt;Calls out that we’re testing the same endpoints with two setups&lt;/li&gt;
-  &lt;li&gt;Avoids repeating the &lt;code class=&quot;highlighter-rouge&quot;&gt;http_auth_login&lt;/code&gt; call on each of the authorized tests&lt;/li&gt;
-  &lt;li&gt;Avoids repeating &lt;code class=&quot;highlighter-rouge&quot;&gt;deny non-admin&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;allow admin&lt;/code&gt; in the test names&lt;/li&gt;
-&lt;/ul&gt;
+- Calls out that we're testing the same endpoints with two setups
+- Avoids repeating the `http_auth_login` call on each of the authorized tests
+- Avoids repeating `deny non-admin` and `allow admin` in the test names
 
-&lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
-&lt;p&gt;Rails adds some DSL shortcuts through ActiveSupport::TestCase for defining test
-methods with &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;; defining setup and teardown methods with
-&lt;code class=&quot;highlighter-rouge&quot;&gt;setup&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;teardown&lt;/code&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails. It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>/2018/04/co-routines</id><content type="html" xml:base="/2018/04/co-routines.html">&lt;p&gt;Have you ever wondered how a construction crane grows with the building?
-Well, I have. Here’s how it works.&lt;/p&gt;
+#### Footnote
+Rails adds some DSL shortcuts through ActiveSupport::TestCase for defining test
+methods with `test`; defining setup and teardown methods with
+`setup` and `teardown`.</content><author><name>Douglas Lovell</name></author><summary type="html">Here’s a test written with minitest as extended for Rails. It is from the open source Rails project, IACCDB.</summary></entry><entry><title type="html">Coroutines</title><link href="http://localhost:4000/2018/04/co-routines.html" rel="alternate" type="text/html" title="Coroutines" /><published>2018-04-17T00:00:00-03:00</published><updated>2018-04-17T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/co-routines</id><content type="html" xml:base="http://localhost:4000/2018/04/co-routines.html">Have you ever wondered how a construction crane grows with the building?
+Well, I have. Here's how it works.
 
-&lt;p&gt;A portable crane constructs the initial tower and places the head, with
+A portable crane constructs the initial tower and places the head, with
 pivot and counter-balanced long arm, on top. Then the crane starts making
-the building.&lt;/p&gt;
+the building.
 
-&lt;p&gt;When the building reaches a height too close to the height of the crane,
+When the building reaches a height too close to the height of the crane,
 the crew stabilizes the tower using a brace against the building.
 Then they add sections, about four meters long,
-to the tower underneath the head.&lt;/p&gt;
+to the tower underneath the head.
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/CraneConnected.jpg&quot; alt=&quot;Preparing to extend the crane&quot; /&gt;
-&lt;img src=&quot;/assets/images/CraneExtended.jpg&quot; alt=&quot;Crane extended&quot; /&gt;
-&lt;img src=&quot;/assets/images/Crane.jpg&quot; alt=&quot;Construction crane&quot; /&gt;&lt;/p&gt;
+![Preparing to extend the crane](/assets/images/CraneConnected.jpg)
+![Crane extended](/assets/images/CraneExtended.jpg)
+![Construction crane](/assets/images/Crane.jpg)
 
-&lt;p&gt;This process of adding sections underneath the head is fascinating,
-at least to me. It’s a very clever work of engineering.&lt;/p&gt;
+This process of adding sections underneath the head is fascinating,
+at least to me. It's a very clever work of engineering.
 
-&lt;p&gt;The base of the tower, when it was first constructed, is fitted
+The base of the tower, when it was first constructed, is fitted
 with a sleeve.
-The sleeve is roughly double the length of a section.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The upper part of the sleeve can stably hold the head of the crane.&lt;/li&gt;
-  &lt;li&gt;The lower part of the sleeve can stably maintain itself attached to
-the tower and move the sleeve up and down on the tower.&lt;/li&gt;
-  &lt;li&gt;The middle part of the sleeve is hollow, open on one side, and fitted
-with rails and catwalks.&lt;/li&gt;
-&lt;/ul&gt;
+The sleeve is roughly double the length of a section.
+- The upper part of the sleeve can stably hold the head of the crane.
+- The lower part of the sleeve can stably maintain itself attached to
+the tower and move the sleeve up and down on the tower.
+- The middle part of the sleeve is hollow, open on one side, and fitted
+with rails and catwalks.
 
-&lt;p&gt;The crew:&lt;/p&gt;
+The crew:
 
-&lt;ol&gt;
-  &lt;li&gt;moves the sleeve up to the head.&lt;/li&gt;
-  &lt;li&gt;braces the tower below the sleeve.&lt;/li&gt;
-  &lt;li&gt;raises a section of tower using the crane itself,
-and stations the section on the rails of the sleeve.&lt;/li&gt;
-  &lt;li&gt;raises another section of tower or a weight to use as adjustable balance
-for the head.&lt;/li&gt;
-  &lt;li&gt;attaches the head to the sleeve and detaches it from the tower.
+1. moves the sleeve up to the head.
+1. braces the tower below the sleeve.
+1. raises a section of tower using the crane itself,
+and stations the section on the rails of the sleeve.
+1. raises another section of tower or a weight to use as adjustable balance
+for the head.
+1. attaches the head to the sleeve and detaches it from the tower.
 There is much banging and fiddling at this stage as they move the
 crane to balance the head, take pressure off of the bolts, line up the
-bolt holes, and remove or insert the bolts.&lt;/li&gt;
-  &lt;li&gt;raises the sleeve, with the attached head, leaving an open space
+bolt holes, and remove or insert the bolts.
+1. raises the sleeve, with the attached head, leaving an open space
 between the head and the tower.
 They do this very, very slowly.
-There is no perceptible motion, only over time, a widening gap.&lt;/li&gt;
-  &lt;li&gt;slides the new section of tower into place and attaches it.&lt;/li&gt;
-&lt;/ol&gt;
+There is no perceptible motion, only over time, a widening gap.
+1. slides the new section of tower into place and attaches it.
 
-&lt;p&gt;In the two close-up pictures of the top of the crane, you can see
+In the two close-up pictures of the top of the crane, you can see
 the sleeve in position before and while raising the head of the crane
-above the existing tower to make room for a new tower section.&lt;/p&gt;
+above the existing tower to make room for a new tower section.
 
-&lt;p&gt;In the far-away picture, the crew has added one new section to the
+In the far-away picture, the crew has added one new section to the
 tower and is preparing to mount the next section onto the rails on
-the sleeve.&lt;/p&gt;
+the sleeve.
 
-&lt;h2 id=&quot;as-a-metaphor&quot;&gt;As a metaphor&lt;/h2&gt;
+## As a metaphor
 
-&lt;p&gt;The crane builds the building, and having built the building,
-builds itself. So clever.&lt;/p&gt;
+The crane builds the building, and having built the building,
+builds itself. So clever.
 
-&lt;p&gt;This is something like co-routines in software, which trade work
-on two parallel aspects of a task to make progress toward completion.&lt;/p&gt;
+This is something like co-routines in software, which trade work
+on two parallel aspects of a task to make progress toward completion.
 
-&lt;p&gt;It is also something like bootstrapping a company. You could think of
+It is also something like bootstrapping a company. You could think of
 the crane as money, and the building as the business. With some initial
 money you start the business. When the business grows it can fund
-itself for more growth.&lt;/p&gt;
+itself for more growth.
 
-&lt;p&gt;Seeing the building go up makes me think of incremental development.
-A software system isn’t
+Seeing the building go up makes me think of incremental development.
+A software system isn't
 anything like as regular as the floors of a building. As a building,
 software would look more like something from Dr. Seuss.
 However, in a sense, adding a floor is a sprint. Extending the tower
@@ -409,97 +510,91 @@ is a short sprint or spike to enable more sprints.
 Filling-out the floors with fire-protection, plumbing, electrical,
 HVAC, walls, ceilings, fixtures, and furnishing may all be planned as
 units of work or stories that are no doubt sequenced
-and scheduled by the builders.&lt;/p&gt;
+and scheduled by the builders.
 
-&lt;p&gt;The metaphor is limited:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;A software system ought to be useful very
+The metaphor is limited:
+- A software system ought to be useful very
 early in development, like a shed, then a house, then an office, then
-a mall… or whatever. The building isn’t useful until it’s very nearly
-complete. (Other than as bracing for the crane that’s building it.)&lt;/li&gt;
-  &lt;li&gt;It’s horrible to try to apply construction planning and scheduling
-techniques to software. Software isn’t regular enough or made-up of
+a mall... or whatever. The building isn't useful until it's very nearly
+complete. (Other than as bracing for the crane that's building it.)
+- It's horrible to try to apply construction planning and scheduling
+techniques to software. Software isn't regular enough or made-up of
 repeated processes- like laying-in sprinkler pipes on the floor of a
-building.&lt;/li&gt;
-&lt;/ul&gt;
+building.
 
-&lt;p&gt;In any case,
-it’s fun to see a construction crew make progress on a building,
+In any case,
+it's fun to see a construction crew make progress on a building,
 to see a crane bootstrap itself, and
-to see a development team make progress on a software system.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>/2018/04/dock-io</id><content type="html" xml:base="/2018/04/dock-io.html">&lt;p&gt;I was a LinkedIn early adopter in 2007. My profile there was very complete
+to see a development team make progress on a software system.</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="http://localhost:4000/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/dock-io</id><content type="html" xml:base="http://localhost:4000/2018/04/dock-io.html">I was a LinkedIn early adopter in 2007. My profile there was very complete
 and well connected. In April, 2017 I got freaked-out about privacy and an
-update to LinkedIn terms. (What about them in particular I don’t recall.)
-I deleted my account.&lt;/p&gt;
+update to LinkedIn terms. (What about them in particular I don't recall.)
+I deleted my account.
 
-&lt;p&gt;However I’ve found that professionally, not having a LinkedIn presence
+However I've found that professionally, not having a LinkedIn presence
 can be a show stopper.
 If nothing else, we look people up there to check pedigree.
-A profile on LinkedIn has become part of what we use to establish trust.&lt;/p&gt;
+A profile on LinkedIn has become part of what we use to establish trust.
 
-&lt;p&gt;By allowing LinkedIn to become a trusted arbiter of pedigree, we have
-given them a tremendous amount of power. Enter Dock.io.&lt;/p&gt;
+By allowing LinkedIn to become a trusted arbiter of pedigree, we have
+given them a tremendous amount of power. Enter Dock.io.
 
-&lt;h2 id=&quot;dockio&quot;&gt;Dock.io&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://dock.io/&quot;&gt;Dock.io&lt;/a&gt; supports a clearing-house for professional
+## Dock.io
+[Dock.io](https://dock.io/) supports a clearing-house for professional
 data such as educational background, work history, professional connections,
 skills, accomplishments, recommendations, and ratings.
 The premise is that you, the person
 to whom the data refers, have control over the data. And further, that the
 data is in an open format that many third parties can read from and write to,
-granted access.&lt;/p&gt;
+granted access.
 
-&lt;p&gt;My feeling about this is that it could change the landscape of
-professional pedigree just a little bit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Now my universities can write a signed diploma into my education history.&lt;/li&gt;
-  &lt;li&gt;Now my employers can write signed records of start and end date, position
-and salary into my employment history.&lt;/li&gt;
-  &lt;li&gt;Now clients can write ratings and recommendations into my consulting
-history.&lt;/li&gt;
-&lt;/ul&gt;
+My feeling about this is that it could change the landscape of
+professional pedigree just a little bit:
+- Now my universities can write a signed diploma into my education history.
+- Now my employers can write signed records of start and end date, position
+and salary into my employment history.
+- Now clients can write ratings and recommendations into my consulting
+history.
 
-&lt;p&gt;Now I’m not only who I say I am, but who other people say I am.&lt;/p&gt;
+Now I'm not only who I say I am, but who other people say I am.
 
-&lt;p&gt;Consumers of the data can trust that it is valid, and trust the provenance
+Consumers of the data can trust that it is valid, and trust the provenance
 of the data because Dock.io puts it in a public, distributed block chain.
 (The block chain
 rewards the proof of work with units of cryptocurrency that have
 some value in trade, as a commodity or security, for fiat currency in an open
-market.)&lt;/p&gt;
+market.)
 
-&lt;p&gt;While the block chain is readable by anyone, my encrypted professional
+While the block chain is readable by anyone, my encrypted professional
 record is available only to someone who has a key that I have provided to
-them. And this is cool, because now:&lt;/p&gt;
+them. And this is cool, because now:
 
-&lt;ul&gt;
-  &lt;li&gt;we have control over the keys&lt;/li&gt;
-  &lt;li&gt;we can monitor who reads the data&lt;/li&gt;
-  &lt;li&gt;we can monitor who writes the data&lt;/li&gt;
-&lt;/ul&gt;
+- we have control over the keys
+- we can monitor who reads the data
+- we can monitor who writes the data
 
-&lt;h2 id=&quot;neuromancer-concerns&quot;&gt;Neuromancer concerns&lt;/h2&gt;
-&lt;p&gt;As pointed out in the opening,
+## Neuromancer concerns
+As pointed out in the opening,
 LinkedIn has already become a necessary part of professional life
 (at least in the United States). Dock.io would like to replace it,
-with benefit that it offers an open solution.&lt;/p&gt;
+with benefit that it offers an open solution.
 
-&lt;p&gt;Supposing Dock.io is successful, all of us will need to have our professional
+Supposing Dock.io is successful, all of us will need to have our professional
 pedigree in the chain in order to be professionally employed.
 Employers will start to require access to write performance data, perhaps.
-We’re talking about the equivalent of a credit history, credit report, or
+We're talking about the equivalent of a credit history, credit report, or
 credit score.
-However it won’t be only about getting loans, which can be optional.
-It will be about getting work, which can be vital. &lt;a href=&quot;#footnote&quot;&gt;Footnote&lt;/a&gt;&lt;/p&gt;
+However it won't be only about getting loans, which can be optional.
+It will be about getting work, which can be vital. [Footnote](#footnote)
 
-&lt;p&gt;This bothers me more than a little, but here we have somewhat of an
+This bothers me more than a little, but here we have somewhat of an
 opportunity to choose our poison.
 If LinkedIn accomplished the same, as they are well along the
 road to doing, our data is in private hands, and for sale to
 unknown, unaccountable third parties. With Dock.io our data is
 in a distributed block chain owned by no-one,
-that we nominally control access to.&lt;/p&gt;
+that we nominally control access to.
 
-&lt;p&gt;I say nominally because parties will begin to require access, and it
+I say nominally because parties will begin to require access, and it
 will be more and more necessary to provide it.
 The big difference will be that we know who asked.
 However once granted, how do we know how the party to whom we granted
@@ -507,87 +602,89 @@ the access further shares the data?
 That will be up to the policies of the parties to whom we grant access.
 It will be up to us to insist on strict no-share policies.
 Or rather, you share, but only in my Dock.io record where I see you
-sharing, see, and nominally control who views.&lt;/p&gt;
+sharing, see, and nominally control who views.
 
-&lt;p&gt;Dock.io offers some hope that unlike our credit data, that is always for
+Dock.io offers some hope that unlike our credit data, that is always for
 sale, our personal professional record can be under our own control.
 That we succeed, I think, depends on regulatory policy.
-In short, I think we’re doomed.&lt;/p&gt;
+In short, I think we're doomed.
 
-&lt;p&gt;Today I put a limited
-&lt;a href=&quot;https://www.linkedin.com/in/dclovell/&quot;&gt;profile back on LinkedIn&lt;/a&gt;
-and started rebuilding a network there.  I’m also available at
-&lt;a href=&quot;https://dock.io?r=douglaslovell:aaaak2fc&quot;&gt;Dock.io&lt;/a&gt;.
-That’s a referral link. Check it out.&lt;/p&gt;
+Today I put a limited
+[profile back on LinkedIn](https://www.linkedin.com/in/dclovell/)
+and started rebuilding a network there.  I'm also available at
+[Dock.io](https://dock.io?r=douglaslovell:aaaak2fc).
+That's a referral link. Check it out.
 
-&lt;p&gt;And elect people who understand what a sieve the current theater
-of privacy has become.&lt;/p&gt;
+And elect people who understand what a sieve the current theater
+of privacy has become.
 
-&lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
-&lt;p&gt;Credit history does cross the line into vital territory.
+#### Footnote
+Credit history does cross the line into vital territory.
 Some employers require good credit history for certain job roles.
-Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>/2018/03/the-dispossessed</id><content type="html" xml:base="/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
-how agreeable she sounded, remembered that I hadn’t found her books
+Many or most landlords require good credit history to rent apartments.</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">When I read about the [death of Ursula K Le Guin](
+https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html
+) in the New York Times, at the end of January, I thought
+how agreeable she sounded, remembered that I hadn't found her books
 accessible when I first encountered them as an adolescent,
 for whatever reason, and
-decided to try reading one of them again.&lt;/p&gt;
+decided to try reading one of them again.
 
-&lt;p&gt;It isn’t strange, but a little regrettable how an artist’s stock can
-go up when they die. It’s only that so many people have that same reaction–
-being reminded of something they’ve missed, finding new or renewed
+It isn't strange, but a little regrettable how an artist's stock can
+go up when they die. It's only that so many people have that same reaction--
+being reminded of something they've missed, finding new or renewed
 interest in a body of work that, with one inevitable event, has become
-a life’s work. The regret is that the artist doesn’t get to feel the
-appreciation.&lt;/p&gt;
+a life's work. The regret is that the artist doesn't get to feel the
+appreciation.
 
-&lt;p&gt;Her first five books found resonance with me just now, having content
+Her first five books found resonance with me just now, having content
 about strangers, aliens living in foreign lands, because I am. After so
 many years in the country of my birth now living far away in what is
-on one hand much alike– an urban economy connected and woven into
-global commerce and trade–
+on one hand much alike-- an urban economy connected and woven into
+global commerce and trade--
 and on the other hand completely foreign in language, cultural expectations,
-experience, and values.&lt;/p&gt;
+experience, and values.
 
-&lt;p&gt;The fifth book, &lt;em&gt;The Dispossessed&lt;/em&gt;, felt to me like a classic work
+The fifth book, _The Dispossessed_, felt to me like a classic work
 on a par with the best of the classics.
-I feel amazed that it isn’t better known
-and more talked about. I feel amazed that it isn’t part of the cultural
+I feel amazed that it isn't better known
+and more talked about. I feel amazed that it isn't part of the cultural
 curriculum that we consider foundational for the well educated.
-Or perhaps it is, and I haven’t been, and I’m just getting around to it.&lt;/p&gt;
+Or perhaps it is, and I haven't been, and I'm just getting around to it.
 
-&lt;p&gt;When it was published in 1974 it was called a utopian novel. It was a book
+When it was published in 1974 it was called a utopian novel. It was a book
 about an experimental, anarchistic society,
 its successes and shortcomings, and its
-relationship to the worlds around it.&lt;/p&gt;
+relationship to the worlds around it.
 
-&lt;p&gt;It reads to me, personally, now, as a book whose major theme is not the
+It reads to me, personally, now, as a book whose major theme is not the
 societies themselves or their relationships (of which this book describes many)
 but rather the relationship of the individual to society.
 Some think of Ayn Rand as owning that territory.
-&lt;em&gt;The Dispossessed&lt;/em&gt; reminds me of &lt;em&gt;The Fountainhead&lt;/em&gt;.
+_The Dispossessed_ reminds me of _The Fountainhead_.
 I now think that she shares it.
 This book, being outside of any time or place in human experience,
 beyond the limits of a human city in a plausible time, demonstrates
 the relationship of the individual to society
-at the intersection of multiple worlds, civilizations, and governments.&lt;/p&gt;
+at the intersection of multiple worlds, civilizations, and governments.
 
-&lt;p&gt;For this reason it has lasting relevance and importance above parity with
-&lt;em&gt;1984&lt;/em&gt; or &lt;em&gt;Animal Farm&lt;/em&gt;, &lt;em&gt;Catcher in the Rye&lt;/em&gt; or &lt;em&gt;Fahrenheit 451&lt;/em&gt; – all
-books that were part of the curriculum when I was young. We weren’t asked
-to consume Ayn Rand or Thomas Moore. Ursula K Le Guin was new then.&lt;/p&gt;
+For this reason it has lasting relevance and importance above parity with
+_1984_ or _Animal Farm_, _Catcher in the Rye_ or _Fahrenheit 451_ -- all
+books that were part of the curriculum when I was young. We weren't asked
+to consume Ayn Rand or Thomas Moore. Ursula K Le Guin was new then.
 
-&lt;p&gt;The relationship of the individual to society, the tensions around
+The relationship of the individual to society, the tensions around
 realization of individual potentials within the surround of their
 community, culture, economy, and government are forever, it seems to me,
-in flux and in tension.&lt;/p&gt;
+in flux and in tension.
 
-&lt;p&gt;How can a poor kid who’s smart contribute and find traction
+How can a poor kid who's smart contribute and find traction
 in an area that is dominated by those more privileged and perhaps,
 as often happens, insular? How does an individual with potential open
 up a group who has captured an area of discourse
 or commerce and established what they consider to be a norm?
 How does a person transcend their sex,
 race, economic status, language, education, or whatever attributes we
-perceive to constitute an “other”?
+perceive to constitute an &quot;other&quot;?
 How does a person find work that produces income while realizing the
 best expression of what they are, or potentially might be?
 How does a society support and encourage the very difficult work
@@ -595,259 +692,204 @@ of sitting down and actually working, vs. getting by, or getting along,
 or fitting in?
 How do we help people who, facing their work, the incredible monster that it is,
 fall short, fail, fear, as we all do, give up, or fall into addiction
-or despair or depression?&lt;/p&gt;
+or despair or depression?
 
-&lt;p&gt;These are to me questions of the greatest importance and measure
-of the success of a society.  And that’s why I so much liked
-Ursula K Le Guin’s &lt;em&gt;The Dispossessed&lt;/em&gt;.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I first encountered them as an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="/2018/03/why-i-dont-use-fb.html">&lt;h1 id=&quot;-or-whatsapp-or-instagram-&quot;&gt;… or WhatsApp or Instagram …&lt;/h1&gt;
+These are to me questions of the greatest importance and measure
+of the success of a society.  And that's why I so much liked
+Ursula K Le Guin's _The Dispossessed_.</content><author><name>Douglas Lovell</name></author><summary type="html">When I read about the death of Ursula K Le Guin in the New York Times, at the end of January, I thought how agreeable she sounded, remembered that I hadn’t found her books accessible when I first encountered them as an adolescent, for whatever reason, and decided to try reading one of them again.</summary></entry><entry><title type="html">Why I’m not on Facebook</title><link href="http://localhost:4000/2018/03/why-i-dont-use-fb.html" rel="alternate" type="text/html" title="Why I'm not on Facebook" /><published>2018-03-16T00:00:00-03:00</published><updated>2018-03-16T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/why-i-dont-use-fb</id><content type="html" xml:base="http://localhost:4000/2018/03/why-i-dont-use-fb.html"># ... or WhatsApp or Instagram ...
 
-&lt;p&gt;I don’t use these programs because they leak information about
+I don't use these programs because they leak information about
 who your contacts are, whom you talk with, when, and how often,
-to invisible, unaccountable third parties.&lt;/p&gt;
+to invisible, unaccountable third parties.
 
-&lt;p&gt;Who are these third parties?&lt;/p&gt;
+Who are these third parties?
 
-&lt;p&gt;From the &lt;a href=&quot;https://www.facebook.com/about/privacy&quot;&gt;Facebook privacy policy&lt;/a&gt;,
-“We share information we have about you within the family of companies that
-are part of Facebook.”&lt;/p&gt;
+From the [Facebook privacy policy](https://www.facebook.com/about/privacy),
+&quot;We share information we have about you within the family of companies that
+are part of Facebook.&quot;
 
-&lt;p&gt;&lt;a href=&quot;https://www.facebook.com/help/111814505650678&quot;&gt;Facebook lists&lt;/a&gt;
-nine companies which comprise the Facebook family:&lt;/p&gt;
+[Facebook lists](https://www.facebook.com/help/111814505650678)
+nine companies which comprise the Facebook family:
 
-&lt;ul&gt;
-  &lt;li&gt;WhatsApp: share with Facebook your contacts and how much you interact with them.&lt;/li&gt;
-  &lt;li&gt;Instagram LLC: share pictures of people and things of interest to you,
-your location.&lt;/li&gt;
-  &lt;li&gt;Moves: share with Facebook an activity diary of your daily life.&lt;/li&gt;
-  &lt;li&gt;Onavo: share with Facebook the apps you’re using
-and how much data you’re using on them (possibly more).&lt;/li&gt;
-  &lt;li&gt;Facebook Payments, Inc.: You think this stuff is free? You’re the product.&lt;/li&gt;
-  &lt;li&gt;Oculus: virtual reality goggles.&lt;/li&gt;
-  &lt;li&gt;Atlas: measure and track purchasing behavior linked to advertising, target
-advertising.&lt;/li&gt;
-  &lt;li&gt;Masquerade: cross web-site tracking technology.&lt;/li&gt;
-  &lt;li&gt;CrowdTangle: monitor social media.&lt;/li&gt;
-&lt;/ul&gt;
+- WhatsApp: share with Facebook your contacts and how much you interact with them.
+- Instagram LLC: share pictures of people and things of interest to you,
+your location.
+- Moves: share with Facebook an activity diary of your daily life.
+- Onavo: share with Facebook the apps you're using
+and how much data you're using on them (possibly more).
+- Facebook Payments, Inc.: You think this stuff is free? You're the product.
+- Oculus: virtual reality goggles.
+- Atlas: measure and track purchasing behavior linked to advertising, target
+advertising.
+- Masquerade: cross web-site tracking technology.
+- CrowdTangle: monitor social media.
 
-&lt;p&gt;The first two are probably familiar.
-The next two, maybe you’re foolish enough to use them.
+The first two are probably familiar.
+The next two, maybe you're foolish enough to use them.
 Ever heard of Atlas, Masquerade and CrowdTangle?
-&lt;a href=&quot;http://www.crowdtangle.com/features&quot;&gt;CrowdTangle&lt;/a&gt;
+[CrowdTangle](http://www.crowdtangle.com/features)
 is especially interesting.
-Know what they do? I’ve added summaries to give you a clue.&lt;/p&gt;
+Know what they do? I've added summaries to give you a clue.
 
-&lt;p&gt;Facebook makes a big deal of your “privacy controls.” You can change all
-sorts of settings about who “sees” your posts. This is smoke and mirrors.
+Facebook makes a big deal of your &quot;privacy controls.&quot; You can change all
+sorts of settings about who &quot;sees&quot; your posts. This is smoke and mirrors.
 The fact is that all of the above collect, collate, merge, and sell access
-to &lt;strong&gt;everything&lt;/strong&gt; you do on Facebook and elsewhere on the internet.
+to **everything** you do on Facebook and elsewhere on the internet.
 Your activity is available privately or by subscription,
-without accountability to you, for proprietary purposes.&lt;/p&gt;
+without accountability to you, for proprietary purposes.
 
-&lt;p&gt;Organizations that collect, collate, monitor, and enhance this data
-aren’t the true darknet, because they operate under a public
+Organizations that collect, collate, monitor, and enhance this data
+aren't the true darknet, because they operate under a public
 legal framework where they nevertheless hide. What could we call them?
-Let’s call them the “datalords”.&lt;/p&gt;
+Let's call them the &quot;datalords&quot;.
 
-&lt;p&gt;When you assent to Facebook terms, or WhatsApp, or Instagram, or …
-you assent to all of the above.&lt;/p&gt;
+When you assent to Facebook terms, or WhatsApp, or Instagram, or ...
+you assent to all of the above.
 
-&lt;h2 id=&quot;how-you-leak-data-to-the-datalords&quot;&gt;How you leak data to the datalords&lt;/h2&gt;
-&lt;p&gt;When I share my phone number into your contact list, because you use
+## How you leak data to the datalords
+When I share my phone number into your contact list, because you use
 WhatsApp, the fact that we are somehow socially connected goes to
-the datalords. The fact that I myself don’t use WhatsApp doesn’t matter.
-There is still a data block for me and it just got connected to yours.&lt;/p&gt;
+the datalords. The fact that I myself don't use WhatsApp doesn't matter.
+There is still a data block for me and it just got connected to yours.
 
-&lt;h3 id=&quot;how-metadata-works&quot;&gt;How metadata works&lt;/h3&gt;
-&lt;p&gt;Here is an example of how metadata works and how you leak it.
+### How metadata works
+Here is an example of how metadata works and how you leak it.
 I spend a lot of time abroad, so I have phone numbers in two countries.
 One day I made the mistake of sharing my entire contact information with
 a WhatsApp user (which is just about anybody). Both of my phone numbers
-went into their address book.&lt;/p&gt;
+went into their address book.
 
-&lt;p&gt;Up until that point, my phone number in one country and the one in another
+Up until that point, my phone number in one country and the one in another
 were completely separate data blocks in the store of the datalords.
 However, when next they sucked-up the contacts of my friend,
 the two numbers were related and a connection made between the two,
-up to now separate data blocks. The connection says, “these are likely the
-same person.” After all, they are! And now the datalords can connect every
-bit of metadata about one with the other. They’ve enhanced their whole
-world picture about who’s who connected with whom.&lt;/p&gt;
+up to now separate data blocks. The connection says, &quot;these are likely the
+same person.&quot; After all, they are! And now the datalords can connect every
+bit of metadata about one with the other. They've enhanced their whole
+world picture about who's who connected with whom.
 
-&lt;p&gt;And the metadata doesn’t end there. My phone number is associated with my
+And the metadata doesn't end there. My phone number is associated with my
 credit card numbers. Whenever I make a purchase using the credit card,
 the purchase data gets tagged on. That includes the location of the purchase,
-amount, company, service, sometimes itemized products purchased.&lt;/p&gt;
+amount, company, service, sometimes itemized products purchased.
 
-&lt;p&gt;By matching data items across data blocks – phone number to phone number,
-credit card number to credit card number – all of the additional data items
+By matching data items across data blocks -- phone number to phone number,
+credit card number to credit card number -- all of the additional data items
 in those blocks can be associated with a single identity and form an ever
-growing and more detailed picture of that identity.&lt;/p&gt;
+growing and more detailed picture of that identity.
 
-&lt;h2 id=&quot;why-this-makes-me-uneasy&quot;&gt;Why this makes me uneasy&lt;/h2&gt;
-&lt;p&gt;As a moral, law abiding citizen who works hard,
+## Why this makes me uneasy
+As a moral, law abiding citizen who works hard,
 pays his taxes and stays out of trouble,
-why should I care?&lt;/p&gt;
+why should I care?
 
-&lt;p&gt;In early 2017 I wrote a &lt;a href=&quot;http://wbreeze.com/bio/TOSFB.html&quot;&gt;response&lt;/a&gt;
+In early 2017 I wrote a [response](http://wbreeze.com/bio/TOSFB.html)
 to an Electronic Frontier Foundation (EFF) call to technology companies,
 asking them to shore-up their security practices.
 (EFF had bought a full page advertisement in the January,
-2017 issue of Wired magazine.)&lt;/p&gt;
+2017 issue of Wired magazine.)
 
-&lt;p&gt;The response talks about the data mine, machine learning, and records
-of government abuses targeted against citizens. It asserts,&lt;/p&gt;
+The response talks about the data mine, machine learning, and records
+of government abuses targeted against citizens. It asserts,
 
-&lt;p&gt;“The greatest danger of these databases is that we are only one rogue agent,
+&quot;The greatest danger of these databases is that we are only one rogue agent,
 or rogue agency, or rogue government away from having our data turned against
-us. In a “national security emergency,” or under some other cover, our
+us. In a &quot;national security emergency,&quot; or under some other cover, our
 government could claim broad, sweeping access to social network, advertising,
 and purchase behavior databases for the purpose of identifying and prosecuting
-citizens they deem threatening.”&lt;/p&gt;
+citizens they deem threatening.&quot;
 
-&lt;p&gt;That’s why. Because, while ideas can’t be squashed,
-individuals who hold them can be.&lt;/p&gt;
+That's why. Because, while ideas can't be squashed,
+individuals who hold them can be.
 
-&lt;h2 id=&quot;alternatives&quot;&gt;Alternatives&lt;/h2&gt;
-&lt;p&gt;There aren’t really any good, secure alternatives to Facebook that I know of.
-I’d like to know. But really, I don’t find it necessary to share a selfie
+## Alternatives
+There aren't really any good, secure alternatives to Facebook that I know of.
+I'd like to know. But really, I don't find it necessary to share a selfie
 in front of the leaning tower of Pisa with everyone I know or have been
-acquainted with.&lt;/p&gt;
+acquainted with.
 
-&lt;p&gt;For messaging, including phone calls and picture sharing with individuals
-whom I’m truly close to, I use &lt;a href=&quot;https://www.signal.org/&quot;&gt;Signal messenger&lt;/a&gt;.
+For messaging, including phone calls and picture sharing with individuals
+whom I'm truly close to, I use [Signal messenger](https://www.signal.org/).
 Signal is an angel funded small team that continually improves the
 function of the app. The application provides one of the few easy, practical
 ways to stay in touch without leaking information to the datalords.
-I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>/2018/03/merging-structure</id><content type="html" xml:base="/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
+I like it.</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="http://localhost:4000/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/merging-structure</id><content type="html" xml:base="http://localhost:4000/2018/03/merging-structure.html">In Rails, the file `db/structure.sql` or `db/schema.rb` (depending)
 captures a snapshot of the state of the development database after a
-migration, when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt; tasks.&lt;/p&gt;
+migration, when you run the `db:migrate` or `db:schema:dump` tasks.
 
-&lt;p&gt;What do you do when you have migrations in two different branches
+What do you do when you have migrations in two different branches
 of your development tree? Do you get a merge conflict? How do you resolve it?
-What if you don’t get a merge conflict?&lt;/p&gt;
+What if you don't get a merge conflict?
 
-&lt;p&gt;I’ll use the term “schema” now to refer to the file
-(&lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt;).
+I'll use the term &quot;schema&quot; now to refer to the file
+(`db/structure.sql` or `db/schema.rb`).
 It is the file that captures the structure of the database.
 Because the schema is generated by a program, not hand written, the best
-effort of &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; to try to merge two changes to it will often produce a
-result different than what you will get from running the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt;.&lt;/p&gt;
+effort of `git` to try to merge two changes to it will often produce a
+result different than what you will get from running the `db:schema:dump`.
 
-&lt;p&gt;Why is that important?&lt;/p&gt;
+Why is that important?
 
-&lt;ul&gt;
-  &lt;li&gt;It might have duplications or content out of sequence.&lt;/li&gt;
-  &lt;li&gt;The next migration will produce a schema with differences
-unrelated to the migration.&lt;/li&gt;
-  &lt;li&gt;The schema is the only source of truth about the database structure.
+- It might have duplications or content out of sequence.
+- The next migration will produce a schema with differences
+unrelated to the migration.
+- The schema is the only source of truth about the database structure.
 It deserves extra care, to keep it aligned with what the framework
-and tooling expect and produce.&lt;/li&gt;
-&lt;/ul&gt;
+and tooling expect and produce.
 
-&lt;p&gt;Here’s a process that allows the tooling to keep the schema in order,
-combining independent migrations without errors induced by merging.&lt;/p&gt;
+Here's a process that allows the tooling to keep the schema in order,
+combining independent migrations without errors induced by merging.
 
-&lt;p&gt;First, do not allow git to merge the file. Set-up git to always treat
+First, do not allow git to merge the file. Set-up git to always treat
 independent changes to the schema as a conflict. You do this by placing
-a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;db&lt;/code&gt; directory with content,&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;schema.rb -merge
+a `.gitattributes` file in the `db` directory with content,
+```
+schema.rb -merge
 structure.sql -merge
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;(Or add those lines to the existing &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file if there is one.)
+```
+(Or add those lines to the existing `.gitattributes` file if there is one.)
 The reference for doing that is deep down in the documentation of
-&lt;a href=&quot;https://www.git-scm.com/docs/gitattributes&quot;&gt;gitattributes&lt;/a&gt;.&lt;/p&gt;
+[gitattributes](https://www.git-scm.com/docs/gitattributes).
 
-&lt;p&gt;Second, when you do get a conflict, resolve it as follows:&lt;/p&gt;
+Second, when you do get a conflict, resolve it as follows:
 
-&lt;p&gt;If your database migrations come &lt;em&gt;after&lt;/em&gt; those you picked-up in the merge:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Abort the merge &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge --abort&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Roll back your migrations, however many, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:rollback&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Pull the changes a second time&lt;/li&gt;
-&lt;/ul&gt;
+If your database migrations come *after* those you picked-up in the merge:
+- Abort the merge `git merge --abort`
+- Roll back your migrations, however many, `rails db:rollback`
+- Pull the changes a second time
 
-&lt;p&gt;In either case,&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Run the migrations picked-up in the merge, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Accept the newly generated schema, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;git add db/structure.sql&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Make that merge commit, &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
+In either case,
+- Run the migrations picked-up in the merge, `rails db:migrate`
+- Accept the newly generated schema, e.g. `git add db/structure.sql`
+- Make that merge commit, `git commit`
 
-&lt;p&gt;In this way, your database schema will always be wholly in agreement with
+In this way, your database schema will always be wholly in agreement with
 the text wanted by the framework, because it is always and only ever generated
-by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>/2018/03/rebase-v-merge</id><content type="html" xml:base="/2018/03/rebase-v-merge.html">&lt;p&gt;I’ve been looking into the git merge v. rebase endless theological debate.
+by the framework.</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry><entry><title type="html">Git merge v. rebase</title><link href="http://localhost:4000/2018/03/rebase-v-merge.html" rel="alternate" type="text/html" title="Git merge v. rebase" /><published>2018-03-08T00:00:00-03:00</published><updated>2018-03-08T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/rebase-v-merge</id><content type="html" xml:base="http://localhost:4000/2018/03/rebase-v-merge.html">I’ve been looking into the git merge v. rebase endless theological debate.
 It comes up over and over. But I’ve only ever gotten into trouble
 trying to rebase. Not getting all wrapped up over how my
-commit history looks and just merging has given me fewer issues.&lt;/p&gt;
+commit history looks and just merging has given me fewer issues.
 
-&lt;p&gt;I’m seeing a camp that recommends rebasing your local feature branch when
+I’m seeing a camp that recommends rebasing your local feature branch when
 master gets ahead of it, but merging it when you bring it back into master.
 Another person says, yeah, do that, but if your rebase has conflicts,
-give it up and merge instead.&lt;/p&gt;
+give it up and merge instead.
 
-&lt;p&gt;I’ll paste some links now. …&lt;/p&gt;
+I’ll paste some links now. …
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/11219380/608359&quot;&gt;SO: Conflict resolution during rebase&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase&quot;&gt;Atlassian article&lt;/a&gt;
-has pros and cons and what Atlassian does.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/a/36587353/608359&quot;&gt;SO: When to rebase&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/git/tutorials/merging-vs-rebasing&quot;&gt;Atlassian tutorial&lt;/a&gt;
-Contains “The Golden Rule of Rebasing” and after two thousand words says,
-“that’s all you really need to know to start”.&lt;/li&gt;
-&lt;/ul&gt;
+- [SO: Conflict resolution during rebase](
+  https://stackoverflow.com/a/11219380/608359)
+- [Atlassian article](
+https://www.atlassian.com/git/articles/git-team-workflows-merge-or-rebase)
+  has pros and cons and what Atlassian does.
+- [SO: When to rebase](https://stackoverflow.com/a/36587353/608359)
+- [Atlassian tutorial](
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+Contains &quot;The Golden Rule of Rebasing&quot; and after two thousand words says,
+&quot;that’s all you really need to know to start&quot;.
 
-&lt;p&gt;The gist I’m taking away is that it’s okay (but entirely optional) to rebase
-your feature branch occasionally before finally &lt;strong&gt;merging&lt;/strong&gt; it back to master.&lt;/p&gt;
+The gist I’m taking away is that it’s okay (but entirely optional) to rebase
+your feature branch occasionally before finally **merging** it back to master.
 
-&lt;p&gt;All of the caveats and warnings I’m seeing in these threads are about rebase.
-That tells me something. My friend, KISS says, “Just merge and stop fussing.”&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry><entry><title type="html">RSpec have HTTP status upgrade</title><link href="/2018/02/have-http-status.html" rel="alternate" type="text/html" title="RSpec have HTTP status upgrade" /><published>2018-02-23T00:00:00-03:00</published><updated>2018-02-23T00:00:00-03:00</updated><id>/2018/02/have-http-status</id><content type="html" xml:base="/2018/02/have-http-status.html">&lt;p&gt;When upgrading a project to the Rails 5.2 pre-release we started to see
-some deprecation warnings in our RSpec runs.
-The warnings were as follows, and occurred wherever
-&lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status(:success)&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;have_success_status&lt;/code&gt; and the like
-were used in tests.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.DEPRECATION WARNING: The success? predicate is deprecated and will be removed
-in Rails 6.0. Please use successful? as provided by Rack::Response::Helpers.
-(called from matches? at rspec/rails/matchers/have_http_status.rb:263)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This was annoying because many controller tests use
-the &lt;code class=&quot;highlighter-rouge&quot;&gt;have_success_status&lt;/code&gt; matcher.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-changed&quot;&gt;What changed&lt;/h2&gt;
-&lt;p&gt;Rails, with &lt;a href=&quot;https://github.com/rails/rails/pull/30104/files&quot;&gt;this commit&lt;/a&gt;
-decided, in very reasonable fashion, to standardize the response status
-checking methods in ActionDispatch::TestResponse.&lt;/p&gt;
-
-&lt;p&gt;The team simply deprecated the &lt;code class=&quot;highlighter-rouge&quot;&gt;success?&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;missing?&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;error?&lt;/code&gt; methods
-with the suggestion to use the &lt;code class=&quot;highlighter-rouge&quot;&gt;successful?&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;not_found?&lt;/code&gt;,
-and &lt;code class=&quot;highlighter-rouge&quot;&gt;server_error?&lt;/code&gt; methods pre-existing in
-&lt;a href=&quot;https://github.com/rack/rack/blob/b37356ee881c0de4266165dacb8af4efaebaf4ec/lib/rack/response.rb#L110&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Rack::Response::Helpers&lt;/code&gt;&lt;/a&gt;.
-(&lt;code class=&quot;highlighter-rouge&quot;&gt;ActionDispatch::TestResponse&lt;/code&gt; inherits from &lt;code class=&quot;highlighter-rouge&quot;&gt;ActionDispatch::Response&lt;/code&gt; which
-includes &lt;code class=&quot;highlighter-rouge&quot;&gt;Rack::Response::Helpers&lt;/code&gt;.)&lt;/p&gt;
-
-&lt;p&gt;In &lt;code class=&quot;highlighter-rouge&quot;&gt;rspec-rails&lt;/code&gt;, the &lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status&lt;/code&gt; matcher called these methods
-in a meta-sense, by mapping the &lt;code class=&quot;highlighter-rouge&quot;&gt;:success&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:missing&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;:error&lt;/code&gt;
-symbols to corresponding methods invoked on the response.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-to-repair&quot;&gt;How to repair?&lt;/h2&gt;
-&lt;p&gt;One way to repair this would have been to support the replacement methods,
-e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;successful?&lt;/code&gt; and require any extant tests using, for example,
-&lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status(:success)&lt;/code&gt; to make the change to
-&lt;code class=&quot;highlighter-rouge&quot;&gt;have_http_status(:successful)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;This would possibly be defensible as a “follow closely as a thin wrapper on
-Rails” strategy. Unfortunately, it would break a mountain of tests!&lt;/p&gt;
-
-&lt;p&gt;However the &lt;code class=&quot;highlighter-rouge&quot;&gt;successful?&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;server_error?&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;not_found?&lt;/code&gt; methods have
-been available to &lt;code class=&quot;highlighter-rouge&quot;&gt;ActionDispatch::TestResponse&lt;/code&gt; via
-&lt;code class=&quot;highlighter-rouge&quot;&gt;Rack::Response::Helpers&lt;/code&gt; for many many years.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;https://github.com/rspec/rspec-rails/pull/1951&quot;&gt;method provided&lt;/a&gt;
-introduces the new status codes, &lt;code class=&quot;highlighter-rouge&quot;&gt;:successful&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;:not_found&lt;/code&gt;,
-and &lt;code class=&quot;highlighter-rouge&quot;&gt;:server_error&lt;/code&gt; while maintaining support for the Rails deprecated ones.
-It does so by mapping, for example, &lt;code class=&quot;highlighter-rouge&quot;&gt;:success&lt;/code&gt; to the &lt;code class=&quot;highlighter-rouge&quot;&gt;successful?&lt;/code&gt; method.&lt;/p&gt;
-
-&lt;p&gt;Thus the world of &lt;code class=&quot;highlighter-rouge&quot;&gt;rspec-rails&lt;/code&gt; turns in accordance with the heavens,
-that is, Rails.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">When upgrading a project to the Rails 5.2 pre-release we started to see some deprecation warnings in our RSpec runs. The warnings were as follows, and occurred wherever have_http_status(:success) or have_success_status and the like were used in tests.</summary></entry></feed>
+All of the caveats and warnings I’m seeing in these threads are about rebase.
+That tells me something. My friend, KISS says, &quot;Just merge and stop fussing.&quot;</content><author><name>Douglas Lovell</name></author><summary type="html">I’ve been looking into the git merge v. rebase endless theological debate. It comes up over and over. But I’ve only ever gotten into trouble trying to rebase. Not getting all wrapped up over how my commit history looks and just merging has given me fewer issues.</summary></entry></feed>
