@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
    href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>RSpec have HTTP status upgrade | Wind and Water</title>
+<title>Fútbol Decisions | Wind and Water</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="RSpec have HTTP status upgrade" />
+<meta property="og:title" content="Fútbol Decisions" />
 <meta name="author" content="Douglas Lovell" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="When upgrading a project to the Rails 5.2 pre-release we started to see some deprecation warnings in our RSpec runs. The warnings were as follows, and occurred wherever have_http_status(:success) or have_success_status and the like were used in tests." />
-<meta property="og:description" content="When upgrading a project to the Rails 5.2 pre-release we started to see some deprecation warnings in our RSpec runs. The warnings were as follows, and occurred wherever have_http_status(:success) or have_success_status and the like were used in tests." />
-<link rel="canonical" href="http://localhost:4000/2018/02/have-http-status.html" />
-<meta property="og:url" content="http://localhost:4000/2018/02/have-http-status.html" />
+<meta name="description" content="Over the past week I’ve seen two penalty shootouts in the quarter-finals of the 2019 Copa América." />
+<meta property="og:description" content="Over the past week I’ve seen two penalty shootouts in the quarter-finals of the 2019 Copa América." />
+<link rel="canonical" href="http://localhost:4000/2019/06/review-tech.html" />
+<meta property="og:url" content="http://localhost:4000/2019/06/review-tech.html" />
 <meta property="og:site_name" content="Wind and Water" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2018-02-23T00:00:00-03:00" />
+<meta property="article:published_time" content="2019-06-30T00:00:00-03:00" />
 <script type="application/ld+json">
-{"url":"http://localhost:4000/2018/02/have-http-status.html","headline":"RSpec have HTTP status upgrade","dateModified":"2018-02-23T00:00:00-03:00","datePublished":"2018-02-23T00:00:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/02/have-http-status.html"},"author":{"@type":"Person","name":"Douglas Lovell"},"description":"When upgrading a project to the Rails 5.2 pre-release we started to see some deprecation warnings in our RSpec runs. The warnings were as follows, and occurred wherever have_http_status(:success) or have_success_status and the like were used in tests.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"url":"http://localhost:4000/2019/06/review-tech.html","headline":"Fútbol Decisions","dateModified":"2019-06-30T00:00:00-03:00","datePublished":"2019-06-30T00:00:00-03:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/06/review-tech.html"},"author":{"@type":"Person","name":"Douglas Lovell"},"description":"Over the past week I’ve seen two penalty shootouts in the quarter-finals of the 2019 Copa América.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css">
   <style type='text/css'>
@@ -178,65 +178,102 @@
   itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">RSpec have HTTP status upgrade</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Fútbol Decisions</h1>
     <p class="post-meta">
-      <time class="dt-published" datetime="2018-02-23T00:00:00-03:00" itemprop="datePublished">Feb 23, 2018
+      <time class="dt-published" datetime="2019-06-30T00:00:00-03:00" itemprop="datePublished">Jun 30, 2019
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>When upgrading a project to the Rails 5.2 pre-release we started to see
-some deprecation warnings in our RSpec runs.
-The warnings were as follows, and occurred wherever
-<code class="highlighter-rouge">have_http_status(:success)</code> or <code class="highlighter-rouge">have_success_status</code> and the like
-were used in tests.</p>
+    <p>Over the past week I’ve seen two penalty shootouts in the quarter-finals
+of the
+<a href="https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica">2019 Copa América</a>.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.DEPRECATION WARNING: The success? predicate is deprecated and will be removed
-in Rails 6.0. Please use successful? as provided by Rack::Response::Helpers.
-(called from matches? at rspec/rails/matchers/have_http_status.rb:263)
-</code></pre></div></div>
+<p>The first was Chile v. Columbia. Columbia was, in many opinions, the superior
+team. They dominated the game in possession and chances against the goal.
+They passed the ball to one another with greater success, and put-together
+combination plays against the defense of Chile that penetrated right to the
+goal keeper.</p>
 
-<p>This was annoying because many controller tests use
-the <code class="highlighter-rouge">have_success_status</code> matcher.</p>
+<p><img src="/assets/images/FIFA-offside-VAR.jpg" alt="VAR review offside" /></p>
 
-<h2 id="what-changed">What changed</h2>
-<p>Rails, with <a href="https://github.com/rails/rails/pull/30104/files">this commit</a>
-decided, in very reasonable fashion, to standardize the response status
-checking methods in ActionDispatch::TestResponse.</p>
+<p>The second was Uruguay v. Peru. Uruguay similarly dominated the match. They
+in fact scored three goals, each of which was taken away by the new
+video assistant referees using
+technology that enables splitting hairs over whether a player is off side.</p>
 
-<p>The team simply deprecated the <code class="highlighter-rouge">success?</code>, <code class="highlighter-rouge">missing?</code> and <code class="highlighter-rouge">error?</code> methods
-with the suggestion to use the <code class="highlighter-rouge">successful?</code>, <code class="highlighter-rouge">not_found?</code>,
-and <code class="highlighter-rouge">server_error?</code> methods pre-existing in
-<a href="https://github.com/rack/rack/blob/b37356ee881c0de4266165dacb8af4efaebaf4ec/lib/rack/response.rb#L110"><code class="highlighter-rouge">Rack::Response::Helpers</code></a>.
-(<code class="highlighter-rouge">ActionDispatch::TestResponse</code> inherits from <code class="highlighter-rouge">ActionDispatch::Response</code> which
-includes <code class="highlighter-rouge">Rack::Response::Helpers</code>.)</p>
+<p>Both matches went to a tie at no goals scored.
+Because it is the quarter finals, single elimination, not group elimination,
+the matches had to be decided. The rules of this contest have the matches
+decided immediately by a penalty shootout. There are no additional periods
+of play.</p>
 
-<p>In <code class="highlighter-rouge">rspec-rails</code>, the <code class="highlighter-rouge">have_http_status</code> matcher called these methods
-in a meta-sense, by mapping the <code class="highlighter-rouge">:success</code>, <code class="highlighter-rouge">:missing</code>, and <code class="highlighter-rouge">:error</code>
-symbols to corresponding methods invoked on the response.</p>
+<p>The winners of the penalty shootouts were Chile and Peru.</p>
 
-<h2 id="how-to-repair">How to repair?</h2>
-<p>One way to repair this would have been to support the replacement methods,
-e.g. <code class="highlighter-rouge">successful?</code> and require any extant tests using, for example,
-<code class="highlighter-rouge">have_http_status(:success)</code> to make the change to
-<code class="highlighter-rouge">have_http_status(:successful)</code>.</p>
+<p>You see where this is going. The penalty shootout feels like an unjust way
+to decide a good fútbol match. What could be better? What are some alternatives?</p>
 
-<p>This would possibly be defensible as a “follow closely as a thin wrapper on
-Rails” strategy. Unfortunately, it would break a mountain of tests!</p>
+<p>One would be to keep playing the game. The game could by played for two
+additional, shorter periods. With no result after that, it could be played
+sudden death, as long as it takes for one team to wear-out the other and
+get a goal.</p>
 
-<p>However the <code class="highlighter-rouge">successful?</code>, <code class="highlighter-rouge">server_error?</code>, and <code class="highlighter-rouge">not_found?</code> methods have
-been available to <code class="highlighter-rouge">ActionDispatch::TestResponse</code> via
-<code class="highlighter-rouge">Rack::Response::Helpers</code> for many many years.</p>
+<p>Another would be to have a decision, as in boxing. They go the full nine rounds
+without a knockout. The judges decide. I don’t know who decides. Maybe the
+referees. All you have to do is give them police protection for at least
+three weeks after the decision.</p>
 
-<p>The <a href="https://github.com/rspec/rspec-rails/pull/1951">method provided</a>
-introduces the new status codes, <code class="highlighter-rouge">:successful</code>, <code class="highlighter-rouge">:not_found</code>,
-and <code class="highlighter-rouge">:server_error</code> while maintaining support for the Rails deprecated ones.
-It does so by mapping, for example, <code class="highlighter-rouge">:success</code> to the <code class="highlighter-rouge">successful?</code> method.</p>
+<p>Another would be to use some objective formula based on properties of the
+match– time of possession, number of successful passes, number of shots on
+goal, number of goals scored and taken away.</p>
 
-<p>Thus the world of <code class="highlighter-rouge">rspec-rails</code> turns in accordance with the heavens,
-that is, Rails.</p>
+<p>In the end, the penalty shootout puts the result on the field, in view of
+the fans. Play to the death would encourage strange energy management
+strategies. The team that played hard might lose due to exhaustion.
+A decision, well. Who decides? How do you keep them neutral and objective?
+How do you protect them?</p>
 
-  </div><a class="u-url" href="/2018/02/have-http-status.html" hidden></a>
+<p>As for formulas, formulas are nice but also dry. Who wants to decide
+a fútbol match by a formula? How can you distill the art of play into a
+formula?</p>
+
+<p><img src="/assets/images/FIFA-ref-VAR.jpg" alt="Ref looking dumbly and VAR" /></p>
+
+<p>Which brings me back around to review technology. We all sit around for one
+or two minutes watching the on-field referee listening to his ear piece
+and fending off players. Eventually the broadcast and/or stadium monitor
+gets around to showing what the reviewers might be seeing. And then the
+game starts again with a goal or a goal erased.
+The players and fans can celebrate a goal. But now it’s just a provisional
+celebration because we’re going to sit around a couple of minutes for
+the video assistant referees.</p>
+
+<p>It’s boring. Inhuman. My feeling? If the referees didn’t see it, the players
+got away with it. If the referees called it and were wrong, tough luck.
+It’s part of the game. Keep it human. Keep it personal.
+Keep it on the field, not in a review booth.</p>
+
+<p>Yes, I’ve seen my favorites favored by a review.
+And in this case ruined by reviews.
+It goes both ways. And either way it’s kind of dull and disappointing.
+Enough. Play ball.</p>
+
+<p>Note: The images are both reproduced without permission.
+One from
+<a href="https://nongnghiep.vn/luis-suarez-hoa-toi-do-uruguay-bi-loai-khoi-copa-america-post244373.html">a Vietnameze review of the
+match</a>,
+the other from
+<a href="https://www.sportsjournal.ae/can-var-enhance-refereeing-standards-eliminate-human-errors/">this 2018 Sports Journal
+editorial</a>
+about Video Assistant Referee (VAR).
+Here’s a <a href="https://www.goal.com/en/match/uruguay-v-peru/3gio9y3lh03dti9t2tocq6puy">nice review in
+English</a>
+of the Uruguay v. Peru match.
+Here’s another editorial, also from Goal.com, about
+<a href="https://www.goal.com/en/news/var-carnage-is-coming-womens-world-cup-a-harbinger-for-new/177zuq87z9job1jzhlvrdigs0t">VAR at the 2019 Women’s World
+Cup</a>.</p>
+
+  </div><a class="u-url" href="/2019/06/review-tech.html" hidden></a>
 </article>
 
       </div>
