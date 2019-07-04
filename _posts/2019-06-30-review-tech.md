@@ -14,7 +14,7 @@ They passed the ball to one another with greater success, and put-together
 combination plays against the defense of Chile that penetrated right to the
 goal keeper.
 
-![VAR review offside](/assets/images/FIFA-offside-VAR.jpg)
+![VAR review offside]({% link /assets/images/FIFA-offside-VAR.jpg %})
 
 The second was Uruguay v. Peru. Uruguay similarly dominated the match. They
 in fact scored three goals, each of which was taken away by the new
@@ -56,7 +56,7 @@ As for formulas, formulas are nice but also dry. Who wants to decide
 a fútbol match by a formula? How can you distill the art of play into a
 formula?
 
-![Ref looking dumbly and VAR](/assets/images/FIFA-ref-VAR.jpg)
+![Ref looking dumbly and VAR]({% link /assets/images/FIFA-ref-VAR.jpg %})
 
 Which brings me back around to review technology. We all sit around for one
 or two minutes watching the on-field referee listening to his ear piece
