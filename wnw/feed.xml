@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-30T13:45:37-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Fútbol Decisions</title><link href="http://localhost:4000/2019/06/review-tech.html" rel="alternate" type="text/html" title="Fútbol Decisions" /><published>2019-06-30T00:00:00-03:00</published><updated>2019-06-30T00:00:00-03:00</updated><id>http://localhost:4000/2019/06/review-tech</id><content type="html" xml:base="http://localhost:4000/2019/06/review-tech.html">&lt;p&gt;Over the past week I’ve seen two penalty shootouts in the quarter-finals
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-04T13:07:36-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Fútbol Decisions</title><link href="http://localhost:4000/2019/06/review-tech.html" rel="alternate" type="text/html" title="Fútbol Decisions" /><published>2019-06-30T00:00:00-03:00</published><updated>2019-06-30T00:00:00-03:00</updated><id>http://localhost:4000/2019/06/review-tech</id><content type="html" xml:base="http://localhost:4000/2019/06/review-tech.html">&lt;p&gt;Over the past week I’ve seen two penalty shootouts in the quarter-finals
 of the
 &lt;a href=&quot;https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica&quot;&gt;2019 Copa América&lt;/a&gt;.&lt;/p&gt;
 
@@ -615,7 +615,25 @@ building.&lt;/li&gt;
 &lt;p&gt;In any case,
 it’s fun to see a construction crew make progress on a building,
 to see a crane bootstrap itself, and
-to see a development team make progress on a software system.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="http://localhost:4000/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/dock-io</id><content type="html" xml:base="http://localhost:4000/2018/04/dock-io.html">&lt;p&gt;I was a LinkedIn early adopter in 2007. My profile there was very complete
+to see a development team make progress on a software system.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Have you ever wondered how a construction crane grows with the building? Well, I have. Here’s how it works.</summary></entry><entry><title type="html">Your Professional Pedigree</title><link href="http://localhost:4000/2018/04/dock-io.html" rel="alternate" type="text/html" title="Your Professional Pedigree" /><published>2018-04-05T00:00:00-03:00</published><updated>2018-04-05T00:00:00-03:00</updated><id>http://localhost:4000/2018/04/dock-io</id><content type="html" xml:base="http://localhost:4000/2018/04/dock-io.html">&lt;p&gt;Follow-up July 4, 2019:&lt;/p&gt;
+
+&lt;p&gt;Going-through my list of accounts and deleting some that I no longer require,
+I had a visit again to dock.io.&lt;/p&gt;
+
+&lt;p&gt;The site looks really cool. It’s about managing online identity. However
+finding the privacy policy, I had some reservations. I told them,&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Although I'm sympathetic with the goals expressed on the landing page,
+it isn't clear to me that this is not anything more than a site set up
+to mine personal data. The passages about transfer of data upon sale of
+the site are of particular concern.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As such, this is mea culpa regarding the original post, which now follows.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;I was a LinkedIn early adopter in 2007. My profile there was very complete
 and well connected. In April, 2017 I got freaked-out about privacy and an
 update to LinkedIn terms. (What about them in particular I don’t recall.)
 I deleted my account.&lt;/p&gt;
@@ -705,9 +723,9 @@ In short, I think we’re doomed.&lt;/p&gt;
 
 &lt;p&gt;Today I put a limited
 &lt;a href=&quot;https://www.linkedin.com/in/dclovell/&quot;&gt;profile back on LinkedIn&lt;/a&gt;
-and started rebuilding a network there.  I’m also available at
-&lt;a href=&quot;https://dock.io?r=douglaslovell:aaaak2fc&quot;&gt;Dock.io&lt;/a&gt;.
-That’s a referral link. Check it out.&lt;/p&gt;
+and started rebuilding a network there. &lt;del&gt;I’m also available at
+&lt;a href=&quot;https://dock.io&quot;&gt;Dock.io&lt;/a&gt;.
+That’s a referral link. Check it out.&lt;/del&gt;&lt;/p&gt;
 
 &lt;p&gt;And elect people who understand what a sieve the current theater
 of privacy has become.&lt;/p&gt;
@@ -715,7 +733,7 @@ of privacy has become.&lt;/p&gt;
 &lt;h4 id=&quot;footnote&quot;&gt;Footnote&lt;/h4&gt;
 &lt;p&gt;Credit history does cross the line into vital territory.
 Some employers require good credit history for certain job roles.
-Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">I was a LinkedIn early adopter in 2007. My profile there was very complete and well connected. In April, 2017 I got freaked-out about privacy and an update to LinkedIn terms. (What about them in particular I don’t recall.) I deleted my account.</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
+Many or most landlords require good credit history to rent apartments.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">Follow-up July 4, 2019:</summary></entry><entry><title type="html">The Dispossessed</title><link href="http://localhost:4000/2018/03/the-dispossessed.html" rel="alternate" type="text/html" title="The Dispossessed" /><published>2018-03-18T00:00:00-03:00</published><updated>2018-03-18T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/the-dispossessed</id><content type="html" xml:base="http://localhost:4000/2018/03/the-dispossessed.html">&lt;p&gt;When I read about the &lt;a href=&quot;https://www.nytimes.com/2018/01/23/obituaries/ursula-k-le-guin-acclaimed-for-her-fantasy-fiction-is-dead-at-88.html&quot;&gt;death of Ursula K Le Guin&lt;/a&gt; in the New York Times, at the end of January, I thought
 how agreeable she sounded, remembered that I hadn’t found her books
 accessible when I first encountered them as an adolescent,
 for whatever reason, and
