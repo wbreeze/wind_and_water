@@ -1,4 +1,137 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-08T19:12:53-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Fútbol Decisions</title><link href="http://localhost:4000/2019/06/review-tech.html" rel="alternate" type="text/html" title="Fútbol Decisions" /><published>2019-06-30T00:00:00-03:00</published><updated>2019-06-30T00:00:00-03:00</updated><id>http://localhost:4000/2019/06/review-tech</id><content type="html" xml:base="http://localhost:4000/2019/06/review-tech.html">&lt;p&gt;Over the past week I’ve seen two penalty shootouts in the quarter-finals
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-30T13:42:39-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Wind and Water</title><subtitle>The fascination of what's difficult...</subtitle><author><name>Douglas Lovell</name></author><entry><title type="html">Socelect.org</title><link href="http://localhost:4000/2019/07/socelect.html" rel="alternate" type="text/html" title="Socelect.org" /><published>2019-07-30T00:00:00-03:00</published><updated>2019-07-30T00:00:00-03:00</updated><id>http://localhost:4000/2019/07/socelect</id><content type="html" xml:base="http://localhost:4000/2019/07/socelect.html">&lt;p&gt;The first fully functional version of &lt;a href=&quot;https://socelect.org&quot;&gt;socelect.org&lt;/a&gt; is
+now published, up and running.&lt;/p&gt;
+
+&lt;p&gt;It uses an algorithm invented by Andrew Davenport in the early oughts
+(about fifteen years ago) to aggregate multiple preferences into a
+ranking that accurately represents the preferences of the majority.
+To quote the site, “Find alternatives that satisfy most.”&lt;/p&gt;
+
+&lt;p&gt;The series that follows is a personal story about the development of socelect.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-preference-aggregation&quot;&gt;What is preference aggregation?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/socelect_vegetable.png&quot; alt=&quot;socelect which vegetable&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The following will help with some of the jargon necessarily used here.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;partial order&lt;/em&gt; is just an ordering of things, one before the other,
+in which some things are equal. This is opposed to a full order in which
+everything comes before or after every other. You can say “broccoli before
+spinach before brussels sprouts before cabbage.” That is a full ordering.
+You can say “broccoli before spinach and brussels sprouts, and after those
+cabbage.” That is a partial ordering because, while you prefer broccoli to
+spinach and brussels sprouts, you don’t prefer either of spinach or brussels
+sprouts before the other. You do prefer both over cabbage.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;preference aggregation&lt;/em&gt; is taking some number of individual preferences
+for broccoli, brussels sprouts, spinach and cabbage, and putting them
+together to decide which to serve as a vegetable with dinner.
+(Steak and potatoes all the way for the rest, and chocolate cake for
+desert.) Although you’re choosing one vegetable to serve,
+everyone knows that their second
+choice is as meaningful as the first, particularly if they don’t want to
+eat cabbage.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In another scenario you might be
+choosing top three, or ranking everything. The Davenport algorithm
+provides a partial order ranking for all of the alternatives.&lt;/p&gt;
+
+&lt;p&gt;When attempting to measure group preference given more than two alternatives,
+it is well established that asking each person to choose one, and then
+selecting that which gains more votes than the others (plurality), is
+likely to result in a selection that the majority of the group dislikes.
+There are many alternative systems that are better. I believe that
+preference aggregation is the best.&lt;/p&gt;
+
+&lt;p&gt;Having each individual rank the alternatives gives full information
+about which alternatives they prefer over others (although it doesn’t
+tell how much). With that, we can truly select alternatives that satisfy
+the most.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-parts&quot;&gt;The parts&lt;/h2&gt;
+
+&lt;p&gt;To make it happen required these projects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A user interface for specifying partial orders.&lt;/li&gt;
+  &lt;li&gt;An implementation of the Davenport algorithm.&lt;/li&gt;
+  &lt;li&gt;The web site built around a database system.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;language-choice&quot;&gt;Language choice&lt;/h3&gt;
+
+&lt;p&gt;It made most sense to implement the Davenport algorithm in the C language
+because the C language has great compilers that make it very fast for
+most computers, and it needs to be very fast. Others might have chosen C++.
+Never did like it.&lt;/p&gt;
+
+&lt;p&gt;For the web site I resisted going with Elixir and Phoenix, which are
+new and shiny and very interesting.
+I also easily resisted Node.js because, well, JavaScript.
+PHP frameworks likewise aren’t my cup of tea or coffee.
+The framework I chose is
+Ruby on Rails. I know it well, it works well, and it still suits me.
+Also, Ruby plays well with C because it is itself implemented with C.&lt;/p&gt;
+
+&lt;p&gt;The decision to use Ruby over Node.js (JavaScript) or Elixir is in
+reality a big decision. Node.js and Elixir carry a very important distinction
+over Ruby. They have in their core an asynchronous model of execution.
+They enable programming hundreds or magnitudes more individual tasks
+in a Cirque de Soleil juggling ballet. Ruby plugs along doing one thing
+until it’s done. The deeper reality of these statements is a topic for
+another day. They don’t at all tell the real or full story.&lt;/p&gt;
+
+&lt;p&gt;The combination of C and Ruby meant one more project:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A Ruby extension library to use the C implementation
+of the Davenport algorithm with the Ruby code of the web site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;priorities&quot;&gt;Priorities&lt;/h2&gt;
+
+&lt;p&gt;Some of the projects have dependencies on others. The web site depends upon
+the user interface. The Ruby extension depends on the Davenport implementation.
+After that, I had two criteria:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;interest and motivation&lt;/li&gt;
+  &lt;li&gt;risk mitigation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It makes sense to do the riskiest parts first, because failing these all of
+the other work is for naught.  To me the implementation of the Davenport
+algorithm was the riskiest. It’s complex, and the C language can punish little
+mistakes with hard to solve problems.&lt;/p&gt;
+
+&lt;p&gt;Second after that was the user interface. User interfaces have to seem simple
+and it takes a lot of work to get them that way. Further, it needs to be in
+JavaScript because that is the programming language for web browsers.
+JavaScript is still a bit wild, with lots of changes to the language and
+the tooling around it. Some of that tooling helps with the uneven
+implementation of features of the language within the browsers.&lt;/p&gt;
+
+&lt;p&gt;For motivation, someone laid down the gauntlet by saying that I didn’t have
+the technical mettle to get a handle on JavaScript. Sometimes it doesn’t
+take much more than that– a good project and being slighted.&lt;/p&gt;
+
+&lt;h2 id=&quot;up-next&quot;&gt;Up next&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/socelect_home.png&quot; alt=&quot;socelect home page&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The posts that follow track development of the four projects.
+Hopefully, they will contain insights about how to develop software,
+what it’s like, and lessons learned. They will chronicle a journey,
+some of the choices, important crossroads, mistakes, and difficult passages.&lt;/p&gt;
+
+&lt;p&gt;Ride along with me a spell. Let’s see what we’ll discover.
+Meantime, try out &lt;a href=&quot;https://socelect.org&quot;&gt;socelect.org&lt;/a&gt;.
+Let me know what you think!&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">The first fully functional version of socelect.org is now published, up and running.</summary></entry><entry><title type="html">Fútbol Decisions</title><link href="http://localhost:4000/2019/06/review-tech.html" rel="alternate" type="text/html" title="Fútbol Decisions" /><published>2019-06-30T00:00:00-03:00</published><updated>2019-06-30T00:00:00-03:00</updated><id>http://localhost:4000/2019/06/review-tech</id><content type="html" xml:base="http://localhost:4000/2019/06/review-tech.html">&lt;p&gt;Over the past week I’ve seen two penalty shootouts in the quarter-finals
 of the
 &lt;a href=&quot;https://en.wikipedia.org/wiki/2019_Copa_Am%C3%A9rica&quot;&gt;2019 Copa América&lt;/a&gt;.&lt;/p&gt;
 
@@ -929,61 +1062,4 @@ whom I’m truly close to, I use &lt;a href=&quot;https://www.signal.org/&quot;&
 Signal is an angel funded small team that continually improves the
 function of the app. The application provides one of the few easy, practical
 ways to stay in touch without leaking information to the datalords.
-I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry><entry><title type="html">Merging migrations</title><link href="http://localhost:4000/2018/03/merging-structure.html" rel="alternate" type="text/html" title="Merging migrations" /><published>2018-03-09T00:00:00-03:00</published><updated>2018-03-09T00:00:00-03:00</updated><id>http://localhost:4000/2018/03/merging-structure</id><content type="html" xml:base="http://localhost:4000/2018/03/merging-structure.html">&lt;p&gt;In Rails, the file &lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt; (depending)
-captures a snapshot of the state of the development database after a
-migration, when you run the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:migrate&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt; tasks.&lt;/p&gt;
-
-&lt;p&gt;What do you do when you have migrations in two different branches
-of your development tree? Do you get a merge conflict? How do you resolve it?
-What if you don’t get a merge conflict?&lt;/p&gt;
-
-&lt;p&gt;I’ll use the term “schema” now to refer to the file
-(&lt;code class=&quot;highlighter-rouge&quot;&gt;db/structure.sql&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;db/schema.rb&lt;/code&gt;).
-It is the file that captures the structure of the database.
-Because the schema is generated by a program, not hand written, the best
-effort of &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; to try to merge two changes to it will often produce a
-result different than what you will get from running the &lt;code class=&quot;highlighter-rouge&quot;&gt;db:schema:dump&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Why is that important?&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;It might have duplications or content out of sequence.&lt;/li&gt;
-  &lt;li&gt;The next migration will produce a schema with differences
-unrelated to the migration.&lt;/li&gt;
-  &lt;li&gt;The schema is the only source of truth about the database structure.
-It deserves extra care, to keep it aligned with what the framework
-and tooling expect and produce.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Here’s a process that allows the tooling to keep the schema in order,
-combining independent migrations without errors induced by merging.&lt;/p&gt;
-
-&lt;p&gt;First, do not allow git to merge the file. Set-up git to always treat
-independent changes to the schema as a conflict. You do this by placing
-a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;db&lt;/code&gt; directory with content,&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;schema.rb -merge
-structure.sql -merge
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;(Or add those lines to the existing &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitattributes&lt;/code&gt; file if there is one.)
-The reference for doing that is deep down in the documentation of
-&lt;a href=&quot;https://www.git-scm.com/docs/gitattributes&quot;&gt;gitattributes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Second, when you do get a conflict, resolve it as follows:&lt;/p&gt;
-
-&lt;p&gt;If your database migrations come &lt;em&gt;after&lt;/em&gt; those you picked-up in the merge:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Abort the merge &lt;code class=&quot;highlighter-rouge&quot;&gt;git merge --abort&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Roll back your migrations, however many, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:rollback&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Pull the changes a second time&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In either case,&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Run the migrations picked-up in the merge, &lt;code class=&quot;highlighter-rouge&quot;&gt;rails db:migrate&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Accept the newly generated schema, e.g. &lt;code class=&quot;highlighter-rouge&quot;&gt;git add db/structure.sql&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;Make that merge commit, &lt;code class=&quot;highlighter-rouge&quot;&gt;git commit&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In this way, your database schema will always be wholly in agreement with
-the text wanted by the framework, because it is always and only ever generated
-by the framework.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">In Rails, the file db/structure.sql or db/schema.rb (depending) captures a snapshot of the state of the development database after a migration, when you run the db:migrate or db:schema:dump tasks.</summary></entry></feed>
+I like it.&lt;/p&gt;</content><author><name>Douglas Lovell</name></author><summary type="html">… or WhatsApp or Instagram …</summary></entry></feed>
