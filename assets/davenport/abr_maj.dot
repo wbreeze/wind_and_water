@@ -1,0 +1,9 @@
+strict digraph {
+  graph [bgcolor=transparent, rankdir="LR"]
+  Ace
+  Budd
+  Rickie
+  Ace -> Budd [label=38]
+  Budd -> Rickie [label=20]
+  Ace -> Rickie [label=20]
+}

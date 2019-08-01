@@ -1,0 +1,13 @@
+strict digraph {
+  graph [bgcolor=transparent]
+  Ace
+  Rickie [style=bold]
+  Cooter [style=bold]
+  Budd [style=bold]
+  Ace -> Budd [label=38]
+  Ace -> Cooter [label=100]
+  Ace -> Rickie [label=20]
+  Budd -> Rickie [label=20, style=bold, color=red, fontcolor=red]
+  Rickie -> Cooter [label=100, style=bold]
+  Cooter -> Budd [label=38, style=bold]
+}
