@@ -104,6 +104,8 @@ over all of the others.
 
 ![majority graph]({% link /assets/davenport/abr_maj.svg %})
 
+<p style="clear: both"/>
+
 In the example, Ace has a majority of (60 - 40 = 20) over Rickie and
 (69 - 31 = 38) over Budd for a total of 58. Budd's majority is 20,
 Rickie's is zero. You see how strong this heuristic is.
@@ -116,11 +118,16 @@ of disagreements than the one found with
 (Ace before Budd and then Rickie)?
 
 ![Rickie disagreements]({% link /assets/davenport/abr_rdis.svg %})
-![Budd disagreements]({% link /assets/davenport/abr_bdis.svg %})
+
+<p style="clear: both"/>
 
 When you choose Rickie first, you immediately have 120 disagreements.
 There's no need to explore any further. All rankings that start with Rickie
 may be pruned, eliminated from consideration.
+
+![Budd disagreements]({% link /assets/davenport/abr_bdis.svg %})
+
+<p style="clear: both"/>
 
 When you choose Budd first,
 you immediately have 109 disagreements. To that, you can add the minimum
@@ -139,7 +146,7 @@ not wrong.
 ![majority graph]({% link /assets/davenport/abrc_maj.svg %})
 
 Davenport used a method from capacity planning for computing maximum flow.
-He modeled the problem using a majority graph, which has nodes (places)
+He modeled the problem using a majority graph, which has nodes (ovals)
 corresponding to alternatives and directed edges (arrows) weighted with
 the majority preference for one alternative over the other. Computing
 maximum flow through all three-cycles in this graph gives the minimum
@@ -150,7 +157,7 @@ Two years later, in 2006, Davenport teamed up with IBM Post-doctoral visiting
 scientist Vincent Conitzer (Ph.D. at Carnegie Mellon University in Pittsburgh,
 Pennsylvania; now a professor at Duke University in Durham, North Carolina)
 to improve the lower bound (make it stronger) by
-accounting for three-cycles that shared an edge in the graph.
+accounting for three-cycles that share an edge in the graph.
 
 ## Closing
 
