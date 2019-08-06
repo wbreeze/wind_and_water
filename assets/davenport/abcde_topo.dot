@@ -1,0 +1,7 @@
+strict digraph {
+  graph [bgcolor=transparent, rankdir="LR"]
+  "Budd Cooter Doc" [style=bold]
+  Ace -> "Budd Cooter Doc" [label=3]
+  Ace -> Rickie [label=3]
+  "Budd Cooter Doc" -> Rickie [label=3]
+}
