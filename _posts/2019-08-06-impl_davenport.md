@@ -253,7 +253,8 @@ a partial solution that bears no further examination, it backtracks
 It finishes when it has explored the
 entire solution space, ruling out large portions that need not be explored.
 
-The algorithm is tail-recursive. The implementation uses a loop and a smallest
+The implementation uses recursive descent to explore the solution space,
+and a smallest
 possible stack recording added edges, that rolls and then unrolls changes
 to the solution graph.
 When selecting an edge from the majority graph to add to the solution
