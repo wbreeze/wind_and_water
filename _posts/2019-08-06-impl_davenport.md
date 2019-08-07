@@ -374,6 +374,10 @@ the blink of an eye. More than once I had to satisfy myself that it was
 actually running the tests!
 
 The implementation was complete on the fifteenth of May, after about five weeks
-of intense work. It was something I had wanted to do for about fifteen
+of intense work. You can find the complete project, including source as
+[wbreeze/davenport](https://github.com/wbreeze/davenport)
+on GitHub.
+
+It was something I had wanted to do for about fifteen
 years, that was often in the back of my mind. Knowing that, I had to do it.
 It was both a relief and a source of great satisfaction to have it accomplished.
