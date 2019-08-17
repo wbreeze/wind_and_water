@@ -3,6 +3,9 @@ layout: post
 title: Speaking up
 date: 2019-08-19
 categories: society violence abuse
+excerpt: You are ten years old and in the fifth grade.
+  Some of the other kids in your class have taken to picking on you.
+  It's sport for them. They like to do it.
 ---
 
 ![image]({% link /assets/images/bear_cub.jpg %})

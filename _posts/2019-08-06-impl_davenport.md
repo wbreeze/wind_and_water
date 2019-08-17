@@ -3,6 +3,9 @@ layout: post
 title: Implementing Davenport
 date: 2019-08-06
 categories: software socelect
+excerpt: By now, having read the previous post, you have
+  an idea what excites me about Kemeny orders and Davenport's algorithm.
+  What I felt was missing was a good implementation.
 ---
 
 This is the fourth in a series of posts about the development of

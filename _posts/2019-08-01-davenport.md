@@ -3,6 +3,10 @@ layout: post
 title: Davenport's Algorithm
 date: 2019-08-01
 categories: software socelect davenport rank-aggregation
+excerpt: Davenport's algorithm, developed in the early oughts by Andrew
+  Davenport in the math department at IBM TJ Watson Research center in Yorktown
+  Heights, New York, provides a practical way to compute a Kemeny-Young
+  preference ranking from some number of individual preference rankings.
 ---
 
 This is the third in a series of posts about the development of

@@ -3,8 +3,11 @@ layout: post
 title: Why I'm not on Facebook
 date: 2018-03-16
 categories: datalords social security privacy
+excerpt: I don't use these programs because they leak information about
+  who your contacts are, whom you talk with, when, and how often,
+  to invisible, unaccountable third parties.
 ---
-# ... or WhatsApp or Instagram ...
+## ... or WhatsApp or Instagram ...
 
 I don't use these programs because they leak information about
 who your contacts are, whom you talk with, when, and how often,
