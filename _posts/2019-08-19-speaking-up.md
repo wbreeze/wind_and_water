@@ -25,7 +25,7 @@ The barbs, threats and put-downs are continuous and vile.
 Not only do you feel vulnerable, you feel surrounded.
 There is nothing you can do or say to defend yourself.
 You are alone, half naked, and the wolves are nipping at
-your legs and arms, going for your groin.
+your legs and arms, closing in.
 A few other kids chime in with little laughs or yeahs, maybe nervous ones.
 You feel that **everyone in the room** not only loathes you, but is
 part with the attack.
