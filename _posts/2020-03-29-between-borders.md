@@ -44,7 +44,7 @@ same. Only I don't have a home. The boat isn't right.  It's a no go.
 
 Somehow being in a poor town in Mexico whose source of income has evaporated
 and economy has collapsed doesn't feel like the best option. It's one thing for
-those that live there; but, maybe a bad idea for a visitor.
+those who live there; but, maybe a bad idea for a visitor.
 
 ## Caught out
 
@@ -198,7 +198,7 @@ This is hopeful, but I start to feel very cold. I put on the jacket that I have
 in my carry-on. I'm starting to shake a little. I stand and focus on my
 breathing, my eyes looking to the horizon out of the window.
 
-Every once in a while, agent Abel has more questions. At one point he asks the
+At one point agent Abel asks the
 name of my friend and asks me if he is a national. Yes, he is a national.  "Did
 you know that the border was closed, yes or no?" No. I relied on the
 information from my friend. I show them a text from my friend, that the person
@@ -320,7 +320,7 @@ desk there is a hallway with windows. Through the windows on one side I can see
 a courtyard area and then fifteen or so African people in a common room.
 
 The other side is a mirror of the first, with fewer people. A short, middle
-aged man there with grey hair, salt and pepper growth of beard on his cheeks,
+aged man at the desk, with grey hair, salt and pepper growth of beard on his cheeks,
 and a jolly, stocky figure instructs me to take off my shoe laces and put them
 in my bag. Seriously? Yes, are you wearing a belt?  Yes. Take it off and put it
 in the bag. He spots the cord I wear around my neck and wants that in the bag,
@@ -466,7 +466,7 @@ measured amounts of water with each press. There are no curtains.  The floor of
 the area between the showers and toilets is puddled with water from the
 showers.
 
-Cameras are present to monitor all areas with exception of the bathroom.
+Cameras are present to monitor the hallway bedroom entrances and common room.
 
 Hugh has me take my bedding out of the plastic bag and leave it on the bed.
 I'm pretty sure he takes the plastic bag. Back in the common area, he brings me
@@ -482,8 +482,8 @@ He also gave me two rolls in individual plastic bags, a single serving carton
 of milk, one of juice and a plastic bag with a slice of cheese.  I drink the
 juice. The rolls feel stale through the bag.
 
-At another table a young man of heavy build, with skin the color of ebony a
-gentle, oval face and friendly eyes is playing a card game with a woman with
+At another table a young man of heavy build, with skin the color of ebony, a
+gentle, round face and friendly eyes is playing a card game with a woman with
 whom you wouldn't want to get into a fight. He has a little English and tells
 me that he's from Africa, trying to get to Italy, and that he's been in the
 facility I think several weeks.  I ask him if he minds if we turn-off CNN,
@@ -742,7 +742,7 @@ my bags and property. With that, he asks me to sign the form saying that I've
 gotten everything back.
 
 From my point of view, I haven't. He hasn't opened the envelope. I haven't put
-everything in my pockets or away in my bags. From his point if view, he wants
+everything in my pockets or away in my bags. From his point of view, he wants
 that signature. I'll get my stuff when I've signed. He's a little insulted.
 "You are in Europe, now", he tells me. (I guess he is implying, not the United
 States.) "You will receive all of your things back." I sign.
