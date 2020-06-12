@@ -35,3 +35,10 @@ Theatre business, management of men.
 I swear before the dawn comes round again
 I'll find the stable and pull out the bolt.
 ```
+
+## Spanish
+
+The posts in Spanish are thanks to the help of my Spanish teacher, Nuria
+Rodriguez. I write them as exercises, then we correct the grammar together. If
+you don't read Spanish, why not? You can get in touch with Nuria at
+[Dynamo Spanish](https://dynamospanish.com/about/).
