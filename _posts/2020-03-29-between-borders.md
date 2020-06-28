@@ -208,7 +208,7 @@ but someone official. This makes bad cop angry.
 
 "That's illegal," he says. "You didn't just show me that."
 
-I think he has decided that I am trying to influence pedal for special
+I think he has decided that I am trying to influence peddle for special
 treatment.  Hopefully, they're deciding the case on its merits. That someone
 official thought it would be right, that ought to have merit. He doesn't seem
 to agree.
@@ -851,7 +851,7 @@ The marble floors are shining. The carpets are thick. The receptionist takes my
 credit card and hands me a key.
 
 The room is warm, clean, well appointed and decorated. I treat myself to a long
-hot shower and wash and wash. I even wash my shirts and underware that I had
+hot shower and wash and wash. I even wash my shirts and underwear that I had
 worn in the lockdown. I'm only half aware what I'm doing, a sort of symbolic
 cleansing.  I only know that it feels good.
 
