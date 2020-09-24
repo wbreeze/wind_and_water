@@ -14,3 +14,21 @@ img {
     padding-right: 0px;
   }
 }
+
+.verse {
+  white-space: pre;
+}
+
+@media only screen and (min-width: 1000px) {
+  .translation {
+    width: 800px;
+  }
+}
+
+.translation .language {
+  display: inline-block;
+  background-color: #eee;
+  padding-left: 1em;
+  padding-right: 0.5em;
+  margin-top: 1ex;
+}
