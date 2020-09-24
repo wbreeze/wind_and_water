@@ -1,3 +1,4 @@
 #! /bin/bash
 git pull
-jekyll build
+bundle install
+bundle exec jekyll build
