@@ -10,7 +10,7 @@ layout: default
     </p>
 
     <ul class="post-list">
-      {% for post in site.posts %}
+      {% for post in site.posts limit: 12 %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -22,6 +22,10 @@ layout: default
       </li>
       {% endfor %}
     </ul>
+
+    <p class="navigation"><a href="{{ "/posts" | relative_url }}"
+        >...all posts</a>
+    </p>
   {% endif %}
 </section>
 <article class="post h-entry col span_3_of_4"
