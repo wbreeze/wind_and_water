@@ -8,7 +8,7 @@ excerpt: Pongo acá las letras de un canción por Alfredo Zitarrosa, "Pa’l que
 lang: es-ar
 ---
 
-![image]({% link /assets/images/StRegisSunset.jpg %})
+![atardecer]({% link /assets/images/StRegisSunset.jpg %})
 
 Pongo acá las letras de un canción por Alfredo Zitarrosa, "Pa’l que se va". Lo hago en la ocasión de me vuelta desde EEUU a Uruguay (aunque, no soy mocito), en el tiempo del coronavirus.
 
