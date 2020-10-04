@@ -60,7 +60,7 @@ fundadores de EEUU, Ben Franklin enterró a sus parientes. En la tumba de la
 familia Franklin se puso una placa que dice, "Be encouraged to diligence in thy
 calling and distrust not providence" (Sientase animado por el empeño a lo que
 se dedica; no desconfíe de la Providencia). Otros fundadores han sido
-enterrados allí. Entre ellos, John Hamilton, el líder del congreso
+enterrados allí. Entre ellos, John Hancock, el líder del congreso
 constitucional, está enterrado abajo de un gran falo erigido por la cuidad
 en 1896. También podes encontrar el lugar donde está enterrado el patriota Paul
 Revere, quien anda a caballo avisando a todos, "The British are coming!" (Los
