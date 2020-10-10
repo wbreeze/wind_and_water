@@ -8,6 +8,10 @@ img {
   padding-right: 2em;
 }
 
+h1, h2, h3 {
+  clear: both
+}
+
 @media only screen and (max-width: 500px) {
   img {
     width: 100%;
