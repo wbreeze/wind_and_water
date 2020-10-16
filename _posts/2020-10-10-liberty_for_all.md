@@ -160,8 +160,11 @@ liberty for all, and by extension, every individual.
 
 ![mother and child
 ]({% link /assets/images/2020/liberty/pexels-tubarones-photography-3704379.jpg %})
+
 ![girl with tablet
 ]({% link /assets/images/2020/liberty/pexels-julia-m-cameron-4144038.jpg %})
+
+From Pexels:
 
 - children jumping: Foto de Guduru Ajay bhargav en Pexels
 - children in ring: Foto de Archie Binamira en Pexels

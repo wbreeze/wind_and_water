@@ -170,6 +170,8 @@ but it's a little pricey for me. There's a chapter about
   {% link /assets/images/2020/skinner/Etersheim-Etersheimer_Braakmolen-bedstede.jpg %}
 )
 
+Credits:
+
 - [Students with Skinner box](
   https://commons.wikimedia.org/wiki/File:UNMSM_PsiExperimental_1998_2.jpg
 )
