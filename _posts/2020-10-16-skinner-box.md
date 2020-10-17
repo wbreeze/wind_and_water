@@ -21,7 +21,7 @@ precise, the economics-- how it's paid for. Can we do better?
 Someone close to me yesterday shared a thought that I'm going to share with
 you. Here it is:
 
-    "We have diverted our social instincts into, like, this weird Skinner box."
+**"We have diverted our social instincts into, like, this weird Skinner box."**
 
 This brilliantly captures for me one of the problems we're facing, a place
 we've gotten ourselves to.
