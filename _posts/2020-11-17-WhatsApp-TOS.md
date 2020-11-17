@@ -17,11 +17,11 @@ link_note: "[internal link]({% link _posts/2019-07-30-socelect.md %})"
 There is very little here in Uruguay that isn't mediated or facilitated 
 in some manner via WhatsApp.
 [As you know,]({% link _posts/2018-03-14-why-i-dont-use-fb.md %})
-there is nothing of FaceBook in my house, including WhatsApp.
+there is nothing of Facebook in my house, including WhatsApp.
 Sometimes I think I'm the sole person in Uruguay who doesn't have an account
 with WhatsApp. Other than my friend's ninety-four year old mother.
 
-On the other hand, I'll bet she has an FaceBook account.
+On the other hand, I'll bet she has an Facebook account.
 
 WhatsApp is ubiquitous here. The bank has a WhatsApp number they will answer.
 The health insurance company. The phone and internet company.
@@ -89,7 +89,7 @@ account and your device secure and notify WhatsApp of any breach of the security
 of your account.
 
 You will interact with third parties (WhatsApp is the first party, you are second,
-anyone else is a third party), including other websites, apps, content, and
+anyone else is a third party), including other web sites, apps, content, and
 services.  Those third parties are governed by their own terms.
 
 There's a section about rights and who owns what. When you publish something
@@ -140,7 +140,7 @@ WhatsApp (as if that could happen), and that the writer has accepted the TOS.
 Would the writer be required to compensate WhatsApp for losses or damages? Does
 accepting the TOS mean that you have to be careful of what you write about
 them? Is this effectively a hush clause? Presumably, if you're not
-"misrepresenting" you're okay. Who decides? An arbitrer or a court in
+"misrepresenting" you're okay. Who decides? An arbiter or a court in
 California? Or not? What does defending from loss mean?
 
 Wikipedia has a contract law article about [indemnity](
