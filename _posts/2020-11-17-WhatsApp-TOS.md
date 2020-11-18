@@ -193,6 +193,16 @@ The whole agreement is available in other languages, but English rules.
 Congratulations on making it this far. You already knew that this would be all
 about what you do for WhatsApp and not about what WhatsApp does for you. The
 net effect is that WhatsApp promises you nothing and you promise them a ton.
-Do you still think WhatsApp is free? Next up we'll have a look at the privacy
+They have zero responsibility, zero accountability, total control. Naturally.
+
+Do you still think WhatsApp is free? Would you hire a person who accepts zero
+responsibility, has no accountability, and says they do anything they want?
+Keep them as a friend? Invite them into your home? Give them your address
+book and tell them who is closest to you, whom you talk with the most,
+where you like to eat out? Allow them to live on your phone and follow you around?
+A total stranger from California? Just because everyone you know thinks they're
+okay?
+
+Next up we'll have a look at the privacy
 policy.  That's right. We're barely halfway through.
 
