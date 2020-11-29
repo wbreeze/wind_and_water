@@ -92,7 +92,7 @@ move over. Now we use direct rewards and punishments to train
 ## Keeping the baby
 
 ![A Mother's Duty (1658–1660), oil on canvas, Pieter de Hooch](
-  {% link /assets/images/2020/skinner/Een_moeder_die_het_haar_van_haar_kind_reinigt,_bekend_als_‘Moedertaak%u2019_Rijksmuseum_SK-C-149.jpeg %}
+  {% link /assets/images/2020/skinner/Een_moeder.jpeg %}
 )
 
 How do we rescue the good --being able to readily share our lives with
