@@ -13,6 +13,7 @@ permalink: /tengo-necesito/
 ## Necesito
 
 To renovate the engine cooling system
+- Engine is Universal M-50B (Westerbeke)
 - source for cleaning and pressure testing heat exchanger
 - and if it fails? PN 299818 exchanger, heat
 - new raw water hoses
