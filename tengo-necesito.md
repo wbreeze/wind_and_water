@@ -14,25 +14,39 @@ permalink: /tengo-necesito/
 
 To renovate the engine cooling system
 - source for cleaning and pressure testing heat exchanger
-- and if it fails?
+- and if it fails? PN 299818 exchanger, heat
 - new raw water hoses
+  - PN 19059 hose, 7/8in wire inserted
+  - PN 2999823 hose 5/8in id
+  - the rest of the hoses are added by installation
 - new anti-freeze hoses
 - proper stainless steel hose clamps
-- replacement zincs
+- replacement zincs 301069 1/8NPT ?AND?OR? 011885 1/4NPT x 1-3/4
+- [Marine Diesel Parts](https://marinedieselparts.com/store/universalm-50.htm)
+- [Westerbeke M-50B page](https://www.westerbeke.com/Category/M-50B/5399ADA2DAF73A26740BF680#mainoverview)
+  includes parts catalog and online parts ordering
+
 
 Engine needs
-- proper sized accessory belt (is running with one that is a shade too large)
-- air filter housing
-- air filters
-- spare glow plug or two
+- proper sized accessory belt
+  (is running with a substitude that is a shade too large)
+  PN 239648 FHP 45.0 X A
+- air filter housing PN 301139 Silencer, intake; also PN 299083 sleeve, silencer.
+  Perhaps better, clean up the one that's on it. It's all rusty inside.
+- air filters PN 301049 element, air filter
+- spare glow plug
+- impeller and spare PN 200175
 - fuel filter kits for RACOR 500FG
 
 To prevent corrosion under the boat, along the propeller shaft
 - 1" low clearance shaft zinc
 
 To have a winch for starboard staysail sheet
-- #10 barient bronze winch
-- block to turn sheet to winch
+- #10 barient
+  [bronze winch](
+  https://www.ebay.com/itm/Vintage-Barient-10-Winch-Nice-Cleaned-serviced-2-available/303744914722)
+  matches the port side staysail winch
+- cheek block to turn sheet to winch
 - mounting bolts and backing plate
 - two cleats with mounting bolts and backing plates
 - fairlead for main sheet
@@ -55,24 +69,32 @@ To remove play from rudder
 - replacement pintles and gudgeons
 
 To make working the Monitor wind vane:
-- all eight of the sheaves
-- the teflon ring that the rudder shaft rests and rotates upon
-- control line
-- pendulum line
-- rudder break out mount cotter pin
-- control pulley
+- [Monitor parts diagram](
+  https://www.scanmarinternational.com/monitor-master-parts-diagram)
+  and [parts list](https://www.scanmarinternational.com/monitor-parts)
+- all eight of the sheaves (PN 49 x 2, 
+- the teflon ring that the rudder shaft rests and rotates upon (PN 41)
+- control line (loop with well tapered splice)
+- pendulum line 1/4in. [article about substituting](
+  https://svluckness.blogspot.com/2013/06/monitor-pendulum-lines-and-amsteel.html)
+  and [amsteel source](
+  https://www.samsonrope.com/resources/product-search?product=amsteel)
+  and [another source](
+  http://amsteelblue.com/bulk-1-4-diameter/)
+- rudder break out mount cotter pin (PN )
+- control pulley (PN 79, 2x PN 77)
 - blue magic metal polish acivating stainless steel
+
+To improve jack lines and teather
+- shorter spring teathers made with tubular webbing and bungie cord
+- attach ring and backing plate to install at aft of cockpit
+- two grip lock caribeaners
 
 To prevent rudder damage, install rudder stops
 - stainless through bolt with eye connections
 - two stainless springs
 - two eyes bolted through to hull or pushpit
 - some light chain and shackles or dyneema
-
-To improve jack lines and teather
-- shorter spring teathers made with tubular webbing and bungie cord
-- attach ring and backing plate to install at aft of cockpit
-- two grip lock caribeaners
 
 To make a double purchase block and tackle for raising and lowering the dingy:
 - two double blocks for 10mm line
