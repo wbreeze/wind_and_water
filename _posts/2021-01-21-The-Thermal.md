@@ -60,7 +60,7 @@ The fish jumped. The Frigatebird grabbed it with clawed feet.
 The sails would frequently flag more violently. The heading
 might change. The boat would quicken its drift slightly.
 Once he went below to answer the call and heard a minor ruckus outside.
-Re-emerging he found that the boat had jibed while he was below.
+Re-emerging he found that the boat had jibed.
 
 Early afternoon passed to mid afternoon.
 He knew he needed to motor back to anchor.
