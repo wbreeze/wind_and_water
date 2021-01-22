@@ -62,7 +62,7 @@ might change. The boat would quicken its drift slightly.
 Once he went below to answer the call and heard a minor ruckus outside.
 Re-emerging he found that the boat had jibed while he was below.
 
-At last it was getting past mid afternoon.
+Early afternoon passed to mid afternoon.
 He knew he needed to motor back to anchor.
 He lowered sail, flaked the main and tied it.
 Before he motored off, there was wind.
