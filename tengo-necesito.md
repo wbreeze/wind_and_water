@@ -21,16 +21,14 @@ To renovate the engine cooling system
   - PN 2999823 hose 5/8in id
   - the rest of the hoses are added by installation
 - new anti-freeze hoses
-- proper stainless steel hose clamps
+- proper stainless steel hose clamps (300 series)
 - replacement zincs 301069 1/8NPT ?AND?OR? 011885 1/4NPT x 1-3/4
 - [Marine Diesel Parts](https://marinedieselparts.com/store/universalm-50.htm)
 - [Westerbeke M-50B page](https://www.westerbeke.com/Category/M-50B/5399ADA2DAF73A26740BF680#mainoverview)
-  includes parts catalog and online parts ordering
-
 
 Engine needs
 - proper sized accessory belt
-  (is running with a substitude that is a shade too large)
+  (is running with a substitute that is a shade too large)
   PN 239648 FHP 45.0 X A
 - air filter housing PN 301139 Silencer, intake; also PN 299083 sleeve, silencer.
   Perhaps better, clean up the one that's on it. It's all rusty inside.
@@ -105,6 +103,7 @@ To make a double purchase block and tackle for raising and lowering the dingy:
 
 For proper emergency bilge pump operation
 - side pickup with filter at end of emergency bilge pump pickup hose
+- guzzler repair kit
 
 To replace the corroded engine control lever that is currently a Morse Marine
 Model MV with 33c cables from Morse Controls in Hudson, Ohio. It is the
@@ -114,19 +113,34 @@ combined transmission and speed control type.
 To overhaul fresh water foot pump in galley
 - whale pump repair kit or overhaul kit
 
-To arrange fresh water collection station
-- 5/8" id water hose
+To overhaul potable water supply from tanks
+- PEX (polyethelene) blue OR FDA or NSF-61 PVC, opaque preferred, fabric
+  reinforced. Inside diameters and lengths unknown, need measure from
+  existing.
+
+For seawater to head. The head doesn't need potable water.
+- Extend existing hose to seawater through-hull under the galley sink.
+- T from this hose out of the bilge up to the watermaker
+
+To arrange fresh water collection station. Rethink the direct to tank
+idea. It's risky because a splash of seawater or other contamination
+running into the scupper could ruin the whole tank full. Maybe better to
+collect, test, and pass along a gallon at a time. Direct to tank would only
+be useful in no-wind tropical kinds of downpours, which might be enough
+reason to have it. Or not.
+- 5/8" id water hose (PEX or approved PVC)
 - five ninety degree turn ball valves
 - three T's
 - two elbows
+- T fitting to supply line of one of the tanks
 
 To enable the windlass
 - gypsy for G4 5/16" chain, that fits a one inch shaft
 - wrench to change gypsy
 
 To keep the sink drains quiet at night
-- 1-3/4" black hard rubber stoppers (two or four)
-- 1-1/4" black hard rubber stoppers (one or two)
+- 1-3/4" black hard rubber stoppers for galley (two or four)
+- 1-1/4" black hard rubber stoppers for head (one or two)
 
 To finish repairing stern anchor mount
 - 10mm or 7/16" or 13/32" socket and driver
@@ -160,6 +174,7 @@ To have a lightning ground
 - length of heavy copper strapping
 
 To help main anchor chain fall cleanly into chain locker and protect the
-inside of the hull:
+inside of the hull. Will this work? Can't hurt.
 - teflon or slippery material coating for sides of lower chain locker
+- extend hawser pipe?
 
