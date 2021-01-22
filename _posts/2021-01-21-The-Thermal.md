@@ -32,7 +32,7 @@ wondered. It bugged him. How did that happen?
 
 ![caleta lobos]({% link /assets/images/2021/Thermal/caleta_lobos.jpeg %})
 
-The past thirty minutes he had been looking at glassy water all around him,
+For thirty minutes he looked at glassy water all around him,
 close to the boat. A little distance away the wind blew the waves
 to crests. He denied this. It couldn't be. How could the boat be in an
 island of calm with wind all around? "It must be something wrong with my
