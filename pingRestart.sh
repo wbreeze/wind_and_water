@@ -1,2 +1,2 @@
 curl -I https://wnw.wbreeze.com/
-if [[ $? == 0 ]] ; then sudo nginx ; fi
+if [[ $? == 7 ]] ; then sudo -n nginx ; fi
