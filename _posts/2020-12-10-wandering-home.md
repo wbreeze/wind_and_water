@@ -37,13 +37,23 @@ in New Zealand.
 
 The next owner named the boat, "Smiling Dutchman".  The [Flying
 Dutchman](https://en.wikipedia.org/wiki/Flying_Dutchman) got to smiling,
-apparently.  After that she was named, "Elena", then "Miskatonic", which is a
+apparently.  After that she was named, "Elena", sailed by John Shaw. He
+installed a Universal M-50B engine, three blade 16 x 10.5" propeller, and
+a new toilet among many other improvements, around Y2K.
+
+Later the boat sailed as "Miskatonic", which is a
 reference to the
 [university](https://lovecraft.fandom.com/wiki/Miskatonic_University) in the
 Cthulhu Mythos stories by H.P. Lovecraft.  The port of call for Miskatonic was
 recorded as Arkham, MA, the fictional location of the university. There were
-some real Cthulhu fans with this boat for a while.  The most recent owner, who
-sold the boat to me, named it "Thinkabout."
+some real Cthulhu fans with this boat for a while.
+
+As Miskatonic she won a couple of club races in 2010-- the veleros de baja
+spring regatta and the "rock to the dock."
+
+The most recent owner, who sold the boat to me, named it "Thinkabout."
+He lived on the boat for a few years in La Paz, BCS.
+The composting toilet was his addition.
 
 ![stern view]({% link /assets/images/2020/wandering_home/stern.jpeg %})
 
