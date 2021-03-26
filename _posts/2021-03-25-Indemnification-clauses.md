@@ -65,7 +65,7 @@ of BIG_CORP, regardless of whether you continue to be a customer.
 Both of the situations covered by these agreements
 have been historically mediated by courts of law in
 connection with individual cases.
-Courts grant damages to successful plaintifs
+Courts grant damages to successful plaintiffs
 and the costs of defense to successful defendants.
 Defending cases, however, including frivolous
 ones, is hard on BIG_CORP's bottom line. Instead, they put it on you, and
@@ -83,7 +83,7 @@ companies that use them.
   {% link /assets/images/2021/indemnity/money_bag.png %}
 )
 
-So what do you do if BIG_CORP decides you owe them? You hire a lawer. Who pays?
+So what do you do if BIG_CORP decides you owe them? You hire a lawyer. Who pays?
 You. Who wins? Consider that BIG_CORP has a lot more resources to put to bear
 on the case, including better informed, better connected, and more experienced
 lawyers.
