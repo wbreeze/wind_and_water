@@ -90,11 +90,11 @@ lawyers.
 
 Me personally, I avoid assenting to agreements that contain these terms.
 It means that I don't use quite a few things that you do. Some of them are
-things that many might consider essential to modern life. Fortunately, Apple
-is not among the companies that resort to using an indemnification clause in
-their terms of service. They're one of the good guys. Check out your cellular
-service provider, however.
-
+things that many might consider essential to modern life.
+Some exposure is unavoidable. Like if I want to keep using Apple devices,
+systems, and services. (There are shades. The indemnification clause that
+Apple uses is somewhat less far-reaching than this example; but not
+innocent.)
 
 If you think these provisions are unfair, and find them more or less impossible
 to avoid, consider lobbying your representatives or supporting a lobbying
@@ -108,10 +108,21 @@ industry-wide practices". Unfortunately, getting the FTC to attend to something
 probably requires advocacy from public representatives
 (Senators or members of Congress), which requires lobbying.
 
+There is an organization called "Terms of Service, Didn't Read" ([ToS;DR][])
+that tries to read and summarize these documents for you. They have a rating
+system that DuckDuckGo ([DDG][]) uses to help with their overall web site
+ratings. (You still use the big Goo for search, right? Compare the ratings
+on [ToS;DR][] for the Goo and [DuckDuckGo][ddg]. My search results with [DDG][]
+are excellent.)
+
 [UpCounsel.com]: https://www.upcounsel.com/indemnification-clause
   "UpCounsel explanation"
 
 [FTC]: https://en.wikipedia.org/wiki/Federal_Trade_Commission
   "Federal Trade Commission"
+
+[ToS;DR]: https://tosdr.org/ "Terms of Service; Didn't Read"
+
+[ddg]: https://duckduckgo.com/ "Duck Duck Go Search Engine"
 
 (Images from Wikimedia creative commons)
