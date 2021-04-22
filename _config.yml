@@ -48,6 +48,7 @@ destination: wnw
 markdown: kramdown
 permalink: /:year/:month/:title:output_ext
 theme: minima
+exclude: [script, CNAME]
 
 plugins:
  - jekyll-feed
