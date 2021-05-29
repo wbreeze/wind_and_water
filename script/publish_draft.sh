@@ -10,14 +10,16 @@ fi
 src="$1"
 base_name=${src##*/}
 ymd=`date +%Y-%m-%d`
-dest="./_posts/${ymd}-${base_name}"
+post_dir="./_posts"
+dest="${post_dir}/${ymd}-${base_name}"
+aspell -M -l en check "${src}"
 subst="s/date: .+/date: ${ymd}/"
 sed -E "${subst}" "${src}" >"${dest}"
 echo
 echo "Published ${dest}"
 head -n 12 ${dest}
-echo "Recent content of _posts:"
-ls -lt ./_posts | head -n 6
+echo "Recent content of ${post_dir}:"
+ls -lt ${post_dir} | head -n 6
 echo
 echo "Remove the draft?"
 echo "Press enter to leave it, or type \"y\" and then enter to delete it."
