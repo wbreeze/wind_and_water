@@ -1,23 +1,23 @@
 ---
 layout: post
 title: The four enemies
-date: 2020-11-28
+date: 2021-08-24
 lang: en
 categories: philosophy
 excerpt: This is a rough summary of a path described by the Yaqui Native American
-  known as Don Juan, and related by a young anthropologist, Carlos Casteneda in
-  _The Teachings of Don Juan_.
+  known as Don Juan, and related by a young anthropologist, Carlos Castaneda in
+  "The Teachings of Don Juan".
 link_note: "[internal link]({% link _posts/2019-07-30-socelect.md %})"
 image_note: "![image]({% link /assets/images/image.jpg %})"
 ---
 
 This is a rough summary of a path described by the Yaqui Native American
-known as Don Juan, and related by a young anthropologist, Carlos Casteneda in
+known as Don Juan, and related by a young anthropologist, Carlos Castaneda in
 _The Teachings of Don Juan_.
 
 Don Juan describes four stages of development as four enemies.
 He calls the person who has surpassed all four a person of knowledge,
-a kind of sage. In words from another philosophy, an enligtened one.
+a kind of sage. In words from another philosophy, an enlightened one.
 
 ## Fear
 The first enemy is fear.
@@ -35,13 +35,13 @@ after the other in learning. One step, and then another, always forward,
 advancing in spite of our fear. We must be full of fear and not stop.
 This is a rule.
 
-There comes a time when fear retreats. We begin to feal sure of ourselves.
+There comes a time when fear retreats. We begin to feel sure of ourselves.
 Our purposes are fortified. Learning is no longer a terrifying task.
 We are no longer afraid to attempt new undertakings. Our attempts are no
 longer terrifying.
 
 Once we have conquered our fear, we are free from it forever, for
-the rest of our lives. In its place we aquire a clarity of mind
+the rest of our lives. In its place we acquire a clarity of mind
 that erases fear. We know our desires and how to satisfy them. We are able
 to foresee new paths to learning. A crystal clarity surrounds everything.
 We feel that nothing is hidden from us.
@@ -89,7 +89,7 @@ Power is a burden on our destiny. A person who does not attain control over
 it cannot know how or when to use it.
 
 We must defeat power with intention. We must arrive at the realization that
-the power we have aquired is nothing in truth. We have to keep it coralled
+the power we have acquired is nothing in truth. We have to keep it corralled
 at all times, managed with care and faith in all that we have learned.
 We must see that, without control over them, clarity and power become the
 worst of our errors. Then we know how to use our power.
