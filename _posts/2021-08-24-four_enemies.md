@@ -20,6 +20,11 @@ He calls the person who has surpassed all four a person of knowledge,
 a kind of sage. In words from another philosophy, an enlightened one.
 
 ## Fear
+
+![Beach at San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00671.JPG %}
+)
+
 The first enemy is fear.
 
 Fear is a terrible enemy that betrays and entangles one like brambles, thorns,
@@ -47,6 +52,11 @@ to foresee new paths to learning. A crystal clarity surrounds everything.
 We feel that nothing is hidden from us.
 
 ## Clarity
+
+![Sailboat Brisa in Bahía San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00669.JPG %}
+)
+
 The next enemy is clarity.
 
 Clarity, hard won, conquers fear but also dazzles. It causes a person to
@@ -77,6 +87,11 @@ We can do with it what we want. It is available at our service.
 Our desire is the rule.
 
 ## Power
+
+![Bahía San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00656.JPG %}
+)
+
 With agency comes the enemy of power.
 
 As clarity was dazzling, so is power. One feels invincible, begins to take
@@ -95,6 +110,11 @@ We must see that, without control over them, clarity and power become the
 worst of our errors. Then we know how to use our power.
 
 ## Age
+
+![Beach at San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00648.JPG %}
+)
+
 Our fourth and final enemy is age.
 
 Age is the cruelest of all enemies and the only one that we cannot defeat
@@ -110,6 +130,11 @@ To defeat this last enemy, we must shake off our fatigue and live our destiny.
 Only then can clarity, power, and knowledge serve.
 
 ## And then
+
+![Valley above San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00657.JPG %}
+)
+
 Know that these things face us at every undertaking.
 First fear of beginning, of taking the first steps.
 Once we have taken the first steps and fear subsides, clarity
@@ -123,6 +148,10 @@ If we give in to fear, we will never conquer it. We will be afraid to
 learn and never return to the test. But if we face our fear and
 continue daring ourselves to take the first steps, to learn, to see where
 it takes us, then we have not lost.
+
+![Brisa in Bahía San Francisquito, Baja California](
+  {% link /assets/images/2021/SanFrancisquito/DSC00651.JPG %}
+)
 
 And what is the thing, I will add? Here fear is our friend. That thing that
 we most fear, the worthwhile undertaking that we are most afraid to start,
