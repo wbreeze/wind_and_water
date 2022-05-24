@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Disappeared
-date: 2022-05-22
+date: 2022-05-24
 lang: en
 categories:
 excerpt: On the main street, 18 July, that runs east to west from the old city
@@ -30,7 +30,7 @@ Lila Epelbaum Slotopolsky was detained, taken prisoner by her government in
 Maldonado, Uruguay on the fourth of November, 1976.  Her family and friends
 never saw nor heard from her again.  They only know that she was secretly
 murdered by the state and her body secretly disposed of. She is one of 197
-desaparecidos (disappeared) during that brutal period of supression.
+desaparecidos (disappeared) during that brutal period of suppression.
 
 ![Lila Epelbaum Slotopolsky]( {{
   '/assets/images/2022/desaparecidos/Epelbaum-Slotopolsky-Lila-A4.jpg' |
@@ -50,7 +50,7 @@ out of the plane.  This took care of both the murder of the individual and
 disposal of their body. Very efficient.
 
 The people marching in Montevideo Friday night want to keep their government
-accountable, fourty-five years later, for the crimes of the state during that
+accountable, forty-five years later, for the crimes of the state during that
 period-- primarily the murder of 197 people. This is 197 too many and not a big
 number. So you see that Uruguayans have a low threshold of tolerance for state
 sponsored murder. I would say, and infringement of liberties in general.  More,
@@ -77,7 +77,7 @@ not as something to be had or taken, but rather something to demand, and
 to accomplish continually through heroic choices.
 
 As in the state of New Hampshire, the call of the patriots, "Liberty or Death".
-To never surrender liberty, even if that requires accepting death (an eventual
+To always demand liberty, even if that requires accepting death (an eventual
 certainty) as a proximate possibility.
 
 
