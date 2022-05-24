@@ -17,15 +17,6 @@ and towns in every part of the country.
   {{ '/assets/images/2022/desaparecidos/IMG_9080.jpeg' | relative_url }}
 )
 
-![Lila Epelbaum Slotopolsky]( {{
-  '/assets/images/2022/desaparecidos/Epelbaum-Slotopolsky-Lila-A4.jpg' |
-  relative_url }}
-)
-
-![March of Silence 2022 Calle 18 Julio, Montevideo, Uruguay](
-  {{ '/assets/images/2022/desaparecidos/IMG_9084.jpeg' | relative_url }}
-)
-
 On the main street, 18 July, that runs east to west from the old city to the
 city's largest park, tens of thousands came out to walk silently (or at least
 with a murmuring whisper) in memory of the disappeared.
@@ -40,6 +31,11 @@ Maldonado, Uruguay on the fourth of November, 1976.  Her family and friends
 never saw nor heard from her again.  They only know that she was secretly
 murdered by the state and her body secretly disposed of. She is one of 197
 desaparecidos (disappeared) during that brutal period of supression.
+
+![Lila Epelbaum Slotopolsky]( {{
+  '/assets/images/2022/desaparecidos/Epelbaum-Slotopolsky-Lila-A4.jpg' |
+  relative_url }}
+)
 
 The U.S. State Department under leadership of Henry Kissinger and the
 Central Intelligence Agency under leadership of George H.W. Bush, then Admiral
@@ -59,6 +55,30 @@ period-- primarily the murder of 197 people. This is 197 too many and not a big
 number. So you see that Uruguayans have a low threshold of tolerance for state
 sponsored murder. I would say, and infringement of liberties in general.  More,
 they insist that their government be accountable to them.
+
+![March of Silence 2022 Calle 18 Julio, Montevideo, Uruguay](
+  {{ '/assets/images/2022/desaparecidos/IMG_9084.jpeg' | relative_url }}
+)
+
+We stand together, moving slowly forward, silently, present. Present with
+thousands who are present. Present with 197 who died for being outspoken
+against living under the dictates of a government that ruled at the point of a
+gun.
+
+The front of the march reaches Plaza de Cagancha, also known as
+Plaza Libertad, liberty place. A public address system plays the national
+anthem and all present sing together:
+
+> Liberty or death. That which our hearts and souls demand. Liberty. That
+> which heroes will know to accomplish.
+
+I love it. It characterizes liberty
+not as something to be had or taken, but rather something to demand, and
+to accomplish continually through heroic choices.
+
+As in the state of New Hampshire, the call of the patriots, "Liberty or Death".
+To never surrender liberty, even if that requires accepting death (an eventual
+certainty) as a proximate possibility.
 
 
 
