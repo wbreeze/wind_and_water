@@ -7,8 +7,6 @@ categories: AWS web
 excerpt: How to serve images from the Amazon Web Services (AWS) Simple Storage
   Service (S3) via AWS CloudFront edge servers, scaled on the fly,
   with a cache, using AWS Lambda.
-link_note: "[internal link]({% link _posts/2019-07-30-socelect.md %})"
-image_note: "![image]({% link /assets/images/image.jpg %})"
 ---
 
 Here are instructions about how to serve images from the
@@ -204,6 +202,143 @@ In the end I did it manually via the console. As a test, the command,
 The server `abcdef0123456.cloudfront.net` is the CloudFront distribution link
 given in the console.
 
+## Lambda Functions
+
+With the CloudFront service going strong, it's time to add a pair of Lambda
+functions that will dynamically scale and cache scaled images based upon
+query parameters sent from the browser, from the page retrieving the images.
+The strategy for doing this and some guidance come from a 2018 CDN Blog
+post, "[Resizing Images with Amazon CloudFront & Lamda@Edge][rsiacl]".
+
+I decided to make some adjustments to the functions outlined in that post,
+and did so in an open source project on GitHub, [wbreeze/awsLambdaImage][awsl].
+
+### Building and Packaging
+
+The functions are written with JavaScript that executes in a Node.js
+execution environment. In order to deploy them to AWS Lambda I follow the
+instructions given in the AWS docs,
+"[Deploy Node.js Lambda functions with .zip file archives][depl]".
+The functions depend on the Node.js sharp module. The installation for
+the sharp module compiles native code. This means the packages must be
+built in a machine that duplicates the Lambda runtime environment.
+
+To package the code, I start an AWS EC2 instance running Amazon Linux in the
+console and then shell to it.
+
+    ssh -i "~/.ssh/AWSEC2.pem" ec2-user@ec2-id.eu-west-1.compute.amazonaws.com
+
+The [project][awsl] has scripts for setting-up the machine, cloning and
+initializing the awsLambdaImage project, building, and distributing the
+Lambda function. Instructions are in the project README.md file.
+
+To make things easier for myself, I copy the zip files to my local machine:
+
+    scp -i "~/.ssh/AWSEC2.pem" \
+      ec2-user@ec2-id.eu-west-1.compute.amazonaws.com:~/awsLambdaImage/resize.zip .
+    scp -i "~/.ssh/AWSEC2.pem" \
+      ec2-user@ec2-id.eu-west-1.compute.amazonaws.com:~/awsLambdaImage/request.zip .
+
+### Creating a Role
+
+In order to access the S3 bucket, or to do anything useful really, the Lambda
+functions must have a role associated. This will be the role to which we
+grant read, write, or read and write access to the Lambda functions. To do
+this, I followed the instructions for [Creating a role for a service][role]
+using the [create_role api command][crol].
+
+    $ aws iam create-role \
+    --role-name "lambda-scaling-access-photo-buckets" \
+    --assume-role-policy-document file://role_policy.json \
+    --description "Lambda scaling function access to S3 image buckets"
+
+The content of the `role-policy.json` file is
+
+      "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Principal": {
+                      "Service": "edgelambda.amazonaws.com"
+                  },
+                  "Action": "sts:AssumeRole"
+              },
+              {
+                  "Effect": "Allow",
+                  "Principal": {
+                      "Service": "lambda.amazonaws.com"
+                  },
+                  "Action": "sts:AssumeRole"
+              }
+          ]
+      }
+
+The output contains a RoleId and an Arn for the role. The AWS account Id
+forms part of the Arn together with the name of the role. For example,
+
+      "RoleId": "AROAROLEDFORLAMBDA54E",
+      "Arn": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets",
+
+### Creating the Functions in Lambda
+
+Now I'm ready to create the functions, I think. I have both the distribution
+packages and the role needed to create them. I use the AWS Lambda
+[`create-function`][cfun] command as follows:
+
+    $ aws lambda create-function \
+    --function-name scale_image \
+    --runtime nodejs16.x \
+    --description "scale images on the fly" \
+    --handler index.handler \
+    --package-type Zip \
+    --zip-file fileb://resize.zip \
+    --publish \
+    --role "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets" \
+    --region eu-west-1
+
+The command to create the URL rewriting function, `request.js` differs only
+in the function-name, description, and zip-file name. I give it the role
+although I'm not sure it is needed.
+
+The return includes an AWS Arn for the function that is useful for updating
+the function code. The relevant tag is `FunctionArn`. The Arn includes the
+region, account Id, and name of the function, for example
+`arn:aws:lambda:eu-west-1:012345678901:function:scale_image`.
+
+### S3 Bucket Access
+
+The S3 bucket that contains the image files must grant permissions to the
+image scaling Lambda function for reading and writing. It does so by
+identifying the Lambda function role in its access policy.
+
+I use the AWS [`put-bucket-policy` command][put-bucket-policy] with a new
+version of the policy file. The new policy file has additional entries in
+the policy statement as follows
+
+    {
+      "Effect": "Allow",
+      "Principal": {
+          "AWS": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets"
+      },
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922/*"
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+          "AWS": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets"
+      },
+      "Action": "s3:PutObject",
+      "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922/*"
+    }
+
+You can view the complete policy as [`s3policy2.json`][policyjson].
+
+    $ aws s3api put-bucket-policy \
+    --bucket photo-photo-da83944a8eb53c3a61a287150146a922 \
+    --policy file://s3policy2.json
+
 
 
 
@@ -226,3 +361,10 @@ given in the console.
 [cfcreated]: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/create-distribution.html
 [put-bucket-policy]: https://docs.aws.amazon.com/cli/latest/reference/s3api/put-bucket-policy.html
 [distjson]: {{ 'assets/files/distribution.json' | relative_url }}
+[rsiacl]: https://aws.amazon.com/blogs/networking-and-content-delivery/resizing-images-with-amazon-cloudfront-lambdaedge-aws-cdn-blog/
+[awsl]: https://github.com/wbreeze/awsLambdaImage
+[depl]: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html
+[role]: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html
+[crol]: https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html
+[cfun]: https://docs.aws.amazon.com/cli/latest/reference/lambda/create-function.html
+[policyjson]: {{ 'assets/files/s3policy2.json' | relative_url }}
