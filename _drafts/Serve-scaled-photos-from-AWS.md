@@ -295,7 +295,7 @@ packages and the role needed to create them. I use the AWS Lambda
     --zip-file fileb://resize.zip \
     --publish \
     --role "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets" \
-    --region eu-west-1
+    --region us-east-1
 
 The command to create the URL rewriting function, `request.js` differs only
 in the function-name, description, and zip-file name. I give it the role
@@ -304,7 +304,7 @@ although I'm not sure it is needed.
 The return includes an AWS Arn for the function that is useful for updating
 the function code. The relevant tag is `FunctionArn`. The Arn includes the
 region, account Id, and name of the function, for example
-`arn:aws:lambda:eu-west-1:012345678901:function:scale_image`.
+`arn:aws:lambda:us-east-1:012345678901:function:scale_image`.
 
 ### S3 Bucket Access
 
@@ -339,7 +339,73 @@ You can view the complete policy as [`s3policy2.json`][policyjson].
     --bucket photo-photo-da83944a8eb53c3a61a287150146a922 \
     --policy file://s3policy2.json
 
+## Configure CloudFront with Lambda functions
 
+We install the `request` Lambda function as a callback for the CloudFront
+Viewer Request event. It rewrites the image URL according to the scaling
+query parameter, to identify the scaled image file.
+
+We install the `resize` Lambda function as a callback for the CloudFront
+Origin Response event. It creates the scaled image if it did not already
+exist in the S3 scaled image bucket.
+
+According to the CloudFront [`update-distribution` AWS CLI command
+reference][upd-dist] we proceed by first pulling the existing distribution
+configuration, modifying it, and then posting the new one. The function might
+better be called "replace-distribution", but good enough.
+
+    $ aws cloudfront get-distribution-config \
+    --id ABCDEFGHOIDEXP >distrib.json
+
+The returned json data includes everything. I'm interested in updating the
+callback function settings. The response contains an ETag element that we
+delete, however, we must retain the value for use in the `update-distribution`
+command. The ETag looks something like this, `E2QETAGEXAMPLE`.
+
+In addition to removing the ETag, I update the `FunctionAssociations` element
+as follows:
+
+    "LambdaFunctionAssociations": {
+        "Quantity": 2,
+        "Items": [
+          {
+              "LambdaFunctionARN": "arn:aws:lambda:us-east-1:012345678901:function:rewrite_request_url:1",
+              "EventType": "viewer-request",
+              "IncludeBody": false
+          },
+          {
+              "LambdaFunctionARN": "arn:aws:lambda:us-east-1:012345678901:function:scale_image:1",
+              "EventType": "origin-response",
+              "IncludeBody": false
+          }
+        ]
+    },
+
+and then provide it to the `update-distribution` command as follows:
+
+    $ aws cloudfront update-distribution \
+    --id ABCDEFGHOIDEXP \
+    --if-match E2QETAGEXAMPLE \
+    --distribution-config file://distrib.json
+
+Houston, there's a problem. The call returns an error, "The function must be in
+region 'us-east-1'". Nice. The Lambda docs tell us to put the functions in the
+same region as any S3 buckets they access. This is telling us that the function
+has to be in region us-east-1. What to do?
+
+One solution would be to capitulate, and put everything in region us-east-1.
+Well, let's see if there's something else we can do.
+
+It seems clear from the [Developer Guide Restrictions on Lambda@Edge][ledger]
+that the function has to reside in region `us-east-1`. For the moment, I'll
+put it there and not worry about the cross-region access to the S3 bucket
+in region `eu-west-1`. Will revisit that later.
+
+## Debugging
+
+As expected, the functions do not work. Retrieving a scaled image with curl
+retrieves the full sized image,
+`curl --get --output Further.jpg "https://abcd0123.cloudfront.net/Further.jpg?d=200"`
 
 
 
@@ -368,3 +434,5 @@ You can view the complete policy as [`s3policy2.json`][policyjson].
 [crol]: https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html
 [cfun]: https://docs.aws.amazon.com/cli/latest/reference/lambda/create-function.html
 [policyjson]: {{ 'assets/files/s3policy2.json' | relative_url }}
+[upd-dist]: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-distribution.html
+[ledger]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-restrictions.html#lambda-at-edge-function-restrictions
