@@ -405,7 +405,86 @@ in region `eu-west-1`. Will revisit that later.
 
 As expected, the functions do not work. Retrieving a scaled image with curl
 retrieves the full sized image,
-`curl --get --output Further.jpg "https://abcd0123.cloudfront.net/Further.jpg?d=200"`
+`curl --get --output Further.jpg "https://abcd0123.cloudfront.net/Further.jpg?d=600"`
+
+The Lambda functions need additional permissions to write to CloudWatch logs.
+The monitor tab of the console says, "add the AWSLambdaBasicExecutionRole
+managed policy to its execution role"
+
+The execution role is `lambda-scaling-access-photo-buckets`, the role given
+read and write permissions within the S3 bucket. How do I add a managed policy
+to a role?
+
+Browsing the AWS IAM command line documentation I see a command,
+[`attach-role-policy`][arp]. The description looks promising,
+"Attaches the specified managed policy to the specified IAM role." So good.
+
+The command needs the arn for the managed policy. I found it by searching
+the name of the policy in the AWS console, [AWSLamdbaBasicExecutionRole][alber].
+
+    $ aws iam attach-role-policy \
+    --policy-arn arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole \
+    --role-name lambda-scaling-access-photo-buckets
+
+and sure enough, it shows up as a "Permissions policies" in the Permissions
+tab for the role in the IAM console. Voila. Reloading the Monitor tab in the
+console view of the Lambda function, the advisory message no longer appears.
+Perhaps now the functions are enabled for logging. Do I have to do anything
+more to update them with the CloudFront distribution? I'm guessing not.
+It will just work.
+
+Checking the Logs page of the CloudFront AWS console, I see that logging is
+not enabled-- not standard nor real-time. Enabling it from the command line
+requires the same configuration replacement gymnastics that I did (above) to
+install the function callbacks. Maybe it will be easier simply to enable them
+in the console.
+
+Well, not so. The log requires an S3 bucket. I tried giving it the photo bucket
+and got an error, "Failed to update distribution details: The S3 bucket that
+you specified for CloudFront logs does not enable ACL access"
+Bock to the developer guide, ["Choosing an Amazon S3 bucket for your standard
+logs][logbucket].
+
+It pretty much says to create a bucket with ACLs enabled. This is something
+that the S3 documentation deprecates. So be it.
+
+    $ aws s3api create-bucket \
+    --bucket cloudfront-logs-da83944a8eb53c3a61a287150146a922 \
+    --region us-east-1 \
+    --create-bucket-configuration LocationConstraint=eu-west-1 \
+    --object-ownership BucketOwnerPreferred
+
+Hitting the edge server with an image request causes, eventually, a log to
+appear in the log bucket. Good start. (Getting real time logs requires setting
+up something called "Kinesis", so; I'm passing on that.)
+
+After adding logging statements to the request.js code in the awsLambdaImage
+project and running the tests, I have to push the code to the git repository,
+shell to the EC2 instance, build, and then update the function for Lambda
+and CloudFront.
+
+### Update Lambda function
+
+With a new distribution zip file, `request.zip` I use the [AWS Lambda `update-function-code`][updfn] command as follows:
+
+    $ aws lambda update-function-code \
+    --function-name "rewrite_request_url" \
+    --zip-file fileb://request.zip \
+    --publish \
+    --region us-east-1
+
+This generates a new version for the function. I have to tell CloudFront to
+use the new version. The AWS CLI CloudFront `update-function` command doesn't
+look like the ticket. This looks like some other kind of function. What's
+needed is the whole distribution replacement workflow. Maybe it's easier to
+do it in the console. Yes. I have to edit the behavior for the distribution
+to change the function ARN.
+
+After that, I send another curl request to retrieve a scaled image. After
+waiting several minutes, the new log file appears in the bucket.
+The log doesn't contain anyting from the console logging commands. It's
+essentially the same as before.
+
 
 
 
@@ -436,3 +515,7 @@ retrieves the full sized image,
 [policyjson]: {{ 'assets/files/s3policy2.json' | relative_url }}
 [upd-dist]: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/cloudfront/update-distribution.html
 [ledger]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/edge-functions-restrictions.html#lambda-at-edge-function-restrictions
+[alber]: https://us-east-1.console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole$serviceLevelSummary
+[arp]: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/attach-role-policy.html
+[logbucket]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html#access-logs-choosing-s3-bucket
+[updfn]: https://docs.aws.amazon.com/cli/latest/reference/lambda/update-function-code.html
