@@ -485,6 +485,51 @@ waiting several minutes, the new log file appears in the bucket.
 The log doesn't contain anyting from the console logging commands. It's
 essentially the same as before.
 
+Pah. Okay. Here's the scoop on
+[logging statements from Lambda Node.js functions][logjs]
+and [viewing the logs][logcons] from the AWS console.
+The first reference includes instructions for invoking the function and
+retrieving the log from the AWS CLI (command line).
+However following those instructions yields an error, "The specific log group:
+/aws/lambda/rewrite_request_url does not exist in this account or region."
+
+I think there's an enablement that I haven't provided. Let's see. More digging.
+It looks like it ought to be working. Now follow this operator guide for
+AWS Lambda [Monitoring and observability][lambmon]. This tells me that it ought
+to be working automagically. Perhaps I haven't made enough invocations to
+generate the log?
+
+I'm getting the feeling the function is never invoked. There's this "Deploy
+to Lambda@Edge" action that I haven't done and that doesn't work. It says
+that the runtime environment must be Node.js 12.x or 14.x. What have I installed
+on the EC2 instance? 16.15. So that needs to be 14.x. At the command line
+of the EC2 instance,
+
+    $ nvm install 14
+    Downloading and installing node v14.19.3...
+    Downloading https://nodejs.org/dist/v14.19.3/node-v14.19.3-linux-x64.tar.xz...
+    ################################################################################### 100.0%
+    Computing checksum with sha256sum
+    Checksums matched!
+    manpath: can't set the locale; make sure $LC_* and $LANG are correct
+    Now using node v14.19.3 (npm v6.14.17)
+
+And then do the whole build, download, upload, update version workflow.
+I'm thinking to configure the AWS CLI on the EC2 instance because downloading
+and then uploading the zip files takes a while. They are only 18MB but my
+internet is slow here.
+
+I also use the console to edit the runtime configuration. Changing it to Node.js
+14.x I get a message about the new runtime 16.x available. Ignoring that.
+
+I'm still not getting a log group nor any log streams for `/aws/lambda/rewrite_request_url`. Try creating the log group in the console and running the curl command
+again.
+
+What's happening is that the image loads from the edge server, without any
+scaling, without invoking either of the functions. The configuration indicates
+that the functions ought to be invoked on the Viewer request and Origin response
+callbacks. The Function ARNs and versions are correct. I'm stumped for the
+moment.
 
 
 
@@ -519,3 +564,6 @@ essentially the same as before.
 [arp]: https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/attach-role-policy.html
 [logbucket]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/AccessLogs.html#access-logs-choosing-s3-bucket
 [updfn]: https://docs.aws.amazon.com/cli/latest/reference/lambda/update-function-code.html
+[logjs]: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
+[logcons]: https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs.html
+[lambmon]: https://docs.aws.amazon.com/lambda/latest/operatorguide/monitoring-observability.html
