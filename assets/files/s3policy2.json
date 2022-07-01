@@ -13,6 +13,14 @@
         {
             "Effect": "Allow",
             "Principal": {
+                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity ABCDEFGHOIDEXP"
+            },
+            "Action": "s3:ListObject",
+            "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
                   "AWS": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets"
             },
             "Action": "s3:GetObject",
@@ -25,6 +33,14 @@
             },
             "Action": "s3:PutObject",
             "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922/*"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets"
+            },
+            "Action": "s3:ListObject",
+            "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922"
         }
     ]
 }
