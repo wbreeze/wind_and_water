@@ -5,21 +5,22 @@ date: 2022-05-16
 lang: en
 categories: AWS web
 excerpt: How to serve images from the Amazon Web Services (AWS) Simple Storage
-  Service (S3) via AWS CloudFront edge servers, scaled on the fly,
-  with a cache, using AWS Lambda.
+  Service (S3) via AWS CloudFront edge servers, scaled according to requested
+  size, using AWS Lambda, S3 triggers and CloudFront functions.
 ---
 
-Here are instructions about how to serve images from the
-[Amazon Web Services (AWS)][AWS] [Simple Storage Service (S3)][S3]
-via [AWS CloudFront edge servers][edge],
-scaled on the fly, with a cache, using [AWS Lambda][lambda].
+Here are instructions about how to serve images from the [Amazon Web Services
+(AWS)][AWS] [Simple Storage Service (S3)][S3] via [AWS CloudFront edge
+servers][edge], scaled according to requested size, using
+[AWS Lambda][lambda], S3 triggers and CloudFront functions.
 
 To be crude, it's a royal pain in the ass. It's valuable because it enables
 delivery of images for my web sites scaled to sizes suitable for the
 pages on which and devices for which they are called for.
 
 By this method, images load rapidly and without excess use of bandwidth. All I
-have to do is place the full size images in a bucket. Queries for the scaled
+have to do is place the full size images in a bucket. A Lambda function
+triggered when I add an image prepares scaled versions. Queries for the scaled
 versions take care to retrieve the appropriate sizes.
 
 It's difficult to set-up because it involves configuration of the three
@@ -33,11 +34,12 @@ I've used the AWS command line interface (awscli) and included the commands
 used in order to facilitate reproducing this work.
 
 ### IAM administrator
+
 I did all of this setup using [IAM administrator credentials][admin] configured
 for my account through the IAM console. I used the [aws configure][config]
 command to store these credentials with the aws command line interface.
 
-## The AWS region
+### The AWS region
 
 It's necessary to choose a region in which to keep the files and execute the
 Lambda programs. The Lambda programs will incur extra charges if you ask them
@@ -91,8 +93,12 @@ In order to place the bucket in a regon other than *us-east-1* it was necessary
 to specify the region in two places, using the `--region` and
 `--create-bucket-configuration` options to `create-bucket`.
 
+The same commands serve to create the destination bucket for scaled images.
+To name the bucket, I append the suffix "-derived" to the name used for the
+photo source bucket.
+
 The next interesting thing to do is to upload an image to the bucket.
-To begin with, I'll upload to the root directory of the bucket.
+To begin with, I'll upload to the "root directory" of the bucket.
 The command to use is the `s3api` [put-object][put-object] command.
 
     $ aws s3api put-object \
@@ -105,6 +111,8 @@ The command to use is the `s3api` [put-object][put-object] command.
 
 The `key` is the path on the bucket. The `body` is the local file.
 Looking at the bucket in the AWS console, there is the image.
+Note that S3 keys do not use leading slashes. They start with the name
+at the "root".
 
 Next I'll set-up a method to retrieve the image with a web browser.
 
@@ -202,42 +210,55 @@ In the end I did it manually via the console. As a test, the command,
 The server `abcdef0123456.cloudfront.net` is the CloudFront distribution link
 given in the console.
 
+### Origin failover
+
+The solution uses two S3 buckets as already described. I would like
+the CloudFront distribution to first look in the derived images bucket,
+because that is the bucket where most of the images will reside. When the
+original image is called for, I want the CloudFront distribution to fail-over
+to the bucket that contains the original images.
+
+CloudFront offers origin failover in "[origin groups][ogrp]".
+Its purpose is to have alternative locations from which to draw content when
+there is a problem with the primary location. This feature suits the need
+to pull derived images from one bucket and original images from another.
+
+To set it up, I put both S3 buckets as origins for the cloudfront distribution
+using the same origin access identity.  I grant `get` and `list` permissions
+to both buckets when accessed with the origin access identity.
+
 ## Lambda Functions
 
-With the CloudFront service going strong, it's time to add a pair of Lambda
-functions that will dynamically scale and cache scaled images based upon
-query parameters sent from the browser, from the page retrieving the images.
-The strategy for doing this and some guidance come from a 2018 CDN Blog
-post, "[Resizing Images with Amazon CloudFront & Lamda@Edge][rsiacl]".
+With the CloudFront service going strong, it's time to add
+functions that will:
+- scale and cache images when added to the source bucket, and
+- deliver scaled images based upon query parameters sent from the browser, from
+  the page retrieving the images.
 
-I decided to make some adjustments to the functions outlined in that post,
-and did so in an open source project on GitHub, [wbreeze/awsLambdaImage][awsl].
+The strategies for doing this and some guidance come from a 2018 CDN Blog
+post, "[Resizing Images with Amazon CloudFront & Lamda@Edge][rsiacl]".
+This is where the idea to rewrite a URL based upon a query parameter originated.
+
+The AWS Lambda developer guide tutorial, "[Using an Amazon S3 trigger to create
+thumbnail images]" contains the basics of the first part, which is to cache a
+collection of scaled versions of an image when it is added.
+
+Find the development of those functions in an open source project on GitHub,
+[wbreeze/awsLambdaImage][awsl].
 
 ### Building and Packaging
 
-The functions are written with JavaScript that executes in a Node.js
-execution environment. In order to deploy them to AWS Lambda I follow the
+The scaling function hosted in Lambda and triggered by S3
+is written with JavaScript that executes in the Node.js
+execution environment of AWS Lambda. In order to deploy them I follow the
 instructions given in the AWS docs,
 "[Deploy Node.js Lambda functions with .zip file archives][depl]".
 The functions depend on the Node.js sharp module. The installation for
 the sharp module compiles native code. This means the packages must be
 built in a machine that duplicates the Lambda runtime environment.
 
-To package the code, I start an AWS EC2 instance running Amazon Linux in the
-console and then shell to it.
-
-    ssh -i "~/.ssh/AWSEC2.pem" ec2-user@ec2-id.eu-west-1.compute.amazonaws.com
-
-The [project][awsl] has scripts for setting-up the machine, cloning and
-initializing the awsLambdaImage project, building, and distributing the
-Lambda function. Instructions are in the project README.md file.
-
-To make things easier for myself, I copy the zip files to my local machine:
-
-    scp -i "~/.ssh/AWSEC2.pem" \
-      ec2-user@ec2-id.eu-west-1.compute.amazonaws.com:~/awsLambdaImage/resize.zip .
-    scp -i "~/.ssh/AWSEC2.pem" \
-      ec2-user@ec2-id.eu-west-1.compute.amazonaws.com:~/awsLambdaImage/request.zip .
+Find more details about how to build and deploy in the
+[`README.md` file of the project][tbuild].
 
 ### Creating a Role
 
@@ -297,14 +318,13 @@ packages and the role needed to create them. I use the AWS Lambda
     --role "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets" \
     --region us-east-1
 
-The command to create the URL rewriting function, `request.js` differs only
-in the function-name, description, and zip-file name. I give it the role
-although I'm not sure it is needed.
-
 The return includes an AWS Arn for the function that is useful for updating
 the function code. The relevant tag is `FunctionArn`. The Arn includes the
 region, account Id, and name of the function, for example
 `arn:aws:lambda:us-east-1:012345678901:function:scale_image`.
+
+The command to create the URL rewriting function, `request.js` differs
+because it is updating a CloudFront function, not a Lambda function.
 
 ### S3 Bucket Access
 
@@ -329,11 +349,15 @@ the policy statement as follows
       "Principal": {
           "AWS": "arn:aws:iam::012345678901:role/lambda-scaling-access-photo-buckets"
       },
-      "Action": "s3:PutObject",
-      "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922/*"
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922"
     }
 
-You can view the complete policy as [`s3policy2.json`][policyjson].
+For the source image bucket I grant `s3:getObject`. For the destination image
+bucket I grant `s3:putObject`. Both get `s3:ListBucket`. Note that the resource
+for `s3:ListBucket` is the bucket name without any paths.
+
+You can view a complete policy template as [`s3policy2.json`][policyjson].
 
     $ aws s3api put-bucket-policy \
     --bucket photo-photo-da83944a8eb53c3a61a287150146a922 \
@@ -344,10 +368,10 @@ You can view the complete policy as [`s3policy2.json`][policyjson].
 We install the `request` Lambda function as a callback for the CloudFront
 Viewer Request event. It rewrites the image URL according to the scaling
 query parameter, to identify the scaled image file.
+It is a CloudFront function because the code size is limited.
 
-We install the `resize` Lambda function as a callback for the CloudFront
-Origin Response event. It creates the scaled image if it did not already
-exist in the S3 scaled image bucket.
+We install the `resize` Lambda function with a trigger that invokes the
+function when we create or update a file in the S3 source images bucket.
 
 According to the CloudFront [`update-distribution` AWS CLI command
 reference][upd-dist] we proceed by first pulling the existing distribution
@@ -477,11 +501,13 @@ This generates a new version for the function. I have to tell CloudFront to
 use the new version. The AWS CLI CloudFront `update-function` command doesn't
 look like the ticket. This looks like some other kind of function. What's
 needed is the whole distribution replacement workflow. Maybe it's easier to
-do it in the console. Yes. I have to edit the behavior for the distribution
-to change the function ARN.
+do it in the console. Yes. In the AWS console for a Lambda function there's a
+drop-down for "Actions" that contains "Deploy to Lambda@Edge". That does the
+trick.
 
-After that, I send another curl request to retrieve a scaled image. After
-waiting several minutes, the new log file appears in the bucket.
+After that, given a few minutes for the CloudFront deployment to spin-up the
+newly updated configuration, I send another curl request to retrieve a scaled
+image. After waiting several minutes, the new log file appears in the bucket.
 The log doesn't contain anyting from the console logging commands. It's
 essentially the same as before.
 
@@ -522,14 +548,48 @@ internet is slow here.
 I also use the console to edit the runtime configuration. Changing it to Node.js
 14.x I get a message about the new runtime 16.x available. Ignoring that.
 
-I'm still not getting a log group nor any log streams for `/aws/lambda/rewrite_request_url`. Try creating the log group in the console and running the curl command
-again.
+I'm still not getting a log group nor any log streams for
+`/aws/lambda/rewrite_request_url`. Try creating the log group in the console
+and running the curl command again.
 
 What's happening is that the image loads from the edge server, without any
 scaling, without invoking either of the functions. The configuration indicates
 that the functions ought to be invoked on the Viewer request and Origin response
 callbacks. The Function ARNs and versions are correct. I'm stumped for the
 moment.
+
+The CloudFront Monitoring console is showing the function invocations for the
+`rewrite_request_url` function. They match the number of requests.
+
+Okay, I got it. The logs are region specific. My requests are hitting CloudFront
+in Sao Paulo, sa-east-1. Looking at the logs for that region. There they are.
+I logged the event; so, I can set-up a test in the project using that event.
+
+Now seeing the errors and console log output, I was able to do some refactoring
+and add some tests in the `awsLambda` project. The requests made by the AWS
+api to S3 are asynchronous. I had to get up to speed with [promises][promise]
+in JavaScript and [migrate the example][migrate] to the AWS api version 3 with
+S3Client.
+
+Now the console is giving me a complaint that my code size is too large when
+I try to deploy it to Lambda@Edge. Including the AWS api version 3 isn't going
+to work. I have to go back to using the V2 api that is built-in.
+What I want to do in order to use the V2 api and get Promise object is
+capture the request object from the S3 call by not including a callback,
+then [calling the promise() method][v2promise] on the returned request.
+
+I'm getting hammered. Attempting to publish the function to edge now says
+the function code size can't exceed a megabyte. The package is 11MB with all
+of the node modules needed, even without the AWS api V3 (that added seven).
+I'm not sure how I ever got this to work. Is this something new that AWS
+has changed? A new limit?
+
+The message I'm getting is,
+
+> The function code size is larger than the maximum allowed size for functions
+> that are triggered by a CloudFront event: 11503336 Max allowed: 1048576
+
+This didn't happen before, and I don't see anything in the docs about it.
 
 
 
@@ -567,3 +627,8 @@ moment.
 [logjs]: https://docs.aws.amazon.com/lambda/latest/dg/nodejs-logging.html
 [logcons]: https://docs.aws.amazon.com/lambda/latest/dg/monitoring-cloudwatchlogs.html
 [lambmon]: https://docs.aws.amazon.com/lambda/latest/operatorguide/monitoring-observability.html
+[promise]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+[migrate]: https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/migrating-to-v3.html
+[v2promise]: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Request.html#promise-property
+[thumbt]: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-tutorial.html
+[ogrp]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html
