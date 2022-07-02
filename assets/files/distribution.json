@@ -1,101 +1,147 @@
 {
-    "CallerReference": "de9dcc8d405e952378421b7bd16b6fbf",
-    "Aliases": {
-        "Quantity": 3,
-        "Items": [
-          "media.wbreeze.com", "media.brisa.uy", "media.stormn69.org"
-        ]
-    },
-    "DefaultRootObject": "index.html",
-    "Origins": {
-        "Quantity": 1,
-        "Items": [
-            {
-                "Id": "photo-cache-bucket",
-                "DomainName": "photo-da83944a8eb53c3a61a287150146a922.s3.eu-west-1.amazonaws.com",
-                "OriginPath": "/",
-                "CustomHeaders": {
-                    "Quantity": 0
-                },
-                "S3OriginConfig": {
-                    "OriginAccessIdentity": "origin-access-identity/cloudfront/AE45EXAMPLEOAD"
-                }
-            }
-        ]
-    },
-    "OriginGroups": {
-        "Quantity": 0
-    },
-    "DefaultCacheBehavior": {
-        "TargetOriginId": "arn:aws:s3:::photo-da83944a8eb53c3a61a287150146a922",
-        "ForwardedValues": {
-            "QueryString": false,
-            "Cookies": {
-                "Forward": "none"
-            },
-            "Headers": {
-                "Quantity": 0
-            },
-            "QueryStringCacheKeys": {
-                "Quantity": 0
-            }
-        },
-        "TrustedSigners": {
-            "Enabled": false,
+    "ETag": "EB8G2D9LBCGL5",
+    "DistributionConfig": {
+        "CallerReference": "49c45552-4d6d-4b02-a67a-707192997e38",
+        "Aliases": {
             "Quantity": 0
         },
-        "ViewerProtocolPolicy": "https-only",
-        "AllowedMethods": {
+        "DefaultRootObject": "index.html",
+        "Origins": {
             "Quantity": 2,
             "Items": [
-                "HEAD",
-                "GET"
-            ],
-            "CachedMethods": {
+                {
+                    "Id": "photo-da83944a8eb53c3a61a287150146a922.s3.eu-west-1.amazonaws.com",
+                    "DomainName": "photo-da83944a8eb53c3a61a287150146a922.s3.eu-west-1.amazonaws.com",
+                    "OriginPath": "",
+                    "CustomHeaders": {
+                        "Quantity": 0
+                    },
+                    "S3OriginConfig": {
+                        "OriginAccessIdentity": "origin-access-identity/cloudfront/AE45EXAMPLEOAD"
+                    },
+                    "ConnectionAttempts": 3,
+                    "ConnectionTimeout": 10,
+                    "OriginShield": {
+                        "Enabled": false
+                    }
+                },
+                {
+                    "Id": "photo-da83944a8eb53c3a61a287150146a922-derived.s3.eu-west-1.amazonaws.com",
+                    "DomainName": "photo-da83944a8eb53c3a61a287150146a922-derived.s3.eu-west-1.amazonaws.com",
+                    "OriginPath": "",
+                    "CustomHeaders": {
+                        "Quantity": 0
+                    },
+                    "S3OriginConfig": {
+                        "OriginAccessIdentity": "origin-access-identity/cloudfront/AE45EXAMPLEOAD"
+                    },
+                    "ConnectionAttempts": 3,
+                    "ConnectionTimeout": 10,
+                    "OriginShield": {
+                        "Enabled": false
+                    }
+                }
+            ]
+        },
+        "OriginGroups": {
+            "Quantity": 1,
+            "Items": [
+                {
+                    "Id": "scaled-then-original",
+                    "FailoverCriteria": {
+                        "StatusCodes": {
+                            "Quantity": 2,
+                            "Items": [
+                                403,
+                                404
+                            ]
+                        }
+                    },
+                    "Members": {
+                        "Quantity": 2,
+                        "Items": [
+                            {
+                                "OriginId": "photo-da83944a8eb53c3a61a287150146a922-derived.s3.eu-west-1.amazonaws.com"
+                            },
+                            {
+                                "OriginId": "photo-da83944a8eb53c3a61a287150146a922.s3.eu-west-1.amazonaws.com"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "DefaultCacheBehavior": {
+            "TargetOriginId": "scaled-then-original",
+            "TrustedSigners": {
+                "Enabled": false,
+                "Quantity": 0
+            },
+            "TrustedKeyGroups": {
+                "Enabled": false,
+                "Quantity": 0
+            },
+            "ViewerProtocolPolicy": "https-only",
+            "AllowedMethods": {
                 "Quantity": 2,
                 "Items": [
                     "HEAD",
                     "GET"
+                ],
+                "CachedMethods": {
+                    "Quantity": 2,
+                    "Items": [
+                        "HEAD",
+                        "GET"
+                    ]
+                }
+            },
+            "SmoothStreaming": false,
+            "Compress": false,
+            "LambdaFunctionAssociations": {
+                "Quantity": 0
+            },
+            "FunctionAssociations": {
+                "Quantity": 1,
+                "Items": [
+                    {
+                        "FunctionARN": "arn:aws:cloudfront::795252834290:function/rewrite-url",
+                        "EventType": "viewer-request"
+                    }
                 ]
+            },
+            "FieldLevelEncryptionId": "",
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+            "Quantity": 0
+        },
+        "CustomErrorResponses": {
+            "Quantity": 0
+        },
+        "Comment": "edge service for photo-cache-bucket",
+        "Logging": {
+            "Enabled": true,
+            "IncludeCookies": true,
+            "Bucket": "cloudfront-logs-da83944a8eb53c3a61a287150146a922.s3.amazonaws.com",
+            "Prefix": "scale-image"
+        },
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+            "CloudFrontDefaultCertificate": true,
+            "SSLSupportMethod": "vip",
+            "MinimumProtocolVersion": "TLSv1",
+            "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+            "GeoRestriction": {
+                "RestrictionType": "none",
+                "Quantity": 0
             }
         },
-        "SmoothStreaming": false,
-        "MinTTL": 0,
-        "DefaultTTL": 86400,
-        "MaxTTL": 31536000,
-        "Compress": false,
-        "LambdaFunctionAssociations": {
-            "Quantity": 0
-        },
-        "FieldLevelEncryptionId": ""
-    },
-    "CacheBehaviors": {
-        "Quantity": 0
-    },
-    "CustomErrorResponses": {
-        "Quantity": 0
-    },
-    "Comment": "Media caching for wbreeze.com, brisa.uy, stormn69.org",
-    "Logging": {
-        "Enabled": false,
-        "IncludeCookies": false,
-        "Bucket": "",
-        "Prefix": ""
-    },
-    "PriceClass": "PriceClass_All",
-    "Enabled": true,
-    "ViewerCertificate": {
-        "CloudFrontDefaultCertificate": true,
-        "MinimumProtocolVersion": "TLSv1",
-        "CertificateSource": "cloudfront"
-    },
-    "Restrictions": {
-        "GeoRestriction": {
-            "RestrictionType": "none",
-            "Quantity": 0
-        }
-    },
-    "WebACLId": "",
-    "HttpVersion": "http2",
-    "IsIPV6Enabled": true
+        "WebACLId": "",
+        "HttpVersion": "http2",
+        "IsIPV6Enabled": true
+    }
 }
