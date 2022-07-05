@@ -43,6 +43,7 @@ I created the bucket using the S3 console:
 - no logging
 - no Access Control Lists (ACLs)
 - no object locking
+- no public access
 
 We'll call the bucket, "wbreeze.com-bucket" in order to give it a name.
 Amazon has a name for it that we aren't using here.
