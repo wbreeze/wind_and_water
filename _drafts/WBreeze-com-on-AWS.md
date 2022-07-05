@@ -3,16 +3,17 @@ layout: post
 title: WBreeze.com on AWS
 date: 2022-07-03
 lang: en
-categories:
-excerpt:
-link_note: "[text for internal link]({{ '/2021/08/four_enemies.html' | relative_url }})"
-image_note: "![image description]({{ '/assets/images/image.jpeg' | relative_url }})"
+categories: WBreeze.com tech AWS sites
 ---
 
 I've been serving [WBreeze.com][wb] from a Linux server hosted at Linode. The
 trouble with doing so is that I have to maintain the server and software
 installations. This is one too many chores for me; so, instead I've chosen the
 chore of moving the site to AWS.
+
+![WBreeze.com home page](
+  {{ '/assets/images/2022/wbc/home.png' | relative_url }}
+)
 
 [Wbreeze.com][wb] is a static web site. All of the resources-- pages,
 stylesheets, images --are served from files. In other words, there are no
@@ -55,6 +56,10 @@ frowned upon these days, and for good reason. All of the traffic to them is
 wide open for anyone or anything to read, and they're easier to hijack.
 
 ## Amplify
+
+![WBreeze.com aviation page](
+  {{ '/assets/images/2022/wbc/aviation.png' | relative_url }}
+)
 
 Amplify offers a service that serves static web pages backed by a source
 control system. You specify the source repository and branch. Amplify pulls
@@ -117,43 +122,12 @@ serve the files from the bucket.
 
 ## CloudFront
 
-To begin with, I give the S3 wbreeze.com-bucket the following policy,
 
-```
-{
-    "Version": "2012-10-17",
-    "Id": "PolicyForCloudFrontPrivateContent",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity EIDENTIFIER"
-            },
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::wbreeze.com-bucket/*"
-        },
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity EIDENTIFIER"
-            },
-            "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::wbreeze.com-bucket"
-        }
-    ]
-}
-```
+## Conclusion
 
-The identifier names have been changed to protect them. I'm not going to publish
-them here.
-
-
-
-
-
-
-
-
+![WBreeze.com gallery page](
+  {{ '/assets/images/2022/wbc/gallery.png' | relative_url }}
+)
 
 
 [s3]: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
@@ -164,8 +138,8 @@ them here.
 [wb]: https://wbreeze.com/
 [s3h]: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
 [anat]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics#anatomy_of_an_html_document
-[index]: /assets/files/2022/index.html.txt
+[index]: {{ '/assets/files/2022/index.html.txt' | relative_url }}
 [manual]: https://docs.aws.amazon.com/amplify/latest/userguide/manual-deploys.html#amazon-s3-or-any-url
-[myampyml]: /assets/files/2022/amplify.yml.txt
+[myampyml]: {{ '/assets/files/2022/amplify.yml.txt' | relative_url }}
 [ampyml]: https://docs.aws.amazon.com/amplify/latest/userguide/build-settings.html#yml-specification-syntax
 [2266]: https://github.com/aws-amplify/amplify-hosting/issues/2266
