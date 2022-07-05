@@ -122,6 +122,8 @@ serve the files from the bucket.
 
 ## CloudFront
 
+### Copy the site
+
 
 ## Conclusion
 
@@ -129,7 +131,44 @@ serve the files from the bucket.
   {{ '/assets/images/2022/wbc/gallery.png' | relative_url }}
 )
 
+This isn't ideal, but rather expedient. Better would be to enable [Amplify][amp]
+to build the site from the source repository. I've had that working once
+in the past. The barrier is the images. If I'm going to host the site with
+[Amplify][amp], I'll have to put the images somewhere.
 
+The source repository isn't a great place for all of the images. There is
+[Git Large File Storage][lfs], but that isn't exactly what I'm after.
+It simply doesn't make sense to have all of these images under source control.
+
+Another project is to make an images bucket that has all of my images-- years
+and years of photos --backed by a dynamically produced gallery. In that way,
+all I have to do to update the gallery is to add images to the S3 bucket.
+Simply by managing the files, I'll have an up to date gallery.
+
+In addition, that image bucket would be the image source for my web sites,
+like [WBreeze.com][wb], [StormN69.org][s69], and the [Wind and Water][wnw]
+blog.
+
+[WBreeze.com][wb] and [StormN69.org][s69] are produced with XML markup and XSL
+stylesheets. That was really cool twenty years ago.  More recently I've been
+writing sites with [Markdown][md] and serving them up using the
+[Jekyll][jekyll] Ruby based static site transformer and server. Two of the
+sites I've set-up using [Jekyll][jekyll] are [Brisa.uy][brisa] and the [Wind
+and Water][wnw] blog.
+
+Another chore would be to convert [StormN69.org][s69] and [WBreeze.com][wb] to
+[Markdown][md], using a transform, and carry-on updating them as
+[Jekyll][jekyll] sites. That is, to make a technology change, to migrate the
+sites to a new platform.
+
+For now, I've gotten [WBreeze.com][wb] onto AWS where I don't have to worry
+about maintaining a server nor experience days of downtime.
+
+[brisa]: https://brisa.uy/
+[jekyll]: https://jekyllrb.com/
+[md]: https://daringfireball.net/projects/markdown/
+[s69]: https://stormn69.org/
+[wnw]: https://wnw.wbreeze.com/
 [s3]: https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
 [cf]: https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
 [amp]: https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html
@@ -143,3 +182,4 @@ serve the files from the bucket.
 [myampyml]: {{ '/assets/files/2022/amplify.yml.txt' | relative_url }}
 [ampyml]: https://docs.aws.amazon.com/amplify/latest/userguide/build-settings.html#yml-specification-syntax
 [2266]: https://github.com/aws-amplify/amplify-hosting/issues/2266
+[lfs]: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage
