@@ -101,7 +101,7 @@ wbreeze.com-bucket.
 
 Perhaps the bucket, at minimum, has to have an `index.html` file.
 I've created an [index.html][index] file for this purpose, following
-the basic anatomy of an HTML file][anat].
+the basic anatomy of an [HTML file][anat].
 
 Neither of these actions helped. Perhaps it is that Amplify cannot access
 the bucket. I tried placing a policy on the bucket that gives access to
