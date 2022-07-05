@@ -138,7 +138,7 @@ serve the files from the bucket.
 [wb]: https://wbreeze.com/
 [s3h]: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
 [anat]: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics#anatomy_of_an_html_document
-[index]: {{ '/assets/files/2022/index.html.txt' | relative_url }}
+[index]: {{ '/assets/files/2022/index.html.xml' | relative_url }}
 [manual]: https://docs.aws.amazon.com/amplify/latest/userguide/manual-deploys.html#amazon-s3-or-any-url
 [myampyml]: {{ '/assets/files/2022/amplify.yml.txt' | relative_url }}
 [ampyml]: https://docs.aws.amazon.com/amplify/latest/userguide/build-settings.html#yml-specification-syntax
