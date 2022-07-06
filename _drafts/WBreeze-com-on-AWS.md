@@ -123,8 +123,78 @@ serve the files from the bucket.
 
 ## CloudFront
 
+I set-up CloudFront from the AWS console using the new distribution button.
+For the settings, I chose:
+- The S3 bucket with the files for WBreeze
+- empty origin path
+- name, "Serve WBreeze.com"
+- creating an Origin Access Identity (OAI) for the distribution
+- updating the policy of the S3 bucket to allow the OAI
+- no custom headers
+- no origin shield
+- defaults for the cache behavior
+- redirect HTTP to HTTPS
+- GET and HEAD requests only
+- no signed url's
+- no function associations
+- North America and Europe because the content is not so much of interest
+  elsewhere
+- I'll do the CNAME and SSL certificates later
+- Default root object is 'index.html' This is important. Otherwise the root
+  request returns an XML encoded list of files.
+- No longing
+- IPv6 enabled
+
+With this, I was able to direct my web browser to the distribution domain,
+`lettersanddigits@cloudfront.net`. It served the `index.html` file I had
+placed in the S3 bucket. Well, that was easy.
+
 ### Copy the site
 
+What remains is to populate the S3 bucket with the site content. I wrote a
+script to run on the current server, that [copies the web related files][cp2s3]
+to the S3 bucket. After doing that I relented. There was too much of a chance
+to miss a file extension or referenced file. For example, I'd missed some
+`.pdf` and `.txt` files by not including those extensions. The `.xml` files
+aren't so huge; they're just text that I typed. I deleted the '.DS_Store' files
+and then used `aws s3 sync` to copy everything from the www directory to the S3
+bucket.
+
+In the CloudFront console for the distribution I went to the "Error pages"
+tab and caused four of the http errors to serve-up specific error pages that
+I had constructed for the site.
+
+### Set-up the domain to serve from CloudFront
+
+After doing some sanity checking-- just semi-random poking around on the
+CloudFront hosted site to see that everything is working --I'm ready to
+request a certificate from AWS and direct the [WBreeze.com][wb] domain to
+it.
+
+I'm not going to go into details here. It was pretty straightforword.  The
+CloudFront console had a link to the AWS certificate manager where I requested
+the certificate.  I had to add a CNAME record to the domain in order to prove
+that it is mine.  After the certificate was approved I set it on the CloudFront
+distribution along with the domain name in the console.
+
+I have to say, this was so much more straightforward than setting-up
+and managing the [Let's Encrypt certbot][cert] on my own server.
+AWS will maintain the certificate as current indefinitely, so long as
+I'm using it.
+
+The last step was to have the Domain Name Service (DNS) direct
+[WBreeze.com][wb] to the CloudFront distribution.  This was the hardest part.
+The Amazon Route 53 documentation has an article about moving to Route 53,
+"[Making Route 53 the DNS service for a domain that's in use][route]".  The
+trouble with the article is that it imagines copying the DNS records from the
+existing DNS server to Route53. With their import of a zone file (impossible to
+get) or even manually, I wasn't able to do that (as of this writing).
+
+What worked was to delete the `A` records for the root domain (`wbreeze.com`)
+and create a `CNAME` record that directs `wbreeze.com` to
+`lettersanddigits@cloudfront.net`. It isn't possible to create the `CNAME`
+record before deleting the `A` record; so, there was a fragment of possible
+downtime.
 
 ## Conclusion
 
@@ -184,3 +254,6 @@ about maintaining a server nor experience days of downtime.
 [ampyml]: https://docs.aws.amazon.com/amplify/latest/userguide/build-settings.html#yml-specification-syntax
 [2266]: https://github.com/aws-amplify/amplify-hosting/issues/2266
 [lfs]: https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage
+[cp2s3]: https://gitlab.com/dclovell/wbreeze.com/-/blob/master/cp2s3.sh
+[cert]: https://letsencrypt.org/
+[route]: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html
