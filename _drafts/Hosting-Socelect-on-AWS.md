@@ -21,6 +21,7 @@ scalable fashion, just in case it ever becomes wildly popular.
 Mostly, it simply won't experience the days of down time I've had while running
 it on my own server.
 
+[amp]: https://aws.amazon.com/amplify/
 [sc]: https://socelect.org/
 [ror]: http://rubyonrails.org/
 [ln]: https://www.linode.com/
