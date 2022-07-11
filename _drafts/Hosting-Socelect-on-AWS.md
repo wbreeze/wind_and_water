@@ -78,6 +78,16 @@ There are problems with those ansible scripts.
   I deleted this part and then set-up nftables manually.
 - It wouldn't install passenger
 
+There are problems with the Capistrano install.
+- I needed to make installs of rbenv, ruby, etc. for the user, not for
+  the machine. That is "local" installs for the user logged-in for
+  making the install (not root).
+- It wouldn't run the bundler because it used a bad path, ".rbenv/bin".
+  I had to create a symbolic link there to "/usr/bin".
+- The assets precompile seems to never work. It isn't working because the
+  program isn't going to work, either; because the shared library for
+  davenport isn't installed in a way or form that will load properly.
+
 [scr]: https://github.com/wbreeze/ansible-server-setup#readme
 [awsp]: https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html
 [travis]: https://docs.travis-ci.com/user/languages/ruby
