@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WBreeze.com on AWS
-date: 2022-07-03
+date: 2022-07-11
 lang: en
 categories: WBreeze.com tech AWS sites
 ---
@@ -15,7 +15,7 @@ chore of moving the site to AWS.
   {{ '/assets/images/2022/wbc/home.png' | relative_url }}
 )
 
-[Wbreeze.com][wb] is a static web site. All of the resources-- pages,
+[WBreeze.com][wb] is a static web site. All of the resources-- pages,
 stylesheets, images --are served from files. In other words, there are no
 programs to run on the server other than the program that delivers files
 requested from web browsers.
@@ -91,7 +91,7 @@ dialog in which I elected:
 
 When deploying, I got an error, "An error occurred during the publish
 operation: Deployment file has not been uploaded". Using that in a web search I
-discovered [a closed issue on github][2266] where people indicate that the
+discovered [a closed issue on GitHub][2266] where people indicate that the
 deploy is successful in spite of the error report. However it does not.
 
 Perhaps the trouble is that Amplify is looking for a build specification. The
@@ -171,7 +171,7 @@ CloudFront hosted site to see that everything is working --I'm ready to
 request a certificate from AWS and direct the [WBreeze.com][wb] domain to
 it.
 
-I'm not going to go into details here. It was pretty straightforword.  The
+I'm not going to go into details here. It was pretty straightforward.  The
 CloudFront console had a link to the AWS certificate manager where I requested
 the certificate.  I had to add a CNAME record to the domain in order to prove
 that it is mine.  After the certificate was approved I set it on the CloudFront

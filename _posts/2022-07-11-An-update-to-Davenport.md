@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An update to Davenport
-date: 2022-07-09
+date: 2022-07-11
 lang: en
 categories: programming davenport
 excerpt:
@@ -13,7 +13,7 @@ compile the [Davenport library][dlib] for it.
 This was a bit of an eye opener. I myself wasn't able to do it. How do I expect
 anyone else to? The install simply wouldn't work.
 
-![Well now, this is embarrasing.][xkcd]
+![Well now, this is embarrassing.][xkcd]
 
 The reason for this is that I had not tested the install "from scratch" since
 writing the command line program for trying-out the library. When installing
@@ -21,13 +21,13 @@ from nothing, from a `git clone` of the source, there's a [Catch 22][22].
 The command line program won't compile without the library. The library
 won't compile because the command line program won't compile.
 
-Well now, this is embarrasing.
+Well now, this is embarrassing.
 
 To fix it meant some fiddling with [GNU Autoconf][ac] and some directory
 reorganizing. More than a little fiddling, actually. About a day's worth.
 
 It isn't perfect, what I came up with. Now 
-the need for the [Cutter][cutter] testing libary is confined to compiling
+the need for the [Cutter][cutter] testing library is confined to compiling
 the tests. The command line executable will not compile without first
 compiling and installing the davenport library. However, that is now
 possible, more straightforward.
@@ -37,7 +37,7 @@ possible, more straightforward.
 
 As an aside, while web searching an error message I found [an answer on
 askUbuntu][ask] in which a user with name, "Qix" begs people not to use
-the [GNU Autoconf][ac] toolchain. They want people to use [CMake][cmake]
+the [GNU Autoconf][ac] tool chain. They want people to use [CMake][cmake]
 instead. Looking at that, wow. It's a whole new beginning.
 
 [CMake][cmake] is one of those open source, "free" software efforts that
