@@ -3,7 +3,7 @@ layout: post
 title: An update to Davenport
 date: 2022-07-09
 lang: en
-categories:
+categories: programming davenport
 excerpt:
 ---
 
@@ -26,6 +26,13 @@ Well now, this is embarrasing.
 To fix it meant some fiddling with [GNU Autoconf][ac] and some directory
 reorganizing. More than a little fiddling, actually. About a day's worth.
 
+It isn't perfect, what I came up with. Now 
+the need for the [Cutter][cutter] testing libary is confined to compiling
+the tests. The command line executable will not compile without first
+compiling and installing the davenport library. However, that is now
+possible, more straightforward.
+
+
 ### Aside, CMake
 
 As an aside, while web searching an error message I found [an answer on
@@ -42,7 +49,8 @@ any kind of overview. The docs were reference materials that went straight
 down into the weeds.
 
 This isn't entirely a fair assessment. There's a book available online via
-the menu, [_Mastering CMake_][mcm].
+the menu, [_Mastering CMake_][mcm]. There's nothing wrong with making money
+by producing a good product and offering consulting for it.
 
 [mcm]: https://cmake.org/cmake/help/book/mastering-cmake/
 [ask]: https://askubuntu.com/questions/27677/cannot-find-install-sh-install-sh-or-shtool-in-ac-aux
@@ -52,3 +60,4 @@ the menu, [_Mastering CMake_][mcm].
 [xkcd]: https://imgs.xkcd.com/comics/circuit_diagram.png
 [soc]: https://socelect.org/
 [dlib]: https://github.com/wbreeze/davenport
+[cutter]: https://cutter.osdn.jp/
