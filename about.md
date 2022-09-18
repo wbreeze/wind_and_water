@@ -14,8 +14,26 @@ https://www.poetryfoundation.org/poems/43286/the-fascination-of-whats-difficult)
 Find it reproduced below.
 It's something to think about. Try to keep it real.
 
-Douglas Lovell.
+Douglas Lovell<br/>
 March 8, 2018
+
+As for me (although no one has been so unkind as to say this), there's
+passion in tilting at windmills.
+
+Yet do. Try to keep it real.
+
+Douglas Lovell<br/>
+September 18, 2022
+
+#### Tilting at windmills
+
+This characterization given to [Cervantes' don Quixote][quixote] is [defined in
+Wikipedia][tilting] as "courses of action that are based on misinterpreted or
+misapplied heroic, romantic, or idealistic justifications" and "inopportune,
+unfounded, and vain effort against adversaries real or imagined".
+
+[quixote]: https://en.wikipedia.org/wiki/Don_Quixote
+[tilting]: https://en.wikipedia.org/wiki/Don_Quixote#Tilting_at_windmills
 
 ### Spanish language posts
 
