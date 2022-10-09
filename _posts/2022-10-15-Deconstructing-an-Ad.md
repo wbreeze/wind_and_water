@@ -39,7 +39,7 @@ are slender. The manicured nails on her long fingers are painted pink or gold.
 She is smiling and looking down as she runs along, self absorbed and pleased.
 
 A gold sequined handbag trails from the crook of her right elbow. Her bent arm
-holds tightly to her breast: a more cubic that flat Amazon Prime shipping box
+holds tightly to her breast: a more cubic than flat Amazon Prime shipping box
 on which is balanced a plant in a pink pot and some small gold thing shaped
 like, perhaps, a genie lantern.
 
