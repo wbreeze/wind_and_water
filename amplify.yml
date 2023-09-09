@@ -11,4 +11,6 @@ applications:
         build:
           commands:
             - jekyll build
-
+      artifacts:
+        base-directory: _site
+        files: **/*
