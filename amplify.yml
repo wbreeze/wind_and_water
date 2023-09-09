@@ -1,0 +1,14 @@
+version: 1
+applications:
+  - appRoot: _site
+    frontend:
+      buildPath: / # Run install and build from the monorepo project root
+      phases:
+        preBuild:
+          commands:
+            - gem install bundler
+            - bundle install
+        build:
+          commands:
+            - jekyll build
+
