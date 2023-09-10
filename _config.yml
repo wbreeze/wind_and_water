@@ -44,7 +44,6 @@ header_pages:
  - posts.md
 
 # Build settings
-destination: wnw
 markdown: kramdown
 permalink: /:year/:month/:title:output_ext
 theme: minima
