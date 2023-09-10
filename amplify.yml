@@ -1,0 +1,21 @@
+version: 0.1
+frontend:
+  phases:
+    build:
+      commands:
+        - RUBY_VERSION=`cat .ruby-version`
+        - rvm install $RUBY_VERSION
+        - rvm use $RUBY_VERSION
+        - rvm rubygems 3.3.22
+        - gem install --no-document bundler -v 2.4.19
+        - bundle config set path vendor/bundle
+        - bundle config set deployment true
+        - bundle install
+        - JEKYLL_ENV=production bundle exec jekyll b
+  artifacts:
+    baseDirectory: _site
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - 'vendor/**/*'
