@@ -47,7 +47,7 @@ header_pages:
 markdown: kramdown
 permalink: /:year/:month/:title:output_ext
 theme: minima
-exclude: [script, CNAME]
+exclude: [vendor, script, CNAME]
 
 plugins:
  - jekyll-feed
