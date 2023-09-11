@@ -9,12 +9,24 @@ if [ ! -f "$1" ]; then
 fi
 src="$1"
 base_name=${src##*/}
-ymd=`date +%Y-%m-%d`
+if [[ -n "$2" && "$2" == 'now' ]]; then
+  ymd=`date +%Y-%m-%d`
+else
+  ymd=`awk '/date: (.+)/  { print $2 }' ${src}`
+fi
+if [[ -z "${ymd}" ]]; then
+  echo "Unable to dermine date"
+  exit 3
+fi
 post_dir="./_posts"
-dest="${post_dir}/${ymd}-${base_name}"
 aspell -M -l en check "${src}"
-subst="s/date: .+/date: ${ymd}/"
-sed -E "${subst}" "${src}" >"${dest}"
+dest="${post_dir}/${ymd}-${base_name}"
+if [[ -n "$2" && "$2" == 'now' ]]; then
+  subst="s/date: .+/date: ${ymd}/"
+  sed -E "${subst}" "${src}" >"${dest}"
+else
+  cp ${src} ${dest}
+fi
 echo
 echo "Published ${dest}"
 head -n 12 ${dest}
@@ -23,4 +35,4 @@ ls -lt ${post_dir} | head -n 6
 echo
 echo "Remove the draft?"
 echo "Press enter to leave it, or type \"y\" and then enter to delete it."
-rm -i "${src}"
+rm -i "${src}" "${src}.bak"
