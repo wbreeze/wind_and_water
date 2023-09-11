@@ -1,0 +1,11 @@
+<p>
+<audio
+  controls
+  preload=metadata
+  src="{{ include.source | relative_url }}">
+ Shuks, your browser isn't embedding this audio file for you.
+ Maybe you'll download it and reproduce it with some other app.
+ <a href="{{ include.source | relative_url }}"
+   >{{ include.source | relative_url }}</a>.
+</audio>
+</p>
