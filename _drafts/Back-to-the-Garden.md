@@ -18,8 +18,8 @@ unhindered sharing of ideas, worldwide network
 for peace, love and understanding?
 My children will be back to the garden in no time.
 
-The Devil said, "Sure God man, but I've got Zuckerberg, and no-one reads
+The Devil said, "Sure God man, but I've got Zuck, and... No-one reads
 the terms and conditions."
 
-God took a look at Zuck, his circle and the Palo Alto crowd in general, and thought to
-his mighty self, "Shit. Now, there it is! The snake in my garden."
+God took a look at Zuck, his circle and the Palo Alto crowd in general.  He
+thought to his mighty self, "Shit. Now, there it is! The snake in my garden."
