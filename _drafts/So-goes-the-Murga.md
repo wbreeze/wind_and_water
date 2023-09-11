@@ -4,13 +4,17 @@ title: So goes the Murga
 date: 2023-02-28
 lang: en
 categories: Uruguay
-excerpt:
-link_note: "[text for internal link]({{ '/2021/08/four_enemies.html' | relative_url }})"
-image_note: "![description]({{ '/assets/images/image.jpeg' | relative_url }})"
+excerpt: The Murga is a choral work with brief interludes of dialog. The chorus
+  of about a dozen members, plus a choral director and a rythm section of three
+  make-up the complete complement of performers.
 ---
 
 In Uruguay there is a season each year during southern hemisphere summer called
 "Carnaval." It runs from the end of January until the beginning of March.
+
+![Murga](
+  {{ '/assets/images/2023/Murga/IMG_0245.jpeg' | relative_url }}
+)
 
 In Carnaval there are several events. The broadest of these is nightly
 stage performances in Teatro del Verano and in Tablados around the capital city
@@ -23,7 +27,7 @@ the "Murga".
 
 The Murga is a choral work with brief interludes of dialog. The chorus of about
 a dozen members, plus a choral director and a rythm section of three make-up
-the complete complement of performers. The rythm section has symbols, base
+the complete complement of performers. The rythm section has symbols, bass
 drum, and snare drum. All of the performers have painted faces with a white
 base and brightly colored designs, eye makeup, and glitter.
 
@@ -31,6 +35,11 @@ At the beginning, the chorus sings an extended greeting, celebrataion, and
 invocation of Carnaval. They do so in colorful, full length dresses with broad,
 built-up shoulders, high collars, and elaborate, generally tall and colorful
 hats.
+
+{% include video.html
+  source='2023/202302Tablado1eroMayoDos.mp4'
+  still='2023/Murga/202302Tablado1eroMayoDos.png'
+%}
 
 The invocation of Carnaval is more than an invocation of a period or event.
 It is an invocation of a special license to discourse freely and openly around
@@ -48,6 +57,11 @@ of the society, community, leadership, and government of Uruguay. The best of
 them do so in a way that emphasises what we would hope to be while undermining
 our high opinion of ourselves, and the hypocracy of how we behave in truth.
 
+{% include video.html
+  source='2023/202302Tablado1eroMayo.mp4'
+  still='2023/Murga/202302Tablado1eroMayo.png'
+%}
+
 This year [2023 winners of the competiton among twenty-one murga groups][daecpu]
 was [Asaltantes con Patente][acp] (asailants with license).
 You can view [their winning performance on YouTube][ytacp].
@@ -64,6 +78,10 @@ The murga generally ends on an upbeat, something inspirational. For example,
 Asalantes con Patente urges people to be open with friends and family about
 their feelings, concerns and troubles. They go on to urge parents to listen
 thoughtfully to their children.
+
+![Murga](
+  {{ '/assets/images/2023/Murga/IMG_0246.jpeg' | relative_url }}
+)
 
 At the end, the dress costumes reappear. The chorus celebrates the freedom
 and license of Carnaval, underscores the inspirational message, and then bids
