@@ -5,7 +5,7 @@ date: 2023-02-28
 lang: en
 categories: Uruguay
 excerpt: The Murga is a choral work with brief interludes of dialog. The chorus
-  of about a dozen members, plus a choral director and a rythm section of three
+  of about a dozen members, plus a choral director and a rhythm section of three
   make-up the complete complement of performers.
 ---
 
@@ -19,19 +19,19 @@ In Uruguay there is a season each year during southern hemisphere summer called
 In Carnaval there are several events. The broadest of these is nightly
 stage performances in Teatro del Verano and in Tablados around the capital city
 of Montevideo and the rest of the country. Teatro del Verano is an open air
-ampitheater with bandshell located in Montevideo. Tablados are
+amphitheater with band shell located in Montevideo. Tablados are
 open air stages, mostly in parks, with informal, lawn chair seating.
 
 There are five types of stage performances. The most popular of them is called
 the "Murga".
 
 The Murga is a choral work with brief interludes of dialog. The chorus of about
-a dozen members, plus a choral director and a rythm section of three make-up
-the complete complement of performers. The rythm section has symbols, bass
+a dozen members, plus a choral director and a rhythm section of three make-up
+the complete complement of performers. The rhythm section has symbols, bass
 drum, and snare drum. All of the performers have painted faces with a white
 base and brightly colored designs, eye makeup, and glitter.
 
-At the beginning, the chorus sings an extended greeting, celebrataion, and
+At the beginning, the chorus sings an extended greeting, celebration, and
 invocation of Carnaval. They do so in colorful, full length dresses with broad,
 built-up shoulders, high collars, and elaborate, generally tall and colorful
 hats.
@@ -55,14 +55,14 @@ will present a monologue or exchange dialog during the change.
 What follows is a series of pieces designed to poke fun at differing aspects
 of the society, community, leadership, and government of Uruguay. The best of
 them do so in a way that emphasises what we would hope to be while undermining
-our high opinion of ourselves, and the hypocracy of how we behave in truth.
+our high opinion of ourselves, and the hypocrisy of how we behave in truth.
 
 {% include video.html
   source='2023/202302Tablado1eroMayo.mp4'
   still='2023/Murga/202302Tablado1eroMayo.png'
 %}
 
-This year [2023 winners of the competiton among twenty-one murga groups][daecpu]
+This year [2023 winners of the competition among twenty-one murga groups][daecpu]
 was [Asaltantes con Patente][acp] (asailants with license).
 You can view [their winning performance on YouTube][ytacp].
 If you're not following the Spanish, enjoy the spectacle.
@@ -72,7 +72,7 @@ truth in communications, government scandals. A recurrent topic this year was
 the current government's attempts at spending reduction in social
 services, especially in education. There was a scandal involving a network
 of government employees, including the head of security for the President,
-selling officially issued Uruguyan passports to Russian nationals.
+selling officially issued Uruguayan passports to Russian nationals.
 
 The murga generally ends on an upbeat, something inspirational. For example,
 Asalantes con Patente urges people to be open with friends and family about
