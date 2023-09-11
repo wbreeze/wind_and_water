@@ -3,14 +3,14 @@
    controls
    muted=true
    preload="metadata"
-   src="{{ 'assets/video/' | append: include.source }}"
+   src="{{ 'assets/video/' | append: include.source | relative_url }}"
    {% if include.still %}
      poster="{{ 'assets/images/' | append: include.still | relative_url }}"
    {% endif %}
 >
  Awe man. Your browser won't embed this video.
  Maybe you can download it and play it with some other app.
- <a href="assets/video/{{ include.source }}"
-   >https://wnw.wbreeze.com/assets/video/{{ include.source }}</a>.
+ <a href="{{ 'assets/video/' | append: include.source | relative_url }}"
+   >{{ 'assets/video/' | append: include.source | relative_url }}</a>.
 </video>
 </p>
