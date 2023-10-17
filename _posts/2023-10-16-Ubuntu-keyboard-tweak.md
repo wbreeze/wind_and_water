@@ -32,7 +32,7 @@ need it. (My special case.) It took me a couple of days to work that out.
 ## Modding the Keyboard
 The system of keyboard mapping in Linux distributions these days is something
 called, "The X keyboard extension," or "[xkb][xkb]" for short.  Ex Kay Bee.
-**X** **K**ey**B**oard.  It's pretty complicated.  There are resouces for
+**X** **K**ey**B**oard.  It's pretty complicated.  There are resources for
 understanding it in the [xOrg wiki for XKB][wiki].
 
 [xkb]: https://en.wikipedia.org/wiki/X_keyboard_extension
@@ -116,7 +116,7 @@ and use a Ruby interpreter running [Jekyll][jekyll] to generate the pages. That
 it will run from the twelve volt power supply on my boat and allow me to
 write is all I expect from it.
 
-The computer has a touchpad that responds strangely-- with delays or
+The computer has a touch pad that responds strangely-- with delays or
 little jigs.  It's difficult to point or scroll accurately with it.
 I found an inexpensive optical mouse to use with it.
 
