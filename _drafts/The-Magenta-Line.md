@@ -7,14 +7,16 @@ categories: sailing adventure
 excerpt: A chain of events leads to a risky nighttime approach to Isla de
   Mujeres
 
-link_note: "[text for internal link]({{ '/2021/08/four_enemies.html' | relative_url }})"
-image_note: "![description]({{ '/assets/images/image.jpeg' | relative_url }})"
 ---
 Mostly I write about my sailing adventures in less than perfect Spanish, over
 at [Brisa.uy][brisa]. Here's a story in English for my English speaking
 friends.
 
 [brisa]: https://brisa.uy/
+
+![Light at Isla Mujeres](
+  {{ '/assets/images/2024/DSC03806.JPG' | relative_url }}
+)
 
 Every accident has a chain of events that lead to it. On this night I was
 fortunate. There was no damage.
@@ -69,7 +71,7 @@ knots --was carrying me up the channel toward the port.
 
 On arrival I tried to call the port captain and then the marina without
 any response whatsoever. This was freaking me out a bit. Either both my
-radios were not functioning, no-one was listening, or I was being ignared.
+radios were not functioning, no-one was listening, or I was being ignored.
 There were dozens of boats, mostly launches and a few large catamarans.
 The boats had scuba divers, snorklers, fishing adventurers, and people out
 for a ride on the coast. The drivers of the boats treated me like a bad
@@ -81,17 +83,17 @@ water current meets the faster, deeper current. Big cruise ships take
 moorings right up against the shore. There were four or five of them, giant,
 floating hotels, one with a water park on its top deck.
 
-On the advertised VHF channel for the marina someone was putting loud
-music for a few minutes. Some other boats, ship to ship, were talking in
-foul language about the current. The marina was not present there nor on the
-universal hailing channel sixteen.
+On the advertised VHF channel for the marina someone was putting
+music for five or ten minutes. Some other boats, ship to ship, were talking in
+foul language about the current. The marina was not present on the channel nor
+on the universal hailing channel sixteen.
 
 I decided to prepare my lines and fenders on one side and risk the depth
 of the entrance to the marina. I could see bottom right under the boat
-in crystal clear water. A sand bottom, reassuringly. The entry was a
-narrow channel, very active with boats entering and leaving. (I was going
-too slowly for them.) The marina docks were poured concrete with narrow
-plastic bumpers.
+in crystal clear water. A sand bottom, reassuringly. The entry was
+narrow, very active with boats entering and leaving. (I was going
+too slowly for them.) The marina docks were poured concrete with inadequate,
+nearly decorative plastic bumpers.
 
 I started down a channel between the piers only to see seven tenths of a fathom
 under the depth sounder. The depth sounder is a few tenths of a fathom under
@@ -102,7 +104,7 @@ last slip and let the wind push me gently alongside of it.
 Still no-one from the marina had responded to radio calls. No staff had seen
 me enter. No staff had come to greet me or help with lines. A passer-by
 whom I stopped tried to put me on the phone with an agent to process my
-arrival in Mexico; but, I wanted to talk with the marina first.
+arrival in Mexico. I wanted to talk with the marina first.
 
 After half an hour a security guard came around. He was a young guy from a
 private security company. He told me I had to move; that the slip belonged
@@ -114,7 +116,7 @@ I accomplish the entry paperwork? He knew none of that, but called someone
 who promised to come around sometime that afternoon. Meantime, he wanted
 me to move.
 
-By now the wind had increased. It had blown me into the slip and now
+By now the wind had increased. It had blown me into the slip and was now
 holding me there securely. It would be a tough exit. It
 was going to be chancy entering the other slip as well, given the strong
 crossing wind that would blow the boat sideways. I asked him to get help to
@@ -141,12 +143,14 @@ like an alien, or at best a curiosity. I felt threatened, because no-one was
 coming forward about the costs of processing my entry paperwork and staying in
 the marina.  It felt certain that those costs would be an unpleasant surprise.
 It has happened to me before in Mexico that services rendered without first
-asking the price come with a highly inflated price after.  I felt disappointed,
+asking the price come with a highly inflated price after.
+
+I felt disappointed,
 because this Marina Fonatur was nothing like the Marina Fonatur I had so
 pleasantly enjoyed in Baja, in Puerto Escondido.  I felt discouraged, because
 the scuba diving I had so looked forward to wasn't possible, because there was
 no adequate place for me to park.
-I felt frightened, because gaing back out to sea for another night,
+I felt frightened, because going back out to sea for another night,
 unexpectedly was going to test my endurance.
 
 Everyone I had talked to about Cozumel had asked me about Isla Mujeres.
@@ -156,11 +160,11 @@ nautical miles. The entrance to the shallow bay was about thirty five nautical.
 Can I make those thirty-five nautical miles take fourteen hours, in order
 to arrive the next morning with daylight? If I
 traveled at two knots, maybe. Or if I take a detour out to sea after clearing
-the north end of the islad. I planned to do that. Sail out to sea and sleep.
+the north end of the island. I planned to do that. Sail out to sea and sleep.
 Sail back in the morning to enter the bay.
 
 Not having internet, I used the Garmin
-to pull a spot forecast. It was not pleasant. It promised fifteen knots
+to pull a spot forecast. It promised fifteen knots
 gusting to twenty from the southeast. That is not pleasant but not impossible.
 Seas will be a little rough. I'll run double reef and staysail.
 
@@ -170,12 +174,9 @@ in-between the boat and the concrete. Then I cast all lines but the forward
 one and motored forward onto it. This brought the stern out, away from the
 dock. Quickly, before the wind pushed the stern back, I ran up to the
 bow and untied the line from the cleat. Free of the dock, I backed out.
-The stern always
-walks to port when backing.
-This turned the bow toward the dock.
-It kept close to the concrete wall as the boat backed away.
-From the cockpit, I was sure that
-it was going to scrape. It must have missed by inches.
+The stern always walks to port when backing.  This turned the bow toward the
+dock.  It kept close to the concrete wall as the boat backed away.  From the
+cockpit, I was sure that it was going to scrape. It must have missed by inches.
 
 At three in the afternoon, I motored out the narrow channel for Bahía
 Caleta into the big channel between Cozumel and the mainland. I was off
@@ -195,18 +196,16 @@ thought. The slower the better. Haw often do I feel that way?
 
 With hardly any sail and the boat barely pushing a wake I quickly saw
 that there had been a flaw in my calculations. The current in the channel
-was adding three knots to my speed. I was seeing five knots over the gnound.
+was adding three knots to my speed. I was seeing five knots over the ground.
 I would be to the Bahía Mujeres entrance at ten in the evening, or what to
 me is ten at night. We sailors are early risers. By ten, we've had one
-or two cat naps.
+or two cat naps or gone soundly asleep, depending conditions.
 
-I let myself sail to the north end of the island. There the water starts
-to become uncomfortably rough.
-Given some fetch,
-the wind is stacking-up waves against a big swell coming down
-out of the gulf, against the current.
-I decide that sailing isn't going to help get me there more slowly.
-I decide to heave-to on the triple-reef main.
+I let myself sail to the north end of the island. There the water started to
+become uncomfortably rough.  Given some fetch, the wind was stacking-up waves
+against a big swell coming down out of the gulf, against the current.  I decided
+that sailing wasn't going to help get me there more slowly.  I decided to
+heave-to on the triple-reef main.
 
 Inside the cabin, the boat is treacherous. Standing, even bracing myself,
 I get thrown against one side of the boat and then the other.
@@ -241,7 +240,7 @@ disappear. I get a command view followed by a wall of darkness.
 
 ## Planning, and making new plans
 
-The calendar on the iPad that I use to navigate sounds the reminder that the
+The calendar on the iPad that I use to navigate sounds a reminder that the
 twenty-four hour wind and wave forecast is about to come. The United States
 Coast Guard broadcasts it on the HF radio from New Orleans. This single
 document is the single most useful tool I have for planning passage
@@ -255,7 +254,7 @@ entry until morning. It causes me to evaluate the lesser of two evils.
 The first is navigating the shallows of the bay in the dark, trying to identify
 lights to validate my position, unable to see shoal nor reef.
 The second is navigating into the shallows out of high seas and strong winds
-with light to see by.
+and with light to see by.
 
 The second also involves sailing south again against the current in order
 to delay. If I get downstream of three knots of current I'll have a
@@ -273,7 +272,7 @@ but it's important. I don't have a full internet weather briefing for the
 route over the next three days. The twenty-four hour wind and wave chart
 showed a gale blowing in the northern Gulf of Mexico.
 
-What is the new plan? I'll make the enterance in the dark; get the hell
+What is the new plan? I'll make the entrance in the dark; get the hell
 out of Dodge City and into Pasadena. It's terribly risky. See how one
 problem can lead to another? I'm keenly aware than I'm constructing an
 accident chain. Fleeing the discomfort of the situations at Cozumel has
@@ -291,17 +290,17 @@ To the northeast of it is the Yucatán Channel. To the southwest, the bay,
 the mainland and the urban resort town of Cancún.
 
 Depths inside the bay are at most thirty feet. There is an extensive, shallow
-shoal southwest of the island. There is extensxve shoaling off of the mainland.
+shoal southwest of the island. There is extensive shoaling off of the mainland.
 In between, a channel. The chart shows red and green bouys and yellow hazard
 bouys that mark the way. It promises a bright yellow flashing ODAS bouy at
-the mouth. It promises a red and green floshing bouy marking the south
+the mouth. It promises a red and green flashing bouy marking the south
 side of the channel entry.
 
 At half past eleven at night I'm at the decision point. Sail south or
 sail to Dry Tortugas or head for the safety of a harbor. Seems like a
-simple decision, right? Navigating an unfamiliar field of shoals in the
-dark is so onerous that an unplaned, three day sail to Dry Tortugas feels
-like a viable option.
+simple decision, right? Yet there I was, deciding. Navigating an unfamiliar
+field of shoals in the dark is so onerous that an unplanned, three day sail to
+Dry Tortugas feels like a viable option.
 
 Sailing south to delay until daylight would be tough. It would mean making
 at least four knots under sail and without fail. This in rough seas and
@@ -315,14 +314,14 @@ Turning into the bay means putting the wind at my back. That will be nice.
 The waves will be pushing me along as well. It will be a piece of cake.
 It's also an act for which there is no turning back. Trying to turn around
 and come out, motoring into wind and sea, I would make little headway.
-At best I could make a knot, bashing and splashing,
-beating the daylights out of the rig,
-shaking up the inside of the boat, and punishing this sailor.
+At best I could make a knot. There I would be again: bashing and splashing,
+beating the daylights out of the rig, shaking up the inside of the boat, and
+punishing this sailor.
 
 Turning into the bay requires commitment to the unknown.
 We like that sort of living, don't we?
 We do this to skirt the slow death of the known and comfortable, don't we?
-I take a deep breath, start tho motor, heave-to to drop the little bit
+I take a deep breath, start the motor, heave-to to drop the little bit
 of mainsail I have flying, and then motor gently northeast into the channel,
 downwind, with the sea swell and wind waves pushing me alang.
 
@@ -333,7 +332,7 @@ Each has a light house. Their flashing lights amidst the steady lights
 suggests that they are present and functioning. They are where I expect to
 see them.
 
-If there are any lights on bouys marking the channel, I never saw them.
+If there are any lights on bouys marking the channel, I never see them.
 They could have merged with the city lights behind them, but they flash.
 They could have been always hidden in the trough of a wave when I was looking
 and they flashed. Most probably, they are not there.
@@ -342,6 +341,11 @@ There was a prominent, solid light onshore that I chose to steer by.
 If you trust that it's the correct solid light among all of the others
 on shore, you can steer a magnetic bearing to it in order to keep the
 center of the channel. It is prominent. You can do that.
+
+![Magenta line on Navionics](
+  {{ '/assets/images/2024/IMG_0250.PNG' | relative_url }}
+)
+
 
 You can also, additionally or primarily, follow the magenta line.
 Every GPS chart plotter since the dawn of civilization shows the route
@@ -384,6 +388,10 @@ bay on the south side of Isla Mujeres behind a reef and a spit of land.
 
 ## Dragging anchor
 
+![Sailboats at Isla Mujeres](
+  {{ '/assets/images/2024/DSC03814.JPG' | relative_url }}
+)
+
 While there are no waves in the anchorage, there's still wind. Wind takes
 hold of the boat and tries to turn it sideways. It wants to push the boat
 sideways downwind. Driving slowly upwind with motor and tiller, when the boat
@@ -394,7 +402,7 @@ The wind wants the boat the way it likes, and it likes it sideways.
 When anchoring, you drive the boat into the wind, let it come to a stop,
 and then let the wind bring the boat back. As the boat starts back you drop
 anchor. This way the the boat pulls the anchor through the water as the
-anchor falls, keepintg the anchor oriented properly to grab hold when it
+anchor falls, keeping the anchor oriented properly to grab hold when it
 reaches bottom. My boat has the anchor on the starboard side of the
 counter-stay for the bowsprit. In order to keep the chain from grating on it,
 I always cheat the boat a bit to port as it slows upwind. Then the boat
@@ -405,7 +413,7 @@ normal wind all of that happens fairly slowly. In fifteen knots, as was
 blowing here at Isla Mujeres in the wee hours of the morning, all of it
 happens very fast.
 
-The anchorage was not crouded, but well populated. I had to choose a spot
+The anchorage was not crowded, but well populated. I had to choose a spot
 related to the other boats and to depths and location, etc. In the dark,
 I was suprised by a boat that I didn't see until the shore lights put it
 in silhouette. Please, people. If you're not running your anchor light for
@@ -442,8 +450,7 @@ on it to make some slack. Next go forward and pull chain until it pulls
 back away from me. Snub the chain and return to the tiller. Repeat until
 the anchor is up.
 
-This isn't something I've practiced much nor ever done in fifteen knots of
-wind. I'm tired. Your IQ when you are tired drops radically. It's pretty
+I'm tired. Your IQ when you are tired drops radically. It's pretty
 much equivalent to being drunk. I over compensate. I put the chain under
 the boat. It catches somehow underneath. I have to motor a circle to release
 it. Released, I'm halfway down the anchorage and bearing down on another boat.
@@ -456,8 +463,8 @@ out because I get near enough to have a very good look.
 
 The ketch turns out to be my savior because, being near it for reference,
 I can see exactly how far I've motored up against my chain.
-I get a couple of good cycles of matoring-up to get slack and then pulling it
-in.  Then I find that I can keep pulling, pulling hard, and get the
+I get a couple of good cycles of motoring-up to get slack and then pulling in
+chain.  Then I find that I can keep pulling, pulling hard, and get the
 chain up without putting slack on it. The anchor comes up to the surface
 in my headlamp and it's celebration time. The little things, we celebrate.
 I'm free of danger to motor back upwind and try again.
@@ -468,20 +475,21 @@ it resists penetration of the blade of the anchor. In the end, I had nothing
 more than a dumbell weight at the end of my chain.
 
 Otto in charge, taking us upwind, I went forward and cleaned-off the anchor
-with the boat hook. This time I put my headlamp on bright and looked into
-the water before letting loose the anchor. In twelve feet of water here, they
-say, you'll see bottom. I don't know, but I sow light, like sand, not dark,
-like grass. Long story short, it didn't take a third try nor repeat
+with the boat hook. Dropping the anchor again, I put my headlamp on bright and
+looked into the water before letting loose. In twelve feet of water
+here, they say, you'll see bottom. I don't know, but I see light, like sand,
+not dark, like grass. Long story short, it didn't take a third try nor repeat
 tour downwind.
 
-At three in the morning the day after arriving at Cozumel, I was anchored
+At three in the morning the day after arriving at Cozumel, sixteen
+hours after arriving at my point of intended landfall, I was anchored
 at Isla Mujeres. What the devil had I done? Here it is, recorded, my
 insanity. One thing leads to another. Sometimes it gets worse and worse
 before it gets better. It always ends and sometimes it ends in disaster.
 This we try to avoid.
-This time, I'm safe and sound. All I have left to be arrived in Mexico
-is to pay an agent to authorize me
-with the authorities and to pay the fees for sailing my luxury yacht in Mexican
-waters. Here I am, Mexico. Time for that taco I've been craving. May it
-not disappoint.
+
+This time, I'm safe and sound. All I have left to be arrived in Mexico is to
+pay an agent to authorize me with the authorities and to pay the fees for
+sailing my luxury yacht in Mexican waters. Here I am, Mexico. Time for that
+taco I've been craving. May it not disappoint.
 
