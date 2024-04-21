@@ -73,7 +73,7 @@ On arrival I tried to call the port captain and then the marina without
 any response whatsoever. This was freaking me out a bit. Either both my
 radios were not functioning, no-one was listening, or I was being ignored.
 There were dozens of boats, mostly launches and a few large catamarans.
-The boats had scuba divers, snorklers, fishing adventurers, and people out
+The boats had scuba divers, snorkelers, fishing adventurers, and people out
 for a ride on the coast. The drivers of the boats treated me like a bad
 driver. Some yelled criticisms or instructions. Others waved back at me
 in a slightly bemused manner. It was clear that I didn't belong there.
@@ -109,7 +109,7 @@ arrival in Mexico. I wanted to talk with the marina first.
 After half an hour a security guard came around. He was a young guy from a
 private security company. He told me I had to move; that the slip belonged
 to a tenant. He pointed to a narrow slip on the next pier, next to another
-sailboad. You can go there, he said.
+sailboard. You can go there, he said.
 
 I said fine, but where are the marina staff? What are the prices? How do
 I accomplish the entry paperwork? He knew none of that, but called someone
@@ -216,7 +216,7 @@ bent out front --isn't so relaxing. My muscles keep working to hold myself
 steady.
 
 I'm anxious. The sounds inside the boat are spooky-- howling, sloshing,
-a wave occasionally sponking the boat hard with a loud wallop. I just lie
+a wave occasionally spanking the boat hard with a loud wallop. I just lie
 there working to relax.
 
 One of the cruise ships that was moored at Cozumel overtakes me on its way
@@ -225,7 +225,7 @@ of me to the east. It's a beautiful sight. I brace myself in the companionway,
 head and shoulders poking outside, to watch it go by. I always think of
 talking with the ships on the radio, just for company. Then I think, ah well,
 they're busy. They don't want to talk. I'm probably wrong about that.
-Some captains might find us slow moving little sailboats to be a nuissance.
+Some captains might find us slow moving little sailboats to be a nuisance.
 Others might be as curious about me as I am about them.
 
 After the cruise ship goes by I somehow manage to make a thermos of instant
@@ -245,7 +245,7 @@ twenty-four hour wind and wave forecast is about to come. The United States
 Coast Guard broadcasts it on the HF radio from New Orleans. This single
 document is the single most useful tool I have for planning passage
 once passage is underway. It tells me what the wind will be doing
-when I wake up in the morning. Somitimes I can get it. Other times it
+when I wake up in the morning. Sometimes I can get it. Other times it
 won't come-in. Tonight I get it.
 
 What it promises is wind of twenty five knots. Twenty five knots of wind
@@ -262,12 +262,12 @@ devil of a time getting back upstream. By no measure must I allow myself
 to be north of the entrance to the bay.
 
 Another option is to keep on sailing. With that kind of wind, continuing
-through the Yucatán Channel and making passige north of Cuba to Dry Tortuga
+through the Yucatán Channel and making passage north of Cuba to Dry Tortuga
 would have me in the United States of America in only three days. I measure
 it. It's three hundred miles, same as I just made from Grand Cayman.
 
 To be honest, the only thing that stops me is the thought of a full
-night's sleep and Mexican food. Periferally, one more thing. Periferally,
+night's sleep and Mexican food. Peripherally, one more thing. Peripherally,
 but it's important. I don't have a full internet weather briefing for the
 route over the next three days. The twenty-four hour wind and wave chart
 showed a gale blowing in the northern Gulf of Mexico.
@@ -291,9 +291,9 @@ the mainland and the urban resort town of Cancún.
 
 Depths inside the bay are at most thirty feet. There is an extensive, shallow
 shoal southwest of the island. There is extensive shoaling off of the mainland.
-In between, a channel. The chart shows red and green bouys and yellow hazard
-bouys that mark the way. It promises a bright yellow flashing ODAS bouy at
-the mouth. It promises a red and green flashing bouy marking the south
+In between, a channel. The chart shows red and green buoys and yellow hazard
+buoys that mark the way. It promises a bright yellow flashing ODAS buoy at
+the mouth. It promises a red and green flashing buoy marking the south
 side of the channel entry.
 
 At half past eleven at night I'm at the decision point. Sail south or
@@ -323,16 +323,16 @@ We like that sort of living, don't we?
 We do this to skirt the slow death of the known and comfortable, don't we?
 I take a deep breath, start the motor, heave-to to drop the little bit
 of mainsail I have flying, and then motor gently northeast into the channel,
-downwind, with the sea swell and wind waves pushing me alang.
+downwind, with the sea swell and wind waves pushing me along.
 
 Did I say there would be lights? The chart promised lights marking the
 channel. All I can see are city lights on both shores-- Cancún to my left,
-Isla Mujeres to my right. That's to port and to starboard in shipspeak.
+Isla Mujeres to my right. That's to port and to starboard in ship speak.
 Each has a light house. Their flashing lights amidst the steady lights
 suggests that they are present and functioning. They are where I expect to
 see them.
 
-If there are any lights on bouys marking the channel, I never see them.
+If there are any lights on buoys marking the channel, I never see them.
 They could have merged with the city lights behind them, but they flash.
 They could have been always hidden in the trough of a wave when I was looking
 and they flashed. Most probably, they are not there.
@@ -363,14 +363,14 @@ some force on the rudder to straighten it out, have the boat surf the wave
 instead of being turned broadside by it. Yeah. I had to take-over from Otto.
 
 I had told myself it would be like that. I had told myself it would be just
-like entering Bacas del Toro. Sometimes I get it right. We surfed a couple of
+like entering Bocas del Toro. Sometimes I get it right. We surfed a couple of
 dozen waves coming into the shallows and then everything calmed down.
 
 It's amazing and wonderful what GPS has done for us.
 Any back yard gardener can navigate using GPS.
 The position is ultra reliable. We trust it.
 The hydrography of the chart is also extremely reliable.
-The civilized part, lighted bouys, the charts can't keep straight because
+The civilized part, lighted buoys, the charts can't keep straight because
 the organizations that place them and report them don't report them any
 better than they place them.
 The natural part, depths of water and contours of land-- the parts directly
@@ -415,7 +415,7 @@ happens very fast.
 
 The anchorage was not crowded, but well populated. I had to choose a spot
 related to the other boats and to depths and location, etc. In the dark,
-I was suprised by a boat that I didn't see until the shore lights put it
+I was surprised by a boat that I didn't see until the shore lights put it
 in silhouette. Please, people. If you're not running your anchor light for
 some reason, get it sorted so that you are running it. About half of the
 boats in the anchorage were dark.
@@ -441,7 +441,7 @@ the background of shore lights.
 This can only mean one thing. It means that I am moving backward. I'm
 dragging the anchor.
 
-What? Now? This? This business of anchoring is exhastperating at times.
+What? Now? This? This business of anchoring is exasperating at times.
 
 Or dangerous. The wind is beginning to take me down the anchorage at
 an alarming rate. Going forward, I can't pull the chain back. Although the
@@ -458,7 +458,7 @@ it. Released, I'm halfway down the anchorage and bearing down on another boat.
 I sound my air horn to alert any occupants of the boat. It's a shapely ketch.
 My greatest fear is that I'm going to drag my anchor over theirs. We get tangled
 or I simply trip theirs into dragging as well. It seems prudent to warn them.
-It turns out that the boat is unoccupied, unkept, maybe abandoned. This turns
+It turns out that the boat is unoccupied, unkempt, maybe abandoned. This turns
 out because I get near enough to have a very good look.
 
 The ketch turns out to be my savior because, being near it for reference,
@@ -472,7 +472,7 @@ I'm free of danger to motor back upwind and try again.
 The anchor was no longer an anchor. It was a ball. The anchor had clogged
 completely with sticky, sandy clay and grass. Grass is the toughest because
 it resists penetration of the blade of the anchor. In the end, I had nothing
-more than a dumbell weight at the end of my chain.
+more than a dumbbell weight at the end of my chain.
 
 Otto in charge, taking us upwind, I went forward and cleaned-off the anchor
 with the boat hook. Dropping the anchor again, I put my headlamp on bright and
