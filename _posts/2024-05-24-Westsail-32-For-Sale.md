@@ -20,6 +20,10 @@ Back in December, 2000 I wrote about my new
   {{ '/assets/images/2024/BrisaFS/Afloat.jpg' | relative_url }}
 )
 
+![Cartoon drawing by Rowan the Red of me sailing Brisa](
+  {{ '/assets/images/2024/BrisaFS/BrisaDrawingRowan.png' | relative_url }}
+)
+
 Three and a half years and nine thousand nautical miles later, Brisa is for
 sale. The [Westsail 32 for sale announcement][w32] is at [Brisa.uy][uy], where
 I have written in Spanish about my adventures sailing Brisa.  Although most of
