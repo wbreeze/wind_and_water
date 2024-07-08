@@ -11,6 +11,10 @@ dest="${destDir}/${name}.md"
 [[ -e "${destDir}" || `mkdir -p "${destDir}"` ]]
 template="./new_post_template.md"
 subst="s/title: title/title: ${title}/;s/date: .+/date: ${ymd}/"
-sed -E "${subst}" "${template}" >"${dest}"
-echo "Created ${dest}"
+if [[ ! -e ${dest} ]]; then
+  sed -E "${subst}" "${template}" >"${dest}"
+  echo "Created ${dest}"
+else
+  echo "${dest} already present"
+fi
 vi ${dest}
