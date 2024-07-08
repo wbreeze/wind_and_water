@@ -70,7 +70,12 @@ steel frames in them, and load them with the supplies and our gear.
 We strap everything securely that it doesn't wash into the river when
 the river washes over us.
 
+At last we are ready. After dinner at the only restaurant around we
+retire each of us to our camp bedroll or cot for our first night of
+sleep under the stars. The next day is launch day, day one, departure
+day for our two-hundred and twenty mile, one way trip down river.
+
 Find more and larger photos from day zero in the [Day Zero Gallery][dzg].
 
-[dzg]: https://wnw.wbreeze.com/2022/07/WBreeze-com-on-AWS.html
+[dzg]: https://wbreeze.com/photo/gallery/20240620GC/Day00/index.html
 
