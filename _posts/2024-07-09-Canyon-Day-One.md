@@ -30,7 +30,7 @@ excerpt: Lees Ferry to Sheer Wall, mile 14.5
 The first morning light before sunrise lifted all of us out of our slumber.
 At 6:30am we had enjoyed coffee and breakfast.
 Beth from PRO arrived to brief us on the use of the groover,
-kitchen hygene and the water filter.
+kitchen hygiene and the water filter.
 Everything. *Everything* must pack-out of the canyon.
 Imagine. One or two thousand people use every camp along the river
 every year-- some popular camps more than others.
@@ -121,7 +121,7 @@ Anything else ranges from minor mishap to a complicating pin against a rock or
 a boat flip.
 
 We celebrated passing Badger Creek rapid, the first, as an event of greater
-significance than the launch. There were hoots and hollars,
+significance than the launch. There were hoots and hollers,
 fist pumps and arms extended to the sky. Once you've "done Badger," you're
 truly on the way. We were in the canyon as out of reach of the rest of
 the world as ever until the outpost at Phantom Ranch. In only eight miles
