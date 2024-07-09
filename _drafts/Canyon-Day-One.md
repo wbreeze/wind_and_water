@@ -3,11 +3,29 @@ layout: post
 title: Canyon Day One
 date: 2024-07-09
 lang: en
-categories:
+categories: Grand_Canyon
 excerpt: Lees Ferry to Sheer Wall, mile 14.5
-link_note: "[text for internal link]({{ '/2021/08/four_enemies.html' | relative_url }})"
-image_note: "![description]({{ '/assets/images/image.jpeg' | relative_url }})"
 ---
+
+![Rock bluffs and grasses at Lees Ferry, Arizona](
+  {{ 'assets/images/2024/GC/Day01/DCL_0120.JPG' | relative_url }}
+)
+
+![Camp briefing at Lees Ferry](
+  {{ 'assets/images/2024/GC/Day01/DCL_0102.JPG' | relative_url }}
+)
+
+![Water filter briefing at Lees Ferry](
+  {{ 'assets/images/2024/GC/Day01/DCL_0122.JPG' | relative_url }}
+)
+
+![Trip leader Jeff conserves a precious resource-- cooling ice](
+  {{ 'assets/images/2024/GC/Day01/DCL_0138.JPG' | relative_url }}
+)
+
+![Final preparations for launch](
+  {{ 'assets/images/2024/GC/Day01/DCL_0136.JPG' | relative_url }}
+)
 
 The first morning light before sunrise lifted all of us out of our slumber.
 At 6:30am we had enjoyed coffee and breakfast.
@@ -38,7 +56,39 @@ canyon. We depended on the filter. When the Colorado River became muddy,
 as is the norm, we settled the water overnight in buckets to clear the sediment
 before pumping it through the filters.
 
+[Pre launch photo gallery][day01p]
+
+[day01p]: https://wbreeze.com/photo/gallery/20240620GC/Day01p/index.html
+
 ## Launch
+
+![Launch group photo](
+  {{ 'assets/images/2024/GC/Day01/DCL_0142.JPG' | relative_url }}
+)
+
+![Kayak and pack raft entering the canyon](
+  {{ 'assets/images/2024/GC/Day01/DCL_0162.JPG' | relative_url }}
+)
+
+![River rafting in style; a relaxed start](
+  {{ 'assets/images/2024/GC/Day01/DCL_0173.JPG' | relative_url }}
+)
+
+![Navajo Bridges seen from the Colorado River](
+  {{ 'assets/images/2024/GC/Day01/DCL_0211.JPG' | relative_url }}
+)
+
+![Looking upstream the Colorado, two river rafts](
+  {{ 'assets/images/2024/GC/Day01/DCL_0230.JPG' | relative_url }}
+)
+
+![Running the first rapid](
+  {{ 'assets/images/2024/GC/Day01/DCL_0274.JPG' | relative_url }}
+)
+
+![Relaxed and happy below the first rapid](
+  {{ 'assets/images/2024/GC/Day01/DCL_0278.JPG' | relative_url }}
+)
 
 Our trip leader, Jeff Brown gave a safety briefing and review supplemented
 with additions from other, very experienced members of our party.
@@ -72,7 +122,7 @@ a boat flip.
 
 We celebrated passing Badger Creek rapid, the first, as an event of greater
 significance than the launch. There were hoots and hollars,
-fist pumps and arms extended to the sky. Once you've done Badger, you're
+fist pumps and arms extended to the sky. Once you've "done Badger," you're
 truly on the way. We were in the canyon as out of reach of the rest of
 the world as ever until the outpost at Phantom Ranch. In only eight miles
 we had secreted ourselves deeply into the wild.
@@ -80,6 +130,10 @@ we had secreted ourselves deeply into the wild.
 Before mile twelve we ran the Soap Creek rapid, a five, and Brown's
 Riffle. Jeff remarked his namesake riffle. It was actually named for
 Frank M. Brown, an explorer for a railroad survey in 1889. He drowned.
+
+[First river day photo gallery][day01r]
+
+[day01r]: https://wbreeze.com/photo/gallery/20240620GC/Day01r/index.html
 
 ## Sheer Wall camp
 
