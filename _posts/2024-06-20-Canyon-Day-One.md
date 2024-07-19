@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canyon Day One
-date: 2024-07-09
+date: 2024-06-20
 lang: en
 categories: Grand_Canyon
 excerpt: Lees Ferry to Sheer Wall, mile 14.5
