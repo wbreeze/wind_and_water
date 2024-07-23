@@ -6,6 +6,7 @@ lang: en
 categories: Grand_Canyon
 excerpt: Hance to Hermit
 ---
+
 ![description](
   {{ 'assets/images/2024/GC/Day06/DCL_1655.JPG' | relative_url }}
 )
@@ -58,8 +59,9 @@ roller coaster ride.
 
 Below the rapid we got to see the first magnificent formations of metamorphic,
 black Vishnu Schist and pink Zoroaster Granite at river level. We ran the
-Grapevine (6, Mile ~82) and Zoroaster rapids before taking a quick dip into the
-developed world at Phantom Ranch. Ah, sweet lemonade on ice!
+Grapevine (6, Mile ~82) and Zoroaster (4, Mile ~85) rapids before taking a
+quick dip into the developed world at Phantom Ranch (Mile ~88). Ah, sweet
+lemonade on ice!
 
 Right after Phantom, at mile ~91 we ran the Horn, a mean seven rapid that one
 member of our party confided to me they were truly afraid of. With good reason.
