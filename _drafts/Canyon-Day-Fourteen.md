@@ -77,8 +77,8 @@ photographing the cactus growing around camp. It was a sweet place, though the
 sun was intense. There must have been some magic because Christie turned into a
 mer-turtle.
 
-Chris built a shelter over a ledge against a wall. It made a kind of
-sheltered patio overlooking the river. The camp chairs migrated there for
+Chris built a shelter over a ledge against a wall. It made a
+shaded patio overlooking the river. The camp chairs migrated there for
 a while.
 
 Find photos made on day fourteen of our GC river raft adventure at [Canyon Day
