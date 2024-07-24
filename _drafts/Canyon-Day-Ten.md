@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Canyon Day Ten
-date: 2024-07-29
+date: 2024-06-29
 lang: en
 categories: Grand_Canyon
 excerpt: Rest day at Deer Creek and the Patio
