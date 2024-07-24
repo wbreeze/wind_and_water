@@ -28,14 +28,6 @@ excerpt: Deer Creek to Matkat Hotel
 )
 
 ![description](
-  {{ 'assets/images/2024/GC/Day11/DCL_2946.JPG' | relative_url }}
-)
-
-![description](
-  {{ 'assets/images/2024/GC/Day11/DCL_2949.JPG' | relative_url }}
-)
-
-![description](
   {{ 'assets/images/2024/GC/Day11/DSC_2753.JPG' | relative_url }}
 )
 
@@ -71,6 +63,14 @@ excerpt: Deer Creek to Matkat Hotel
   {{ 'assets/images/2024/GC/Day11/DSC_2937.JPG' | relative_url }}
 )
 
+![description](
+  {{ 'assets/images/2024/GC/Day11/DCL_2946.JPG' | relative_url }}
+)
+
+![description](
+  {{ 'assets/images/2024/GC/Day11/DCL_2949.JPG' | relative_url }}
+)
+
 We ran from Deer Creek (Mile ~137) to Matkat Hotel (Mile ~149)
 through a deep, narrow canyon. We stopped at Matkatamiba Canyon briefly, thanks
 to clam cleats well placed by Chris to anchor our boats. The Canyon Expeditions
@@ -92,17 +92,15 @@ at times. The temperature was one-hundred and three (ºF). The sand heated
 by the sun was too hot to walk on barefoot. It burned the feet. It melted the
 glue in some of our shoes. More on that, later.
 
-Would you believe that, with all of this adversity we love to talk about,
+Would you believe that, with all of this adversity that we love to talk about,
 we were content and happy? Lazy and relaxed? It was just so. Chris, always
 the explorer, found a trail up, over the bluff, to the Matkatamiba Canyon.
 We had not remained in the canyon for long when we had anchored our boats
 in the rock. A thunderstorm threatened to the south. We were afraid of a
-flash flood washing us out of the canyon. See? There you go. Straight to
-making drama. The visuals, the sounds, and the closeness of the river induced
-within some of us a serene calm. It was lovely. We marvelled in it.
+flash flood washing us out of the canyon. See? There you go. I'm writing again
+to make drama. The visuals, the sounds, and the closeness of the river
+induced within some of us a serene calm. It was lovely. We marvelled in it.
 
-Find photos made on day eleven of our GC river raft adventure at
-[Canyon Day Eleven Gallery](
-  https://wbreeze.com/photo/gallery/20240620GC/Day11/index.html
-)
+Find photos made on day eleven of our GC river raft adventure at [Canyon Day
+Eleven Gallery]( https://wbreeze.com/photo/gallery/20240620GC/Day11/index.html)
 
