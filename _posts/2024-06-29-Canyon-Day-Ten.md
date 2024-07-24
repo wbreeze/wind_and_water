@@ -87,7 +87,7 @@ remained in this eden for hours simply absorbing the spirit of the place.
 
 Further up the trail from the patio, Faerthen found and documented an agave
 plant. She reported that the plant, Grand Canyon Agave (Agave phillipsiana) is
-critically endangered and rare to find.  Archeologists speculate that the
+critically endangered and rare to find.  Archaeologists speculate that the
 Native Americans cultivated them for food, since they are usually found near
 ancient habitation sites.  Faerthen's photo-documented observation was the
 first for this plant to be [shared on the identification guide,
