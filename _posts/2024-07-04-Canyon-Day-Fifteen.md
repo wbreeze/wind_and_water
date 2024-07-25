@@ -28,11 +28,13 @@ camp, with a layover at Three Springs Canyon (Mile ~216). The group that
 launched with us was costumed for this Fourth of July holiday. We passed their
 camp, then saw them as they also stopped at Three Springs.
 
-Peter had the recollection of Three Springs being terraced with travertine
-pools. Sometime since his last visit, a wash took-out all of the pools.
+Peter had the recollection of Three Springs being terraced with [travertine
+pools][pool]. Sometime since his last visit, a wash took-out all of the pools.
 What remained was a trickle of water thick with shrubby, prickly plants.
 It was beautiful still. We rested, lunched, and sought shade there before
 heading down to the camp.
+
+[pool]: https://en.wikipedia.org/wiki/Travertine
 
 Once again, I was paddling the IK and there were few rapids. I made more
 photos of cactus in camp.
