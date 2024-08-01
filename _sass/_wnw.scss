@@ -12,7 +12,7 @@ h1, h2, h3 {
   clear: both
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
   img {
     width: 100%;
     padding-right: 0px;
@@ -26,6 +26,9 @@ h1, h2, h3 {
 @media only screen and (min-width: 1000px) {
   .translation {
     width: 800px;
+  }
+  img {
+    width: fit-content;
   }
 }
 
