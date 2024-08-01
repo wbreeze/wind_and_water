@@ -1,0 +1,24 @@
+.pnp-post-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1ex;
+
+    div {
+      flex: 1 1 0;
+
+      &:first-child {
+        padding-right: 0.5em;
+      }
+
+      &:last-child {
+        padding-left: 0.5em;
+        text-align: right;
+      }
+    }
+}
+
+.pnp-inicio {
+  margin-top: 1ex;
+}
+
