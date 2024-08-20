@@ -1,0 +1,16 @@
+<p>
+<video
+   controls
+   muted=true
+   preload="metadata"
+   src="{{ 'https://medios.brisa.uy/video/' | append: include.source | relative_url }}"
+   {% if include.still %}
+     poster="{{ 'assets/images/' | append: include.still | relative_url }}"
+   {% endif %}
+>
+ Awe man. Your browser won't embed this video.
+ Maybe you can download it and play it with some other app.
+ <a href="{{ 'https://medios.brisa.uy/video/' | append: include.source | relative_url }}"
+   >{{ include.source | relative_url }}</a>.
+</video>
+</p>
