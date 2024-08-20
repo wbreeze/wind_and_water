@@ -83,3 +83,11 @@ night before launch, we said some goodbyes and parted. End of canyon trip.
 Find photos made on day sixteen of our GC river raft adventure at [Canyon Day
 Sixteen Gallery]( https://wbreeze.com/photo/gallery/20240620GC/Day15/index.html)
 
+Take ten minutes (plus a few) to watch this video. It contains photos and
+live footage.
+
+{% include videob.html
+  source='2024/Grand_Canyon_20240620.mp4'
+  still='2024/GC/Day16/DCL_3784.JPG'
+%}
+
