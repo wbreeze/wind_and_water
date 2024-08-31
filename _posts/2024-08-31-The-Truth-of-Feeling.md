@@ -56,7 +56,7 @@ acknowledged the other as valuable. The felt truth shows us what we aspire to.
 It acknowledges feelings and desires that people who favor "right," or recorded
 truth might otherwise suppress, judge immoral or at minimum regard as
 distasteful. Another possibility is that one dismisses the other as impossibly
-naive or impractical.
+naive, uninformed or impractical.
 
 The Feng and English translation of the Chuang Tsu contains these words: "What
 one says is wrong, the other says is right; and what one says is right, the
@@ -64,11 +64,15 @@ other says is wrong.  If the one is right while the other is wrong, and the
 other is right while the one is wrong, then the best thing to do is to look
 beyond right and wrong."
 
-What will the synthesis look like? Will there be one? Is the system dynamically
-stable, or will it swing more and more widely from one side to the other until
-it simply flies apart? Is there an up-side to our new communications
-technologies, or are they destabilizing, in need of moderation, regulation and
-censorship?
+What would the synthesis look like? Will there be one? Is the system
+dynamically stable, or will it swing more and more wildly from one side to the
+other until it simply flies apart? Is there an up-side to our new
+communications technologies? Are they best left alone or are they
+destabilizing, in need of moderation, regulation and censorship? As for the
+recorded truth faction, are they overcontrolling? Do they represent a thought
+police aristocracy, or worse, a theocracy?
+
+How will it look when each moves beyond seeing the other as right or wrong?
 
 ![Fisher Island Sound, New York](
   {{ '/assets/images/2024/DCL_3993.JPG' | relative_url }}
