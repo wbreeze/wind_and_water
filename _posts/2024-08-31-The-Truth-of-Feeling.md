@@ -18,7 +18,7 @@ many other stories, including "The Truth of Fact, The Truth of Feeling."
 
 In this last, people are given to accept a new technology that records
 everything you experience-- the audiovisual part --in a way that is instantly
-accessable to queries, something like memory.
+accessible to queries, something like memory.
 
 Out of this arise two senses of the past, of memory, and of the meaning
 of truth. In one sense, our personal and cultural memories evolve to suit
@@ -40,7 +40,7 @@ cultural benefits to emotional truth.
   {{ '/assets/images/2024/DCL_4051.JPG' | relative_url }}
 )
 
-Is it possible that our new media of tweets, posts, meems, and going viral are
+Is it possible that our new media of tweets, posts, memes, and going viral are
 returning us to a culture of emotional truth? Is it possible that we are
 experiencing an adoption of technology that favors emotional truth over
 recorded truth? We are a species that builds our culture, our very social
@@ -49,14 +49,14 @@ or not they represent what we would accept as recorded truth, are what define
 us. How is it illegitimate, immoral or inauthentic to favor felt truth over
 recorded truth in defining and communicating that which we aspire to?
 
-There are forces in the world gaining emminence from felt truth, with little
+There are forces in the world gaining eminence from felt truth, with little
 regard to recorded truth. There are forces in the world for whom this is
 unforgivable and dishonest. I wonder what would happen if each of those forces
 acknowledged the other as valuable. The felt truth shows us what we aspire to.
 It acknowledges feelings and desires that people who favor "right," or recorded
-truth might otherwise supress, judge immoral or at minimum regard as
+truth might otherwise suppress, judge immoral or at minimum regard as
 distasteful. Another possibility is that one dismisses the other as impossibly
-naïve or impractical.
+naive or impractical.
 
 The Feng and English translation of the Chuang Tsu contains these words: "What
 one says is wrong, the other says is right; and what one says is right, the
