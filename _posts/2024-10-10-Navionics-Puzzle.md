@@ -3,7 +3,7 @@ layout: post
 title: Navionics Puzzle
 date: 2024-10-10
 lang: en
-categories: usability Navionics navegation sailing
+categories: usability Navionics navigation sailing
 excerpt: In the marine charting application, Navionics, a puzzle.
 image_note: "![description]({{ '/assets/images/image.jpeg' | relative_url }})"
 ---
