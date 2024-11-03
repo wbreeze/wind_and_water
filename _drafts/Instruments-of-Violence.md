@@ -18,6 +18,10 @@ nosed speeding brick.
 [bug]: https://en.wikipedia.org/wiki/The_Love_Bug
 [furthur]: https://en.wikipedia.org/wiki/Furthur_(bus)
 
+![Cars](
+  {{ 'assets/images/2024/11Cars/IMG_20241102_125631_229.jpg' | relative_url }}
+)
+
 Automobiles are instruments of death.  They hurtle down highways menacing
 everything in their path.  Bunnies, for example.  Deer. Dogs and cats.
 Children.  Pedestrians. Birds of all kinds. Bats. Butterflies.  Other cars.
@@ -58,7 +62,11 @@ memorializes about six thousand, five hundred (6,480) soldiers lost per year.
 [wall]: https://en.wikipedia.org/wiki/Vietnam_Veterans_Memorial
 [viet]: https://en.wikipedia.org/wiki/Vietnam_War_casualties
 
-In lower Manhattan of New York City find the [National September 11 Memorial][nmm]
+![F150](
+  {{ 'assets/images/2024/11Cars/IMG_20241102_125639_376.jpg' | relative_url }}
+)
+
+In lower Manhattan of New York City the [National September 11 Memorial][nmm]
 names about three thousand (2,983) victims on the airplanes and at the sites
 targeted by the airplanes in the attacks of September 11, 2001. There
 are several dozens of [permanent memorials][911mems] for the violent and
@@ -77,8 +85,8 @@ in a year, in a distributed fashion by marauding cars.
 Let's visit briefly the the environmental disaster that is an automobile. If
 you believe the news about global climate change due to burning hydrocarbons,
 believe that the [EPA accounts][gcc] cars and light trucks with fifteen percent
-of the damage. That isn't to mention all of the dead bunnies and squirrels.
-You can forgive Mother Nature for thinking of cars as instruments of violence.
+of the damage[^2]. That is not to mention all of the dead bunnies and squirrels.
+You can forgive Mother Nature if she thinks of cars as instruments of violence.
 
 [gcc]: https://www.epa.gov/greenvehicles/fast-facts-transportation-greenhouse-gas-emissions
 
@@ -95,11 +103,15 @@ stroke, crib death.  But really?  We love cars. We don't keep a special place
 in our hearts for tumors.  We love cars more than we love guns, and perhaps
 tellingly, cars are more lethal than guns.
 
+![Cars](
+  {{ 'assets/images/2024/11Cars/DCL_4617.png' | relative_url }}
+)
+
 In automobile advertising there are no other cars.  There is the open road and
 unimpeded pleasure.  Even urban streets are empty. There are no pedestrians. It
 is our dream.  The advertising promises power, performance, freedom, speed,
 sometimes and rarely safety-- that is safety for the driver and the occupants.
-Inside the car we ride in a cuckoon, behind glass often tinted to hide us and
+Inside the car we ride in a cuckoon, behind glass often tinted to hide us,
 armored by steel. The world outside is a moving picture punctuated with threats
 and obstacles. Cars objectify the world for us as soldiers objectify an enemy.
 
@@ -120,4 +132,6 @@ every one of us. And we kill. With cars.
     cars, so far as I know, they don't cause widespread famine and disease. At
     least not yet.
 
+[^2]: The one we worry about, jet airplanes, is accounted with two and
+    a half percent.
 
