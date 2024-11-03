@@ -9,7 +9,7 @@ excerpt: What you say? Rockets? Guns? Water pistols? How about cars?
 
 Automobiles are instruments of violence.  It wasn't always this way. Think of
 ["Chitty Chitty Bang Bang"][ccbb], ["The Love Bug"][bug], ["Furthur" the
-bus][furthur] (although a bus insn't exactly an automobile, is it?).  Let's talk
+bus][furthur] (although a bus isn't exactly an automobile, is it?).  Let's talk
 about the cars of today.  There are no innocent cars.  Even, say, a wholesome
 Subaru Outback. Is there a more innocent car?  It is a ferocious, squat, blunt
 nosed speeding brick.
@@ -111,7 +111,7 @@ In automobile advertising there are no other cars.  There is the open road and
 unimpeded pleasure.  Even urban streets are empty. There are no pedestrians. It
 is our dream.  The advertising promises power, performance, freedom, speed,
 sometimes and rarely safety-- that is safety for the driver and the occupants.
-Inside the car we ride in a cuckoon, behind glass often tinted to hide us,
+Inside the car we ride in a cocoon, behind glass often tinted to hide us,
 armored by steel. The world outside is a moving picture punctuated with threats
 and obstacles. Cars objectify the world for us as soldiers objectify an enemy.
 
