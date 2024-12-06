@@ -117,7 +117,7 @@ Bluesky into revealing them, such as U.S. law enforcement, or whomever.
 It's just like messages at GMail. (Oh so sexy; and free!) You don't know who
 reads them.
 
-What you post is (obviously) available to anyone.  In additon, they track your
+What you post is (obviously) available to anyone.  In addition, they track your
 use of the site-- what you click, what you look at and how long, whom you
 follow, how often you visit what feeds, etc.
 
