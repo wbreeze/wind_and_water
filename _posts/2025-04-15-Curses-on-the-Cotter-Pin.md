@@ -29,7 +29,7 @@ satisfied with spreading them apart.  We have to bend them back.  You have to
 bend back the legs, wrap them around, so that they are impossible, impossible
 to remove. Yes.  Curses on those who've bent back the legs of the cotter pin.
 Their designers did not want their legs bent back. Their designers who put the
-pointy ends on the them. Their designers into didn't want their legs bended
+pointy ends on them. Their designers didn't want their legs bended
 back. They shouldn't have put pointy ends on them. Oh, pointy ends, yes sir.
 Pointy ends on the cotter pin.
 
@@ -51,7 +51,7 @@ course.  In great waves to overturn you. There will be my punishment for giving
 me your cotter pins. No. Do not send your cotter pins to Poseidon.  They
 deserve, of course, to rust quietly lying on the sea bed, turning to dust. But
 no. That takes too long. That is much too slow an end for a cotter pin.  Not to
-mention the Poseidon doesn't like it. We don't want to make Poseidon angry with
+mention Poseidon doesn't like it. We don't want to make Poseidon angry with
 us, do we now?  Oh no, oh no. Only blessings on Poseidon. Offerings of sweet
 things to Poseidon, things that Poseidon enjoys. Like little maidens, little
 mermaid maidens. Not cotter pins. They are double legs and lacking arms they
@@ -81,7 +81,7 @@ developed a technique? Have I become semi expert at the removal of cotter pins?
 Have I become a cotter pin destroyer? Have I become a cotter pin expert?
 Aficionado? Devotee?  I will go home to my pretty wife and tell her, oh pretty
 wife. I have become expert at removing cotter pins. I know how to do it, now.
- I can get a cotter pin out in a jiffy. I can get a copper pin out. In only moments,
+I can get a cotter pin out in a jiffy. I can get a cotter pin out. In only moments,
 easy as pickings I can, as making a pie. Oh, yes. I have techniques. I have
 strategies.  I am a man who can remove part cotter pins without any trouble at
 all! No troubles all! You just have to know how to do it, and then it's easy.
