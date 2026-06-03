@@ -1,0 +1,9 @@
+width=1920
+height=1080
+nopreview=1
+metering=average
+awb=daylight
+lens-position=0
+quality=80
+low-latency=1
+
