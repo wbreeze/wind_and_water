@@ -16,8 +16,8 @@ DEST="${CAM_1}/Popa${TIMESTAMP}1.mp4"
 echo "$DEST"
 rpicam-vid --camera 1 -t 15s --config grabConfig.txt -o "${DEST}" >>"${LOG}" 2>&1
 
+echo +3300 | tee /sys/class/rtc/rtc0/wakealarm
 if [ ! -e "${VID_DIR}/keepalive" ]; then
-  echo +3300 | tee /sys/class/rtc/rtc0/wakealarm
   sudo shutdown now
 fi
 

@@ -10,6 +10,10 @@ excerpt: Programmed video recording using a Raspberry Pi
 I made a camera for the back of my boat. It's a Raspberry Pi with a pair
 of cameras attached. This enables me to program video capture of a passage.
 
+![PiCam mounted on the stern of sailboat Brisa](
+  {{ 'assets/images/2026/PiCam//DCL_5842.JPG' | relative_url }}
+)
+
 ## Make a bootable SD card for the Pi
 
 The [Raspberry Pi Imager][os-imager] put an OS image on a micro-SD card that
@@ -60,6 +64,10 @@ Edit the Chancho connection. On the General tab, up the priority to one.
 It is possible to do this with the command line, using `nmcli`. I wasn't
 able to pull that off. It would disconnect me when creating the BrisaFi
 connection.
+
+![Pieces of the puzzle](
+  {{ 'assets/images/2026/PiCam//IMG_1554.jpeg' | relative_url }}
+)
 
 ### Configure the cameras
 
@@ -240,6 +248,10 @@ and log files --will belong to root. This is a minor inconvenience. It pays
 to run the `grabVideo.sh` script for the first time as the login user.
 In this way, the directory paths to the files, these directories created on
 the first run, will not themselves belong to the root user.
+
+![Camera installed](
+  {{ 'assets/images/2026/PiCam//DCL_5738.JPG' | relative_url }}
+)
 
 ## Administering the files
 
