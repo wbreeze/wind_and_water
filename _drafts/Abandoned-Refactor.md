@@ -250,27 +250,37 @@ link had two different sentences written months apart, which is how I ended up
 rewording it to *This transaction on the Solana blockchain ledger* — a change I
 only made because the two were finally visible side by side.
 
-**And it found four defects that had nothing to do with copy.** A pre\-emptive
+**And it found two defects that had nothing to do with copy.** A pre\-emptive
 warning gated on *has anything happened* when it meant *has this been said*, so
 one successful advance silenced it for the rest of a visit — including the
-advance that makes the next one certain to fail. A failure report with no
+advance that makes the next one certain to fail. And a failure report with no
 branch for a revoked delegate, which the neighbouring branch was catching and
-mis\-explaining. A panel that ordered its sections by comparing their own
-headings against a literal list, which would have silently dropped a reworded
-section to the bottom. A test that checked a convention only in the directory
-the convention happened to start in. Three of the four are the same shape: a
-predicate that tests the wrong proposition and is right almost always.
+mis\-explaining: an approval that is *gone* described as an approval that is
+merely too small.
 
-Plus five tests that were quoting copy — two of them *negative* assertions that
-would have started passing by looking for a string nothing could contain. Those
-were not tests.
+Plus a test that could not tell which of three branches had rendered, because
+all three opened with the same two words; and a negative assertion —
+`assertStringNotContainsString('draft', …)` — that nothing anchored, so it
+would have started passing by looking for a string nothing could contain the
+day the badge was reworded. That one was not a test.
 
-That is a real haul. It is not nothing.
+I first counted four defects rather than two, and the correction is worth
+making because it cuts against me. A third — a diagnostic panel that ordered
+its sections by comparing their own headings against a literal list — I found
+by reading, and assumed was uncaught. It was not: renaming a heading in one
+place and not the other turns an existing test red, with the displaced section
+visible in the diff. I checked, afterwards, by doing it. The fourth was a gap
+in the scanner that enforces the new convention — a defect in machinery the
+refactor itself had introduced, caught by that same machinery, which is not a
+finding about the application at all.
+
+So: two real defects in pre\-existing code, and two tests made sound. That is
+still a real haul for two days. It is half of what I told myself it was.
 
 ## Why it does not pay
 
-Here is the thing about the four defects: **the refactor was their occasion,
-not their cause.** What found them was reading every screen and every branch of
+Here is the thing about those defects: **the refactor was their occasion, not
+their cause.** What found them was reading every screen and every branch of
 every screen, carefully, with a harness that proved what changed. A review pass
 would have found them. A review pass would have cost a day and no lines.
 
