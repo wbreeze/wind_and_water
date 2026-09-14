@@ -10,6 +10,20 @@ excerpt: Over two days I took every English sentence out of a small PHP web
 
 *with Claude Opus 5 (Anthropic)*
 
+I've been working with this AI software development tool. It has helped
+me with a pair of projects over the past few weeks. I'm convinced that
+humans don't need to write code anymore. That is a story for another day.
+Here is an episode that focuses on the value and the costs of extracting
+the human-read content from a code base that renders user interface.
+
+Most of what follows was written by Claude. Maybe you can tell by how
+mechanically thorough it is. I read it over, made some tiny little edits.
+I can't argue with the correctness and completeness. The conclusion was mine.
+Claude was more neutral about it when I asked it to evaluate the refactor.
+It gave me costs and advantages. What sealed it was me looking at the code.
+
+## What I did
+
 Over two days I took every English sentence out of a small PHP web application
 and put it in a catalogue — a keyed array for the short strings, markdown files
 for the prose. Two thousand seven hundred words out of twenty templates, five
@@ -57,12 +71,15 @@ Look at the last row. Two thousand seven hundred words left the templates and
 the templates gave back seventy\-one lines. Every screen grew a docblock
 paragraph explaining where its words had gone and why. The thing being
 optimised did not get smaller; it got quieter.
+I'm not going to argue that comments don't count as lines of code.
+There's a good case that they do because they can be wrong and bring
+maintanence and reading weight.
 
-And of the two hundred and twenty keys, **two hundred and four are used exactly
-once.** Ninety\-three percent. The argument I leaned on hardest while doing this
-— *a wording fixed in two places is a wording fixed in two places* — turns out
-to govern sixteen keys. The duplication was real where it existed (one heading
-was rendered four times from two templates; one link had two different
+Of the two hundred and twenty keys, two hundred and four are used exactly
+once. That is ninety\-three percent. An argument I leaned onwhile doing this—
+a wording fixed in two places is a wording fixed in two places —turns out
+to govern only sixteen keys. The duplication was real where it existed (one
+heading was rendered four times from two templates; one link had two different
 sentences for the same destination) but it is not what the exercise was mostly
 doing. Mostly it was moving a string from one file to another and leaving a
 name behind.
@@ -184,7 +201,7 @@ way of saying each was discovered the hard way:
    copy that a template escapes must be plain text. Which means no catalogue
    string in an escaped position may take a placeholder, because a value the
    catalogue escaped would be escaped twice and `a < b` would reach the page as
-   `a &amp;lt; b`.
+   `a &amp;lt; b`. Hah! Wrong.
 3. **Keys must be literals at the call site**, because a key chosen by a
    ternary is a key no scanner can find.
 4. **A `content/ui/` filename is a key prefix, so it must be
@@ -206,7 +223,8 @@ $rows[] = [
 ];
 ```
 
-Six of those cells are program expressions — `require!(new_used <= limit, LimitReached)` — and must stay in the code, because their whole value is that
+Six of those cells are program expressions — `require!(new_used <= limit,
+LimitReached)` — and must stay in the code, because their whole value is that
 they match something outside the site. The seventh is that English sentence. So
 one cell of seven became:
 
@@ -246,17 +264,17 @@ met.
 
 **Real duplication came out.** *"The rest is metered"* was in two templates and
 rendered from four places. *Go to the paper* was in two screens. One explorer
-link had two different sentences written months apart, which is how I ended up
+link had two different sentences written "months" apart, which is how I ended up
 rewording it to *This transaction on the Solana blockchain ledger* — a change I
 only made because the two were finally visible side by side.
 
-**And it found two defects that had nothing to do with copy.** A pre\-emptive
-warning gated on *has anything happened* when it meant *has this been said*, so
-one successful advance silenced it for the rest of a visit — including the
-advance that makes the next one certain to fail. And a failure report with no
-branch for a revoked delegate, which the neighbouring branch was catching and
-mis\-explaining: an approval that is *gone* described as an approval that is
-merely too small.
+**It found two defects that had nothing to do with copy.**
+- A pre\-emptive warning gated on *has anything happened* when it meant *has
+  this been said*, so one successful advance silenced it for the rest of a
+  visit — including the advance that makes the next one certain to fail.
+- A failure report with no branch for a revoked delegate, which the
+  neighbouring branch was catching and mis\-explaining: an approval that is
+  *gone* described as an approval that is merely too small.
 
 Plus a test that could not tell which of three branches had rendered, because
 all three opened with the same two words; and a negative assertion —
@@ -265,14 +283,15 @@ would have started passing by looking for a string nothing could contain the
 day the badge was reworded. That one was not a test.
 
 I first counted four defects rather than two, and the correction is worth
-making because it cuts against me. A third — a diagnostic panel that ordered
-its sections by comparing their own headings against a literal list — I found
-by reading, and assumed was uncaught. It was not: renaming a heading in one
-place and not the other turns an existing test red, with the displaced section
-visible in the diff. I checked, afterwards, by doing it. The fourth was a gap
-in the scanner that enforces the new convention — a defect in machinery the
-refactor itself had introduced, caught by that same machinery, which is not a
-finding about the application at all.
+making because it cuts against me.
+- A third — a diagnostic panel that ordered its sections by comparing their own
+  headings against a literal list — I found by reading, and assumed was
+  uncaught. It was not: renaming a heading in one place and not the other turns
+  an existing test red, with the displaced section visible in the diff. I
+  checked, afterwards, by doing it.
+- The fourth was a gap in the scanner that enforces the new convention — a
+  defect in machinery the refactor itself had introduced, caught by that same
+  machinery, which is not a finding about the application at all.
 
 So: two real defects in pre\-existing code, and two tests made sound. That is
 still a real haul for two days. It is half of what I told myself it was.
@@ -302,7 +321,7 @@ them and both halves get weaker: the sentence loses the values that make it
 concrete, and the code loses the only plain\-language statement of its purpose.
 
 That is not a tooling problem and no amount of convention fixes it. It is what
-you traded.
+traded.
 
 ## The emblem
 
@@ -326,7 +345,7 @@ what I had done it is hard to improve on.
 
 ## What I would keep
 
-One screen converted looked like a win, and that is the trap. The meter screen
+One screen converted looked like a win, and that was the trap. The meter screen
 alone was a good trade: four hundred and eighty\-nine words, three copies of one
 heading collapsed into one key, a template that got meaningfully shorter. If I
 had stopped there I would still think this was a good idea.
@@ -338,7 +357,7 @@ is an emergent property and you cannot sample it.
 So: **the only justification for separating the text from the code is the one
 that forces it — human language translation.** If a second locale is coming,
 the words have to leave, and every cost above is simply the price of admission.
-If it is not, you are paying the price for nothing but a tidier place to type,
-and a tidier place to type is not worth an application you cannot read.
+If it is not, you are paying the price for nothing but a tidier place to type.
+A tidier place to type is not worth an application you cannot read.
 
 I am keeping the four bug fixes. The rest goes back.
