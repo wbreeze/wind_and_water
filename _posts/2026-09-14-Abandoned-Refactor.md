@@ -73,10 +73,10 @@ paragraph explaining where its words had gone and why. The thing being
 optimised did not get smaller; it got quieter.
 I'm not going to argue that comments don't count as lines of code.
 There's a good case that they do because they can be wrong and bring
-maintanence and reading weight.
+maintenance and reading weight.
 
 Of the two hundred and twenty keys, two hundred and four are used exactly
-once. That is ninety\-three percent. An argument I leaned onwhile doing this—
+once. That is ninety\-three percent. An argument I leaned on while doing this—
 a wording fixed in two places is a wording fixed in two places —turns out
 to govern only sixteen keys. The duplication was real where it existed (one
 heading was rendered four times from two templates; one link had two different
