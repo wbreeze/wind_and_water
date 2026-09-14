@@ -5,5 +5,5 @@ metering=average
 awb=daylight
 lens-position=0
 quality=80
-low-latency=1
+framerate=25
 
