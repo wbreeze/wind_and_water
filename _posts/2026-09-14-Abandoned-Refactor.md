@@ -5,7 +5,7 @@ date: 2026-09-14
 lang: en
 categories: software
 excerpt: Over two days I took every English sentence out of a small PHP web
-  application and put it in a catalogue
+application and put it in a catalogue
 ---
 
 *with Claude Opus 5 (Anthropic)*
@@ -201,8 +201,10 @@ way of saying each was discovered the hard way:
    copy that a template escapes must be plain text. Which means no catalogue
    string in an escaped position may take a placeholder, because a value the
    catalogue escaped would be escaped twice and `a < b` would reach the page as
-   `a &amp;lt; b`. Hah! Wrong.
-3. **Keys must be literals at the call site**, because a key chosen by a
+   `a &amp;lt; b`. Note how the '&' got double-escaped? `a < b` became `a &lt;
+   b` became the completely unintelligable `a &amp;lt; b`.
+3. **Keys must be literals at the call site**,
+   because a key chosen by a
    ternary is a key no scanner can find.
 4. **A `content/ui/` filename is a key prefix, so it must be
    identifier\-safe** — hence `not_found.md` beside `not-found.php`.
@@ -361,11 +363,11 @@ If it is not, you are paying the price for nothing but a tidier place to type.
 A tidier place to type is not worth an application you cannot read.
 
 Oddly, after opening with, "I'm convinced that humans don't need to write
-code anymore," I'm not quite ready to let go.  Claude could care less about six
-more coding guidlines and a little bit of indirection. It would adapt. I can be
-a "non-programmer," have nice looking markdown files for editing the text on
-the screens.  Apparently, I'm not quite ready to let go. I still want to see
-code that a person, a human programmer would enjoy working with, be happy to
-show to colleagues.
+code anymore," I'm not quite ready to let go.  Claude couldn't care less about
+six more coding guidelines and a little bit of indirection. It would adapt. I
+can be a "non-programmer," have nice looking markdown files for editing the
+text on the screens.  Apparently, I'm not quite ready to let go. I still want
+to see code that a person, a human programmer would enjoy working with, be
+happy to show to colleagues.
 
-I am keeping the four bug fixes. The rest goes back.
+I am keeping the two fixes and the two sounder tests. The rest goes back.
