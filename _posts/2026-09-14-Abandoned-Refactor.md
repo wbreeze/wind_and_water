@@ -360,4 +360,12 @@ the words have to leave, and every cost above is simply the price of admission.
 If it is not, you are paying the price for nothing but a tidier place to type.
 A tidier place to type is not worth an application you cannot read.
 
+Oddly, after opening with, "I'm convinced that humans don't need to write
+code anymore," I'm not quite ready to let go.  Claude could care less about six
+more coding guidlines and a little bit of indirection. It would adapt. I can be
+a "non-programmer," have nice looking markdown files for editing the text on
+the screens.  Apparently, I'm not quite ready to let go. I still want to see
+code that a person, a human programmer would enjoy working with, be happy to
+show to colleagues.
+
 I am keeping the four bug fixes. The rest goes back.
